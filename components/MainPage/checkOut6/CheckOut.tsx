@@ -20,7 +20,7 @@ export const CheckOut: FC<CheckOutProps> = ({ }) => {
                 <div className={cls.PortfolioText}>
                     <h1>Our audit portfolio</h1>
                     <p>Check out our audit portfolio on github.</p>
-                    <Link className={cls.PortfolioButton} href={'a'} >Check Out</Link>
+                    <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting'} target="_blank" >Check Out</Link>
                 </div>
             </div>
             <Image 

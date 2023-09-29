@@ -30,7 +30,7 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                         alt='X'
                         loading='lazy'
                     />
-                    <Link href={"/"} className={cls.EvaluationText}>
+                    <Link href={"https://x.com/ABDKconsulting?s=20"} className={cls.EvaluationText} target="_blank">
                         Link
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                             <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
@@ -43,7 +43,7 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                         alt='LinkedIn'
                         loading='lazy'
                     />
-                    <Link href={"/"} className={cls.EvaluationText}>
+                    <Link href={"https://www.linkedin.com/company/abdk-consulting/about/"} className={cls.EvaluationText}  target="_blank">
                         Link
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                             <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
@@ -56,7 +56,7 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                         alt='GhLink'
                         loading='lazy'
                     />
-                    <Link href={"/"} className={cls.EvaluationText}>
+                    <Link className={cls.EvaluationText} href={'https://github.com/abdk-consulting'} target="_blank" >
                         Link
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                             <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
@@ -91,9 +91,9 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                 <div className={cls.TopBlockText}>
                     <Link href={'/audit'} className={cls.text}>Audit</Link>
                     <div className={cls.line}></div>
-                    <Link href={'/consulting'} className={cls.text}>Consulting</Link>
-                    <div className={cls.line}></div>
                     <Link href={'/research'} className={cls.text}>Research</Link>
+                    <div className={cls.line}></div>
+                    <Link href={'/consulting'} className={cls.text}>Consulting</Link>
                     <div className={cls.line}></div>
                     <Link href={'/evaluation'} className={cls.text}>Evaluation</Link>
                 </div>
