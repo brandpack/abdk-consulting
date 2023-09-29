@@ -31,8 +31,16 @@
     align-items: center;
     margin-top: 26.65vh;
     flex-direction: row;
+    margin-left: -1.145vw;
     gap: 0.27vw;
     .text {
+        padding: 0.859vw 1.145vw;
+        font-size: 1.002vw;
+        font-weight: 700;
+        text-decoration: none;
+        color: #FFF;
+    }
+    .text-first {
         padding: 0.859vw 1.145vw;
         font-size: 1.002vw;
         font-weight: 700;
