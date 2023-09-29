@@ -2,7 +2,7 @@ import { FC } from 'react'
 import cls from './TopBlock.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import AboutUs from '@/public/AboutUs.webp';
+import AboutUs from '@/public/about-us.webp';
 
 interface TopBlockProps {
 }
