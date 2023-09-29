@@ -1,0 +1,75 @@
+@import 'fonts';
+@import 'variables';
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body,
+html,
+#root,
+#__next {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	font-family: 'Basis Grotesque Pro', sans-serif;
+	color: $colorAccent;
+	//letter-spacing: 1px;
+	font-size: 14px;
+	border: 0;
+	line-height: 1;
+	position: relative;
+}
+
+#root {
+	flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+input {
+	&:focus {
+		box-shadow: none !important;
+	}
+}
+.videoWrapper {
+    position: absolute;
+	z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    .bgVideo{
+        width: 100vw;
+        min-height: 100vh;
+        object-fit: fill;
+    }
+}

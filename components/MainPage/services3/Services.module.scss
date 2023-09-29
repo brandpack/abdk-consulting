@@ -1,0 +1,104 @@
+.Services {
+    width: 82.433vw;
+    padding: 8.784vw 8.784vw 8.311vw;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.Service:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.Service {
+    flex-direction: row;
+    display: flex;
+    width: 77.703vw;
+    height: 45.62vh;
+    padding: 2.365vw;
+    border-radius: 12px;
+    border: 1px solid rgba(226, 226, 226, 0.50);
+    background: #FCFCFC;
+    justify-content: space-between;
+}
+.ServiceImage {
+    width: 38.851vw;
+    height: 45.62vh;
+}
+
+.ServiceText {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h1 {
+        color: var(--grey-main, #353539);
+        font-size: 4.054vw;
+        font-weight: 700;
+    }
+
+    p {
+        width: 19.324vw;
+        font-size: 1.216vw;
+        color: var(--grey-main, #353539);
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .blueLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #2DAED7;
+    }
+
+    .greenLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #34C88C;
+    }
+
+    .cyanLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #474DD8;
+    }
+
+    .purpleLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #BF63DF;
+    }
+
+    &Header {
+        display: flex;
+        flex-direction: column;
+        gap: 2.703vw;
+
+    }
+
+    &Footer {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        gap: 5.135vw;
+        align-items: flex-end;
+    }
+
+    .ServiceButton {
+        display: flex;
+        gap: 0.676vw;
+        align-items: baseline;
+        padding: 1.622vw 2.162vw;
+        border-radius: 0.676vw;
+        border: 1px solid #000;
+        color: #000;
+        font-size: 1.216vw;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}

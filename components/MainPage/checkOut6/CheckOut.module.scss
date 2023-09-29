@@ -1,0 +1,62 @@
+.CheckOut {
+    width: 82.432vw;
+    height: 88.5954vh;
+    perspective: 1000px;
+    margin: 24.0096vh 8.784vw;
+    border-radius: 0.811vw;
+    border: 0.068vw solid #E2E2E2;
+    background: rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.9231vh;
+    gap: 4.8019vh;
+}
+
+.PortfolioText {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8811vh;
+    color: var(--grey-main, #353539);
+    text-align: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3.243vw;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.081vw;
+        font-weight: 400;
+    }
+
+}
+
+.PortfolioButton {
+    display: flex;
+    padding: 1.9207vh 1.351vw;
+    width: 6.081vw;
+    border-radius: 1.757vw;
+    border: 0.068vw solid #E2E2E2;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(0.27vw);
+    text-decoration: none;
+    font-size: 1.081vw;
+    font-weight: 700;
+    justify-content: center;
+    color: var(--grey-main, #353539);
+}
+.GhPage {
+    width: 85.122vw;
+    height: 677px;
+    transform: rotate3d(1, 0, 0, 45deg);
+}

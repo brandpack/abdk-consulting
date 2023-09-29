@@ -1,0 +1,243 @@
+.TopBlock {
+    width: 84.223vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 0;
+    padding: 0 7.264vw 0 8.514vw;
+    justify-content: flex-end;
+}
+
+.TopBlockHeader {
+    width: 100%;
+    margin-top: 13.514vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw;
+    grid-template-rows: 210px 3.841vh 210px;
+}
+
+.ApproachHeader {
+    width: 27.027vw;
+    font-size: 5.849vw;
+    font-weight: 700;
+    line-height: 98.473px;
+    text-transform: uppercase;
+    color: var(--grey-main, #353539);
+    align-self: center;
+}
+
+.Evaluation {
+    box-sizing: border-box;
+    display: flex;
+    z-index: 1;
+    width: 18.986vw;
+    height: 210px;
+    padding: 2.703vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 0.676vw;
+    border: 0.068vw solid #E2E2E2;
+    background: #FFF;
+
+    .EvaluationText {
+        display: flex;
+        gap: 0.541vw;
+        align-items: center;
+        width: 12.838vw;
+        color: var(--grey-main, #353539);
+        font-size: 1.622vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+    }
+}
+
+.Evaluation1 {
+    grid-row: 1/2;
+    grid-column: 7/8;
+    border: 1px solid #000;
+    background: #FFF;
+
+    .EvaluationText {
+        width: 16.284vw;
+
+        svg {
+            stroke: #000;
+        }
+    }
+}
+
+.Evaluation2 {
+    grid-row: 3/4;
+    grid-column: 7/8;
+    border: 1px solid #0A66C2;
+    background: #F0F6FB;
+
+    .EvaluationText {
+        width: 15.338vw;
+        color: #0A66C2;
+
+        svg {
+            stroke: #0A66C2;
+        }
+    }
+}
+
+.Evaluation3 {
+    grid-row: 3/4;
+    grid-column: 5/7;
+    border: 1px solid #E2E2E2;
+    background: #000;
+
+    .EvaluationText {
+        width: 13.851vw;
+        color: #FFF;
+
+        svg {
+            stroke: #FFF;
+        }
+    }
+}
+
+.Evaluation4 {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    width: 40.135vw;
+    border: 1px solid #E2E2E2;
+    background: #F6F6F6;
+
+    .EvaluationText {
+        width: 15.946vw;
+    }
+
+    .EvaluationFooterEmail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .FooterLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 6px;
+
+        p {
+            font-size: 24px;
+            color: var(--grey-main, #353539);
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .EvaluationFooterEmailLink {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration-line: underline;
+        color: var(--grey-main, #353539);
+    }
+
+    .EmailCopy {
+        width: 51px;
+        height: 51px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #E2E2E2;
+        border-width: 0px;
+        transition: all 0.3s ease-in-out;
+    }
+    .EmailCopy:active {
+        background: #34C88C;
+
+    }
+}
+
+.Line1 {
+    width: 39.595vw;
+    height: 0px;
+    border-top: 0.135vw dashed #0A0A29;
+    opacity: 0.3;
+    grid-row: 1/2;
+    grid-column: 3/7;
+    align-self: center;
+    justify-self: end;
+}
+
+.Line2 {
+    width: 0px;
+    height: 3.041vw;
+    border-right: 0.135vw dashed #0A0A29;
+    opacity: 0.3;
+    align-self: center;
+    justify-self: center;
+    grid-row: 2/3;
+    grid-column: 7/8;
+    z-index: 0;
+}
+
+.Line3 {
+    width: 3.041vw;
+    height: 0px;
+    border-top: 0.135vw dashed #0A0A29;
+    opacity: 0.3;
+    align-self: center;
+    justify-self: center;
+    grid-row: 3/4;
+    grid-column: 6/7;
+    z-index: 0;
+}
+
+.Line4 {
+    width: 3.041vw;
+    height: 0px;
+    border-top: 0.135vw dashed #0A0A29;
+    opacity: 0.3;
+    align-self: center;
+    justify-self: center;
+    grid-row: 3/4;
+    grid-column: 4/5;
+    z-index: 0;
+}
+
+.TopBlockText {
+    display: flex;
+    align-items: center;
+    margin-top: 8.041vw;
+    flex-direction: row;
+    gap: 0.27vw;
+
+    .text:nth-child(1) {
+        padding: 0.859vw 1.145vw 0.859vw 0;
+
+    }
+
+    .text {
+        padding: 0.859vw 1.145vw;
+        font-size: 1.002vw;
+        text-decoration: none;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .line {
+        width: 2.027vw;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.15);
+    }
+}
+
+.TopBlockFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.635vw;
+}

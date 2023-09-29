@@ -1,0 +1,139 @@
+.TopBlock {
+    width: 84.223vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 0;
+    padding: 0 7.264vw 0 8.514vw;
+    justify-content: flex-end;
+}
+
+.TopBlockImage {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: fill;
+}
+
+.TopBlockHeader {
+    display: flex;
+    width: 37.095vw;
+    padding: 3.243vw 3.243vw 3.243vw 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.243vw;
+    box-sizing: border-box;
+}
+
+.TopBlockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    .Header {
+        color: #FFF;
+        font-size: 6.243vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+    }
+
+    .Text {
+        color: #FFF;
+        width: 19.932vw;
+        font-size: 1.351vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        opacity: 0.9;
+    }
+
+    .blueLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #2DAED7;
+    }
+
+    .greenLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #34C88C;
+    }
+
+    .cyanLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #474DD8;
+    }
+
+    .purpleLine {
+        width: 2.703vw;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #BF63DF;
+    }
+}
+
+.TopBlockGuide {
+    color: #77F8A2;
+}
+
+.TopBlockText {
+    display: flex;
+    align-items: center;
+    margin-top: 8.041vw;
+    flex-direction: row;
+    gap: 0.27vw;
+    .text:nth-child(1) {
+        padding: 0.859vw 1.145vw 0.859vw 0;
+
+    }
+    .text {
+        padding: 0.859vw 1.145vw;
+        font-size: 1.002vw;
+        text-decoration: none;
+        font-weight: 700;
+        color: #FFF;
+    }
+
+    .line {
+        width: 2.027vw;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+.TopBlockButton {
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1.622vw 2.162vw;
+    height: 1.081vw;
+    border-radius: 0.861vw;
+    border: 1px solid #2DAED7;
+    background: rgba(45, 174, 215, 0.10);
+    backdrop-filter: blur(25px);
+    color: #2DAED7;
+    font-size: 1.549vw;
+    gap: 0.861vw;
+    font-weight: 500;
+}
+
+.TopBlockFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.635vw;
+}

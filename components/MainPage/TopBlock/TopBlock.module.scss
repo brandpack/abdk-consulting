@@ -1,0 +1,71 @@
+.TopBlock {
+    width: 84.223vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 0;
+    padding:  0 7.264vw 0 8.514vw;
+}
+.TopBlockHeader {
+    margin-top: 30.6vh;
+    width: 37.162vw;
+    color: #FFF;
+    font-size: 6.243vw;
+    font-weight: 500;
+    line-height: 100%;
+}
+.TopBlockGuide {
+    color: #77F8A2;
+    position: relative;
+    .GuideBgImage {
+        position: absolute;
+        right: -20px;
+        top: 15px;
+        width: 1.755vw;
+        height: 1.755vw;
+    }
+}
+.TopBlockText {
+    display: flex;
+    align-items: center;
+    margin-top: 26.65vh;
+    flex-direction: row;
+    gap: 0.27vw;
+    .text {
+        padding: 0.859vw 1.145vw;
+        font-size: 1.002vw;
+        font-weight: 700;
+        text-decoration: none;
+        color: #FFF;
+    }
+    .line {
+        width: 2.027vw;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+.TopBlockButton {
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20.92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.066vw 2.754vw;
+    height: 1.081vw;
+    border-radius: 0.861vw;
+    border: 0.086vw solid rgba(218, 201, 253, 0.15);
+    background: rgba(176, 151, 229, 0.20);
+    backdrop-filter: blur(25px);
+    color: #FFF;
+    font-size: 1.549vw;
+    gap: 0.861vw;
+    font-weight: 500;
+}
+.TopBlockFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.635vw;
+}
