@@ -28,7 +28,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         </p>
                         <Link
                             className={cls.ServiceButton}
-                            href={'a'}
+                            href={'audit'}
                         >
                             View More
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -59,7 +59,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         </p>
                         <Link
                             className={cls.ServiceButton}
-                            href={'a'}
+                            href={'research'}
                         >
                             View More
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -89,7 +89,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         </p>
                         <Link
                             className={cls.ServiceButton}
-                            href={'a'}
+                            href={'consulting'}
                         >
                             View More
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -120,7 +120,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         </p>
                         <Link
                             className={cls.ServiceButton}
-                            href={'a'}
+                            href={'evaluation'}
                         >
                             View More
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
