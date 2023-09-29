@@ -41,9 +41,9 @@ export const TopBlockResearch: FC<TopBlockProps> = ({ }) => {
                 <div className={cls.TopBlockText}>
                     <Link href={'/audit'} className={cls.text}>Audit</Link>
                     <div className={cls.line}></div>
-                    <Link href={'/consulting'} className={cls.text}>Consulting</Link>
-                    <div className={cls.line}></div>
                     <Link href={'/research'} className={cls.text}>Research</Link>
+                    <div className={cls.line}></div>
+                    <Link href={'/consulting'} className={cls.text}>Consulting</Link>
                     <div className={cls.line}></div>
                     <Link href={'/evaluation'} className={cls.text}>Evaluation</Link>
                 </div>
