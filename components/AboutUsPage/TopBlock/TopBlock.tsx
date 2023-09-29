@@ -19,7 +19,7 @@ export const TopBlockAboutUs: FC<TopBlockProps> = ({ }) => {
                 <div className={cls.TopBlockContainer}>
                     <div className={cls.greenLine}></div>
                     <h1 className={cls.Header}>
-                        Consulting
+                        About Us
                     </h1>
                     <p className={cls.Text}>
                         The ABDK Research Team, led by the world 
