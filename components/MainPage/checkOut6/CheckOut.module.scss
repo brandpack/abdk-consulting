@@ -48,13 +48,19 @@
     border-radius: 1.757vw;
     border: 0.068vw solid #E2E2E2;
     background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(0.27vw);
     text-decoration: none;
     font-size: 1.081vw;
     font-weight: 700;
     justify-content: center;
     color: var(--grey-main, #353539);
 }
+
+.PortfolioButton:hover {
+    background: #353539;
+    border: 0.068vw solid #353539;
+    color: #E2E2E2;
+}
+
 .GhPage {
     width: 85.122vw;
     height: 677px;
