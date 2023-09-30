@@ -34,6 +34,7 @@ export const TopBlock: FC<TopBlockProps> = ({ }) => {
                 }
 
             </div>
+            <div className={cls.LinearGradient}></div>
             <div className={cls.TopBlockHeader}>
 
                 Your <span className={cls.TopBlockGuide}>

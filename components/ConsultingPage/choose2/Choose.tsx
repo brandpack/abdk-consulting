@@ -19,10 +19,10 @@ export const ChooseConsulting: FC<ChooseProps> = ({ }) => {
                 abdk
             </h1>
             <div className={cls.Line1}></div>
+            <div className={cls.Line2}></div>
             <div className={cls.Line3}></div>
             <div className={cls.Line4}></div>
-            <div className={cls.Line5}></div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation2}`}>
+            <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
                 <Image
                     src={Engaged}
                     alt='Engaged'
@@ -35,7 +35,7 @@ export const ChooseConsulting: FC<ChooseProps> = ({ }) => {
                     and cryptography
                 </p>
             </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation3}`}>
+            <div className={`${cls.Evaluation} ${cls.Evaluation2}`}>
                 <Image
                     src={OurDesigns}
                     alt='OurDesigns'
@@ -47,7 +47,7 @@ export const ChooseConsulting: FC<ChooseProps> = ({ }) => {
                     of applications
                 </p>
             </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation4}`}>
+            <div className={`${cls.Evaluation} ${cls.Evaluation3}`}>
                 <Image
                     src={Conduct}
                     alt='Conduct'
@@ -58,7 +58,7 @@ export const ChooseConsulting: FC<ChooseProps> = ({ }) => {
                     consultation
                 </p>
             </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation5}`}>
+            <div className={`${cls.Evaluation} ${cls.Evaluation4}`}>
                 <Image
                     src={Advise}
                     alt='Advise top players in the industry'

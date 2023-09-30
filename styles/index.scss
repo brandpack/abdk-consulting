@@ -61,7 +61,7 @@ input {
 }
 .videoWrapper {
     position: absolute;
-	z-index: -1;
+	z-index: 0;
     top: 0;
     bottom: 0;
     left: 0;
@@ -69,13 +69,14 @@ input {
     width: 100vw;
     .bgVideo{
         width: 100vw;
-        min-height: 100vh;
+        min-height: 100svh;
         object-fit: fill;
     }
 }
 @media (max-width: 700px) {
 	.videoWrapper {
 		.bgVideo{
+			min-height: 579px;
 			object-fit: cover;
 		}
 	}

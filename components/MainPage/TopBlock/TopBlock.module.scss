@@ -15,6 +15,7 @@
     font-size: 6.243vw;
     font-weight: 500;
     line-height: 100%;
+    z-index: 1;
 }
 
 .TopBlockGuide {
@@ -31,6 +32,7 @@
 }
 
 .TopBlockText {
+    z-index: 1;
     display: flex;
     align-items: center;
     margin-top: 26.65vh;
@@ -77,6 +79,7 @@
     color: #FFF;
     font-size: 1.549vw;
     gap: 0.861vw;
+    z-index: 1;
     font-weight: 500;
 }
 
@@ -101,6 +104,7 @@
 
 
 .TopBlockFooter {
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -113,6 +117,16 @@
         min-height: 100svh;        
         padding: 0 5.607vw;
         width: 88.786vw;
+        background: #2D283C;
+    }
+    .LinearGradient{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 74.533vw;
+        width: 100vw;
+        height: 43.458vw;
+        background: linear-gradient(180deg, rgba(45, 40, 60, 0.00) 0%, #2D283C 95.8%);
     }
 
     .TopBlockHeader {

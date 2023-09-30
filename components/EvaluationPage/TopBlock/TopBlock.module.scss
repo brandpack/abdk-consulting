@@ -140,19 +140,38 @@
     justify-content: space-between;
     margin-bottom: 2.635vw;
 }
+.LinearGradient{
+    display: none;
+}
 @media (max-width: 700px) {
     .TopBlock {
         justify-content: end;
         padding: 0 5.607vw;
         width: 88.786vw;
         min-height: 100svh;
+        background: #110718;
     }
-
+    .LinearGradient{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 98.131vw;
+        width: 100vw;
+        height: 43.458vw;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(18, 6, 32, 0.00) 0%, rgba(17, 7, 24, 0.00) 0.01%, #110718 70.61%);
+    }
+    .TopBlockImage {
+        height: 524px;
+        z-index: 0;
+    }
     .TopBlockHeader {
         width: 84.112vw;
         font-size: 13.795vw;
         font-weight: 500;
         line-height: 100%;
+        z-index: 1;
     }
 
     .TopBlockGuide {
@@ -167,6 +186,7 @@
 
     .TopBlockFooter {
         flex-direction: column-reverse;
+        z-index: 1;
     }
 
     .TopBlockButton {
@@ -178,6 +198,7 @@
         font-weight: 500;
         gap: 1.869vw;
 
+        z-index: 1;
         svg {
             width: 2.804vw;
             height: 2.804vw;
@@ -185,6 +206,7 @@
     }
     .TopBlockContainer {
         gap: 24px;
+        z-index: 1;
         .Header {
             width: 91.822vw;
             font-size: 13.795vw;
