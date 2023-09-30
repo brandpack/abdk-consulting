@@ -73,3 +73,10 @@ input {
         object-fit: fill;
     }
 }
+@media (max-width: 700px) {
+	.videoWrapper {
+		.bgVideo{
+			object-fit: cover;
+		}
+	}
+}

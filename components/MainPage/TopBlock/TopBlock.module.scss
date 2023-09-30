@@ -110,6 +110,9 @@
 @media (max-width: 700px) {
     .TopBlock {
         justify-content: end;
+        min-height: 100dvh;        
+        padding: 0 5.607vw;
+        width: 88.786vw;
     }
 
     .TopBlockHeader {
