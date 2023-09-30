@@ -22,7 +22,7 @@
 
     img {
         width: 83.514vw;
-        height: 90.2761vh;
+        height: auto;
     }
 }
 
@@ -126,5 +126,88 @@
         color: var(--grey-main, #353539);
         font-weight: 400;
         line-height: 140%
+    }
+}
+@media (max-width: 700px) { 
+    .Expertise {
+        margin: 17.991vw 5.607vw;
+    }
+    .ExpertiseContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 400px);
+    }
+    .ExpertiseHeader {
+        font-size: 11.215vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 9.346vw;
+    }
+    .Lines {
+        top: 6vh;
+        img {
+            width: 11.083vw;
+            height: 300vw;
+        }
+    }
+    .Evaluation1 {
+        margin-left: 8vw;
+        margin-top: 12vh;
+        gap: 5.607vw;
+        img {
+            width: 79.439vw;
+            height: 51.869vw;
+        }
+        .EvaluationText {
+            width: 68.458vw;
+        }
+    }
+    .Evaluation2 {
+        margin-left: 8vw;
+        margin-top: 12vh;
+        gap: 5.607vw;
+        img {
+            width: 79.439vw;
+            height: 51.869vw;
+        }
+        .EvaluationText {
+            width: 75.935vw;
+        }
+    }
+    .Evaluation3 {
+        margin-left: 8vw;
+        margin-top: 12vh;
+        gap: 5.607vw;
+        img {
+            width: 79.439vw;
+            height: 51.869vw;
+        }
+        .EvaluationText {
+            width: 75.701vw;
+        }
+    }
+    .Evaluation4 {
+        margin-left: 8vw;
+        margin-top: 12vh;
+        gap: 5.607vw;
+        img {
+            width: 79.439vw;
+            height: 51.869vw;
+        }
+        .EvaluationText {
+            width: 75.935vw;
+        }
+    }
+    .EvaluationTextBlock {
+        width: 79.439vw;
+        gap: 4.673vw;
+        .EvaluationHeader {
+            font-size: 5.607vw;
+            font-weight: 700;
+        }
+        .EvaluationText {
+            font-size: 3.271vw;
+            font-weight: 400;
+            line-height: 140%;
+        }
     }
 }

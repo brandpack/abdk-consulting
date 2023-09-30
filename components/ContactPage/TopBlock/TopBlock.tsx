@@ -3,11 +3,11 @@ import { FC } from 'react'
 import cls from './TopBlock.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import X from '@/public/x.svg';
-import LinkedIn from '@/public/linkedIn.svg';
-import GhLink from '@/public/ghLink.svg';
+import X from '@/public/xMini.svg';
+import LinkedIn from '@/public/linkedInMini.svg';
+import GhLink from '@/public/GithubMini.svg';
 import EmailLink from '@/public/emailLink.svg';
-import CopyIcon from '@/public/copyIcon.svg';
+import GetInTouch from '@/public/getInTouch.svg';
 
 interface TopBlockProps {
 }
@@ -17,13 +17,11 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
         <div className={cls.TopBlock}>
             <div className={cls.TopBlockHeader}>
                 <h1 className={cls.ApproachHeader}>
-                    Get in
-                    touch
+                    <Image 
+                    src={GetInTouch}
+                    alt='get in touch'
+                    />
                 </h1>
-                <div className={cls.Line1}></div>
-                <div className={cls.Line2}></div>
-                <div className={cls.Line3}></div>
-                <div className={cls.Line4}></div>
                 <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
                     <Image
                         src={X}
@@ -43,7 +41,7 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                         alt='LinkedIn'
                         loading='lazy'
                     />
-                    <Link href={"https://www.linkedin.com/company/abdk-consulting/about/"} className={cls.EvaluationText}  target="_blank">
+                    <Link href={"https://www.linkedin.com/company/abdk-consulting/about/"} className={cls.EvaluationText} target="_blank">
                         Link
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                             <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
@@ -70,20 +68,17 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                         loading='lazy'
                     />
                     <div className={cls.EvaluationFooterEmail}>
-                        <div className={cls.FooterLeft}>
                         <p>Email</p>
-                        <a className={cls.EvaluationFooterEmailLink} href="mailto:dmitry@abdkconsulting.com">dmitry@abdkconsulting.com</a>
+                        <div className={cls.FooterBtn}>
+                            <a className={cls.EvaluationFooterEmailLink} href="mailto:dmitry@abdkconsulting.com">dmitry@abdkconsulting.com</a>
+                            <button
+                                className={cls.EmailCopy}
+                                onClick={() => navigator.clipboard.writeText('dmitry@abdkconsulting.com')}
+                            >
+                                Copy
+                            </button>
                         </div>
-                        <button
-                        className={cls.EmailCopy}
-                            onClick={() =>  navigator.clipboard.writeText('dmitry@abdkconsulting.com')}
-                        >
-                        <Image
-                        src={CopyIcon}
-                        alt='LinkedIn'
-                        loading='lazy'
-                    />
-                        </button>
+
                     </div>
                 </div>
             </div>

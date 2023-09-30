@@ -114,3 +114,90 @@
     grid-column: 2/3;
     z-index: 0;
 }
+@media (max-width: 700px) { 
+    .Approach {
+        padding: 23.364vw 5.607vw 36.449vw;
+        display: grid;
+        grid-template-columns: 42.523vw 3.738vw 42.523vw;
+        grid-template-rows: 182px 16px 182px 16px 182px 16px 182px;
+    }
+    .ApproachHeader {
+        width: 100%;
+        font-size: 10.981vw;
+        font-weight: 700;
+        line-height: 13.084vw; 
+        grid-column: 1/4;
+
+    }
+    .Evaluation {
+        width: 42.523vw;
+        height: 42.523vw;
+        padding: 3.738vw;
+        .EvaluationText {
+            font-size: 4.206vw;
+            font-weight: 500;
+        }
+    }
+    .Evaluation1 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        img {
+            width: 7.71vw;
+            height: 7.71vw;
+            }
+        .EvaluationText {
+            width: 34.112vw;
+        }
+    }
+    .Evaluation2 {
+        grid-row: 3/4;
+        grid-column: 3/4;
+        img {
+        width: 7.71vw;
+        height: 7.477vw;
+        }
+        .EvaluationText {
+            width: 35.28vw;
+        }
+    }
+    .Evaluation3 {
+        grid-row: 5/6;
+        grid-column: 1/2;
+        img {
+           width: 7.944vw;
+           height: 7.944vw;
+        }
+        .EvaluationText {
+            width: 34.112vw;
+        }
+    }
+    .Evaluation4 {
+        grid-row: 5/6;
+        grid-column: 3/4;
+        img {
+            width: 7.477vw;
+            height: 7.477vw;
+        }
+        .EvaluationText {
+            width: 28.037vw;
+        }
+    }
+    .Evaluation5 {
+        grid-row: 7/8;
+        grid-column: 3/4;
+        img {
+            width: 10.748vw;
+            height: 8.645vw;
+        }
+        .EvaluationText {
+            width: 37.617vw;
+        }
+    }
+    .Line1,
+    .Line2,
+    .Line3,
+    .Line4,
+    .Line5 {
+        display: none;
+    }
+}

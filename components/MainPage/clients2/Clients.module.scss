@@ -73,3 +73,9 @@
         height: 3.841vh;
     }
 }
+
+@media (max-width: 700px) { 
+    .clientsBgImage {
+        display: none;
+    }
+}

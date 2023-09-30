@@ -66,3 +66,41 @@
     height: 677px;
     transform: rotate3d(1, 0, 0, 45deg);
 }
+@media (max-width: 700px) { 
+    .CheckOut {
+        margin: 0;
+        width: 100vw;
+        height: 133.879vw;
+        border: none;
+        border-radius: none;
+    }
+    .Portfolio {
+        margin-top: 11.215vw;
+        gap: 11.215vw;
+    }
+.PortfolioText {
+    gap: 5.607vw;
+    
+    h1 {
+        font-size: 8.411vw;
+        font-weight: 700;
+        line-height: 114.1%;
+    }
+
+    p {
+        font-size: 3.738vw;
+        font-weight: 400;
+    }
+}
+.PortfolioButton {
+    padding: 3.738vw 4.673vw;
+    font-size: 3.738vw;
+    width: 21.028vw;
+    border-radius: 6.075vw;
+    border: 0.234vw solid #E2E2E2;
+}
+.GhPage {
+    width: 93.458vw;
+    height: 140.187vw;
+}
+}

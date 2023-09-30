@@ -14,7 +14,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
     return (
         <div className={cls.Services}>
             <div className={cls.Service}>
-                <div className={cls.ServiceText}>
                     <div className={cls.ServiceTextHeader}>
                         <h1>Audit</h1>
                         <div className={cls.blueLine}>
@@ -36,7 +35,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
                             </svg>
                         </Link>
                     </div>
-                </div>
 
 
                 <Image className={cls.ServiceImage}
@@ -45,7 +43,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 />
             </div>
             <div className={cls.Service}>
-                <div className={cls.ServiceText}>
                     <div className={cls.ServiceTextHeader}>
                         <h1>Research</h1>
                         <div className={cls.greenLine}>
@@ -67,7 +64,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
                             </svg>
                         </Link>
                     </div>
-                </div>
 
 
                 <Image className={cls.ServiceImage}
@@ -76,7 +72,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 />
             </div>
             <div className={cls.Service}>
-                <div className={cls.ServiceText}>
                     <div className={cls.ServiceTextHeader}>
                         <h1>Consulting</h1>
                         <div className={cls.cyanLine}>
@@ -97,7 +92,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
                             </svg>
                         </Link>
                     </div>
-                </div>
 
 
                 <Image className={cls.ServiceImage}
@@ -106,7 +100,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 />
             </div>
             <div className={cls.Service}>
-                <div className={cls.ServiceText}>
                     <div className={cls.ServiceTextHeader}>
                         <h1>Evaluation</h1>
                         <div className={cls.purpleLine}>
@@ -128,7 +121,6 @@ export const Services: FC<ServicesProps> = ({ }) => {
                             </svg>
                         </Link>
                     </div>
-                </div>
 
 
                 <Image className={cls.ServiceImage}

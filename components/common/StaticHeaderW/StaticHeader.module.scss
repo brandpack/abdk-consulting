@@ -31,3 +31,17 @@ background: rgba(0, 0, 0, 0.01);
     width: 100%;
     z-index: 1000;
 }
+@media (max-width: 700px) {
+    .headerContent {
+        height: 7.477vw;
+        padding: 3.738vw 5.607vw;
+        .headerLinks {
+            gap: 5.607vw;
+            .link {
+                font-size: 3.271vw;
+            }
+        }
+
+        
+    }
+}

@@ -1,4 +1,5 @@
-import { FC } from 'react'
+"use client"
+import { FC, useEffect, useState } from 'react'
 import cls from './Expertise.module.scss'
 import Image from 'next/image';
 import SmartContarcts from '@/public/smartContarcts.svg';
@@ -7,16 +8,25 @@ import Cryptography from '@/public/cryptography.svg';
 import DeFi from '@/public/deFi.svg';
 
 import Lines from '@/public/lines.svg';
+import LinesMobile from '@/public/linesMobile.svg';
 
 interface ExpertiseProps {
 }
 
 export const Expertise: FC<ExpertiseProps> = ({ }) => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      // Check if window is defined (i.e., we are in a browser environment)
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth <= 700);
+      }
+    }, []);
     return (
         <div className={cls.Expertise}>
             <div className={cls.Lines}>
             <Image 
-                 src={Lines}
+                 src={isMobile ? LinesMobile : Lines}
                  alt='Lines'
                  loading='lazy'
                  />

@@ -5,7 +5,6 @@
     height: 4.324vw;
     width: 82.432vw;
     padding: 2px 2.027vw;
-    margin: 0 6.757vw;
     border-radius: 13px;
     backdrop-filter: blur(30px);
 
@@ -28,4 +27,20 @@
     top: 3.243vw;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 700px) {
+    .headerContent {
+        height: 7.477vw;
+        padding: 3.738vw 5.607vw;
+        .headerLinks {
+            gap: 5.607vw;
+            .link {
+                font-size: 3.271vw;
+            }
+        }
+
+        
+    }
 }

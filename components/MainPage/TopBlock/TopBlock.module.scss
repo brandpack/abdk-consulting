@@ -5,8 +5,9 @@
     flex-direction: column;
     position: relative;
     flex-shrink: 0;
-    padding:  0 7.264vw 0 8.514vw;
+    padding: 0 7.264vw 0 8.514vw;
 }
+
 .TopBlockHeader {
     margin-top: 30.6vh;
     width: 37.162vw;
@@ -15,9 +16,11 @@
     font-weight: 500;
     line-height: 100%;
 }
+
 .TopBlockGuide {
     color: #77F8A2;
     position: relative;
+
     .GuideBgImage {
         position: absolute;
         right: -20px;
@@ -26,6 +29,7 @@
         height: 1.755vw;
     }
 }
+
 .TopBlockText {
     display: flex;
     align-items: center;
@@ -33,6 +37,7 @@
     flex-direction: row;
     margin-left: -1.145vw;
     gap: 0.27vw;
+
     .text {
         padding: 0.859vw 1.145vw;
         font-size: 1.002vw;
@@ -40,6 +45,7 @@
         text-decoration: none;
         color: #FFF;
     }
+
     .text-first {
         padding: 0.859vw 1.145vw;
         font-size: 1.002vw;
@@ -47,12 +53,14 @@
         text-decoration: none;
         color: #FFF;
     }
+
     .line {
         width: 2.027vw;
         height: 1px;
         background: rgba(255, 255, 255, 0.15);
     }
 }
+
 .TopBlockButton {
     cursor: pointer;
     text-decoration: none;
@@ -97,4 +105,73 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2.635vw;
+}
+
+@media (max-width: 700px) {
+    .TopBlock {
+        justify-content: end;
+    }
+
+    .TopBlockHeader {
+        width: 84.112vw;
+        font-size: 13.795vw;
+        font-weight: 500;
+        line-height: 100%;
+    }
+
+    .TopBlockGuide {
+        .GuideBgImage {
+            position: absolute;
+            right: -20px;
+            top: 15px;
+            width: 4.206vw;
+            height: 4.206vw;
+        }
+    }
+
+    .TopBlockFooter {
+        flex-direction: column-reverse;
+    }
+
+    .TopBlockButton {
+        margin-top: 7.477vw;
+        padding: 5.607vw 7.477vw;
+        border-radius: 2.976vw;
+        width: 26.402vw;
+        height: 3.037vw;
+        font-size: 4.206vw;
+        font-weight: 500;
+        gap: 1.869vw;
+
+        svg {
+            width: 2.804vw;
+            height: 2.804vw;
+        }
+    }
+
+    .TopBlockText {
+        margin-top: 11.449vw;
+        margin-bottom: 7.477vw;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+        gap: 0;
+
+        .text {
+            font-size: 3.271vw;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .text-first {
+            font-size: 3.271vw;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .line {
+            width: 4.673vw;
+            height: 0.234vw;
+        }
+    }
 }

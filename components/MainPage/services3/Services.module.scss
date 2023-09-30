@@ -13,7 +13,9 @@
 
 .Service {
     flex-direction: row;
-    display: flex;
+    display: grid;
+    grid-template-areas: "Name image"
+        "Description image";
     width: 77.703vw;
     height: 45.62vh;
     padding: 2.365vw;
@@ -22,17 +24,27 @@
     background: #FCFCFC;
     justify-content: space-between;
 }
+
 .ServiceImage {
     width: 38.851vw;
     height: 45.62vh;
     object-fit: cover;
     border-radius: 8px;
+    grid-area: image;
+
 }
 
-.ServiceText {
+
+
+
+
+
+
+.ServiceTextHeader {
+    grid-area: Name;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    gap: 2.703vw;
 
     h1 {
         color: var(--grey-main, #353539);
@@ -47,63 +59,169 @@
         font-weight: 400;
         line-height: 140%;
     }
+}
 
-    .blueLine {
-        width: 2.703vw;
-        height: 2px;
-        border-radius: 0.946vw;
-        background: #2DAED7;
+.ServiceTextFooter {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    grid-area: Description;
+
+    gap: 5.135vw;
+    align-items: flex-end;
+
+    h1 {
+        color: var(--grey-main, #353539);
+        font-size: 4.054vw;
+        font-weight: 700;
     }
 
-    .greenLine {
-        width: 2.703vw;
-        height: 2px;
-        border-radius: 0.946vw;
-        background: #34C88C;
+    p {
+        width: 19.324vw;
+        font-size: 1.216vw;
+        color: var(--grey-main, #353539);
+        font-weight: 400;
+        line-height: 140%;
     }
+}
 
-    .cyanLine {
-        width: 2.703vw;
-        height: 2px;
-        border-radius: 0.946vw;
-        background: #474DD8;
-    }
+.blueLine {
+    width: 2.703vw;
+    height: 2px;
+    border-radius: 0.946vw;
+    background: #2DAED7;
+}
 
-    .purpleLine {
-        width: 2.703vw;
-        height: 2px;
-        border-radius: 0.946vw;
-        background: #BF63DF;
-    }
+.greenLine {
+    width: 2.703vw;
+    height: 2px;
+    border-radius: 0.946vw;
+    background: #34C88C;
+}
 
-    &Header {
+.cyanLine {
+    width: 2.703vw;
+    height: 2px;
+    border-radius: 0.946vw;
+    background: #474DD8;
+}
+
+.purpleLine {
+    width: 2.703vw;
+    height: 2px;
+    border-radius: 0.946vw;
+    background: #BF63DF;
+}
+
+.ServiceButton {
+    display: flex;
+    gap: 0.676vw;
+    align-items: baseline;
+    padding: 1.622vw 2.162vw;
+    border-radius: 0.676vw;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 1.216vw;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.ServiceButton:hover {
+    border: 1px solid #BABABA;
+}
+
+@media (max-width: 700px) {
+    .Services {
+        width: 100vw;
+        padding: 0;
+        background: #FFF;
         display: flex;
         flex-direction: column;
-        gap: 2.703vw;
-
+        gap: 0px;
     }
 
-    &Footer {
-        display: flex;
-        flex-direction: row;
-        // justify-content: space-between;
-        gap: 5.135vw;
-        align-items: flex-end;
+    .Service:nth-child(even) {
+        flex-direction: column;
     }
 
+    .Service {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        border: none;
+        border-bottom: 1px solid #E2E2E2;
+        display: grid;
+        padding: 16.355vw 5.607vw;
+        box-sizing: border-box;
+        grid-template-areas: "Name"
+            "image"
+            "Description";
+        row-gap: 30px;
+    }
+
+    .ServiceTextHeader {
+        grid-area: Name;
+        h1 {
+            font-size: 11.215vw;
+            font-weight: 700;
+        }
+    }
+
+    .ServiceTextFooter {
+        grid-area: Description;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5.607vw;
+        p {
+            width: 51.402vw;
+            font-size: 3.271vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+
+    .ServiceImage {
+        margin-top: 4.673vw;
+        grid-area: image;
+        width: 88.785vw;
+        height: 58.879vw;
+    }
     .ServiceButton {
-        display: flex;
-        gap: 0.676vw;
-        align-items: baseline;
-        padding: 1.622vw 2.162vw;
-        border-radius: 0.676vw;
-        border: 1px solid #000;
-        color: #000;
-        font-size: 1.216vw;
-        font-weight: 500;
-        text-decoration: none;
+        padding: 20px 0px;
+        border: none;
+        font-size: 4.206vw;
+        gap: 1.869vw;
+        svg  {
+            width: 2.336vw;
+            height: 2.336vw;
+        }
     }
-    .ServiceButton:hover {
-        border: 1px solid #BABABA;
+    .blueLine {
+        width: 9.346vw;
+        height: 2px;
+        border-radius: 3.271vw;
+        background: #2DAED7;
+    }
+    
+    .greenLine {
+        width: 9.346vw;
+        height: 2px;
+        border-radius: 3.271vw;
+        background: #34C88C;
+    }
+    
+    .cyanLine {
+        width: 9.346vw;
+        height: 2px;
+        border-radius: 3.271vw;
+        background: #474DD8;
+    }
+    
+    .purpleLine {
+        width: 9.346vw;
+        height: 2px;
+        border-radius: 3.271vw;
+        background: #BF63DF;
     }
 }
