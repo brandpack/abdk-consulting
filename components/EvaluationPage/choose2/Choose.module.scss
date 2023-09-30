@@ -207,14 +207,17 @@
     }
     .Line1{
         width: 25.701vw;
-        height: 18.692vw;
+        height: 14vw;
         border-top: 0.467vw dashed #0A0A29;
         opacity: 0.3;
         grid-row: 1/3;
         border-right: 0.467vw dashed #0A0A29;
         grid-column: 2/4;
         justify-self: start;
+        align-self: end;
         border-radius:  0 10px 0 0;
+        transform: translateY(0);
+
     }
     .Line2 {
         grid-row: 3/4;
