@@ -140,3 +140,113 @@
     justify-content: space-between;
     margin-bottom: 2.635vw;
 }
+@media (max-width: 700px) {
+    .TopBlock {
+        justify-content: end;
+        padding: 0 5.607vw;
+        width: 88.786vw;
+    }
+
+    .TopBlockHeader {
+        width: 84.112vw;
+        font-size: 13.795vw;
+        font-weight: 500;
+        line-height: 100%;
+    }
+
+    .TopBlockGuide {
+        .GuideBgImage {
+            position: absolute;
+            right: -20px;
+            top: 15px;
+            width: 4.206vw;
+            height: 4.206vw;
+        }
+    }
+
+    .TopBlockFooter {
+        flex-direction: column-reverse;
+    }
+
+    .TopBlockButton {
+        margin-top: 7.477vw;
+        padding: 5.607vw 7.477vw;
+        border-radius: 2.976vw;
+        height: 3.037vw;
+        font-size: 4.206vw;
+        font-weight: 500;
+        gap: 1.869vw;
+
+        svg {
+            width: 2.804vw;
+            height: 2.804vw;
+        }
+    }
+    .TopBlockContainer {
+        gap: 24px;
+        .Header {
+            width: 91.822vw;
+            font-size: 13.795vw;
+            font-weight: 500;
+            line-height: 100%;
+        }
+        .Text {
+            width: 68.925vw;
+            font-weight: 400;
+            font-size: 4.673vw;
+            line-height: 140%;
+        }
+    }
+    .TopBlockText {
+        margin-top: 11.449vw;
+        margin-bottom: 7.477vw;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+        gap: 0;
+
+        .text {
+            font-size: 3.271vw;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .text-first {
+            font-size: 3.271vw;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .line {
+            width: 4.673vw;
+            height: 0.234vw;
+        }
+    }
+    .blueLine {
+        width: 9.346vw !important;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #2DAED7;
+    }
+
+    .greenLine {
+        width: 9.346vw !important;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #34C88C;
+    }
+
+    .cyanLine {
+        width: 9.346vw !important;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #474DD8;
+    }
+
+    .purpleLine {
+        width: 9.346vw !important;
+        height: 2px;
+        border-radius: 0.946vw;
+        background: #BF63DF;
+    }
+}

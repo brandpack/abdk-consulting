@@ -25,6 +25,7 @@ export const ChooseAudit: FC<ChooseProps> = ({ }) => {
             <div className={cls.Line3}></div>
             <div className={cls.Line4}></div>
             <div className={cls.Line5}></div>
+            <div className={cls.Line6}></div>
             <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
                 <Image
                     src={Transparent}
