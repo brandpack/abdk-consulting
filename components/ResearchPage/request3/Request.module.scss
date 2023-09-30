@@ -144,3 +144,97 @@
         align-self: center;
     }
 }
+@media (max-width: 700px) { 
+    .Request {
+        grid-template-columns: 1fr;
+        grid-template-rows: 33.879vw 1fr 145px;
+        padding: 13.551vw 5.607vw;
+    }
+    .Header {
+        width: 88.785vw;
+        font-size: 10.981vw;
+        font-weight: 700;
+        line-height: 13.084vw;
+    }
+    .RequestItems {
+        grid-column: 1/2;
+        align-items: stretch;
+        grid-row: 2/3;
+        grid-template-columns: 83.178vw 5.607vw;
+        grid-template-rows: repeat(5, 9.346vw);
+        row-gap: 1.869vw;
+    }
+    .item {
+        padding: 4.206vw 5.607vw;
+        width: 100%;
+        height: 100%;
+        gap: 5.607vw;
+        border-radius: 1.869vw;
+        border: 1px solid #E2E2E2;
+        background: #FFF;
+    
+        p {
+            font-size: 4.206vw;
+        }
+    }
+    .item1 {
+        grid-column: 1/2;
+        grid-row: -4/-3;
+    
+    }
+    .item2 {
+        grid-column: 1/2;
+        grid-row: -3/-2;
+    }
+    .item3 {
+        grid-column: 1/2;
+        grid-row: -1/-2;
+    }
+    .Line1 {
+        grid-column: 2/3;
+        width: 45.794vw;
+        height: 49.766vw;
+        border-width: 0.467vw;
+
+    }
+    .Line2 {
+        grid-column: 2/3;
+        width: 5.5vw;
+        border-width: 0.467vw;
+    }
+    .Line3 {
+        grid-column: 2/3;
+        width: 5.5vw;
+        border-width: 0.467vw;
+    }
+    .Line4 {
+        grid-column: 2/3;
+        width: 5.5vw;
+        border-width: 0.467vw;
+    }
+
+    .RequestBtnContainer {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+    .RequestAuditText {
+        font-size: 3.271vw;
+        width: 48.364vw;
+        line-height: 140%;
+    }
+    .RequestBtn {
+        padding: 4.673vw 5.607vw;
+        font-size: 3.271vw;
+        width: 37.383vw;
+        border-radius: 2.336vw;
+        gap: 1.869vw;
+        svg {
+            width: 2.336vw;
+            height: 2.336vw;
+        }
+    }
+}

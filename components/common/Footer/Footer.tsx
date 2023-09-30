@@ -2,27 +2,34 @@
 import React, { useState, useEffect } from 'react';
 import cls from './Footer.module.scss'
 import logoDesktop from '@/public/FooterDesktopLogo.svg';
+import logoMobile from '@/public/FooterLogoMini.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';
 
 const Footer = () => {
+    const [isMobile, setIsMobile] = useState(false);
 
+    useEffect(() => {
+      // Check if window is defined (i.e., we are in a browser environment)
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth <= 700);
+      }
+    }, []);
     return (
 
         <div className={cls.Footer}>
             <div className={cls.Line}></div>
             <div className={cls.FooterContent}>
-                <div className={cls.FooterLeft}>
                     <Image
-                        src={logoDesktop}
+                        className={cls.FooterImage}
+                        src={isMobile ? logoMobile : logoDesktop}
                         alt='logo'
                         loading='lazy'
                     />
-                    <p>
+                    <p className={cls.FooterRights}>
                         © 2017-2023 ABDK. All rights reserved.
                     </p>
-                </div>
                 <div className={cls.FooterRight}>
                     <div className={cls.links}>
                         <Link className={cls.link} href={'/'} >Home</Link>
