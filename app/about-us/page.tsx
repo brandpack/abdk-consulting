@@ -1,4 +1,5 @@
 import History from "@/components/AboutUsPage/History/History";
+import HistoryMobile from "@/components/AboutUsPage/History/HistoryMobile";
 import { TopBlockAboutUs } from "@/components/AboutUsPage/TopBlock/TopBlock";
 import WorkAtABDK from "@/components/AboutUsPage/WorkAtABDK/WorkAtABDK";
 import { ChooseAboutUs } from "@/components/AboutUsPage/choose2/Choose";
@@ -12,7 +13,8 @@ const AboutUs: React.FC = () => {
 			<StaticHeader />
 			<TopBlockAboutUs />
 			<ChooseAboutUs />
-            <History />
+			<History />
+            <HistoryMobile />
 			<WorkAtABDK />
 			<CheckOut />
 		</main>
