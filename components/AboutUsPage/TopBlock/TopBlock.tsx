@@ -15,6 +15,7 @@ export const TopBlockAboutUs: FC<TopBlockProps> = ({ }) => {
                 className={cls.TopBlockImage}
                 alt='TopBlockImage'
             />
+            <div className={cls.LinearGradient}></div>
             <div className={cls.TopBlockHeader}>
                 <div className={cls.TopBlockContainer}>
                     <div className={cls.greenLine}></div>

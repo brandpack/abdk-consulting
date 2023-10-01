@@ -1,5 +1,5 @@
 'use client'
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import cls from './TopBlock.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -8,17 +8,26 @@ import LinkedIn from '@/public/linkedInMini.svg';
 import GhLink from '@/public/GithubMini.svg';
 import EmailLink from '@/public/emailLink.svg';
 import GetInTouch from '@/public/getInTouch.svg';
+import GetInTouchMobile from '@/public/GetInTouchMobile.svg';
 
 interface TopBlockProps {
 }
 
 export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      // Check if window is defined (i.e., we are in a browser environment)
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth <= 700);
+      }
+    }, []);
     return (
         <div className={cls.TopBlock}>
             <div className={cls.TopBlockHeader}>
                 <h1 className={cls.ApproachHeader}>
                     <Image 
-                    src={GetInTouch}
+                    src={isMobile ? GetInTouchMobile : GetInTouch}
                     alt='get in touch'
                     />
                 </h1>

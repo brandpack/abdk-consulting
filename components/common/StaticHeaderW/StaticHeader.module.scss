@@ -30,6 +30,8 @@ background: rgba(0, 0, 0, 0.01);
     top: 3.243vw;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
 }
 @media (max-width: 700px) {
     .headerContent {
@@ -41,7 +43,10 @@ background: rgba(0, 0, 0, 0.01);
                 font-size: 3.271vw;
             }
         }
-
+.headerImg{
+    width: 9.302vw;
+    height: 9.346vw;
+}
         
     }
 }

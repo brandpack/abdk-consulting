@@ -19,7 +19,7 @@ export const ChooseAboutUs: FC<ChooseProps> = ({ }) => {
             <div className={cls.Line3}></div>
             <div className={cls.Line4}></div>
             <div className={cls.Line5}></div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation2}`}>
+            <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
                 <Image
                     src={Transparent}
                     alt='transparent'
@@ -29,7 +29,7 @@ export const ChooseAboutUs: FC<ChooseProps> = ({ }) => {
                     Designated approach
                 </p>
             </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation3}`}>
+            <div className={`${cls.Evaluation} ${cls.Evaluation2}`}>
                 <Image
                     src={Time}
                     alt='Time'
@@ -39,7 +39,7 @@ export const ChooseAboutUs: FC<ChooseProps> = ({ }) => {
                     Time commitment
                 </p>
             </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation4}`}>
+            <div className={`${cls.Evaluation} ${cls.Evaluation3}`}>
                 <Image
                     src={Independence}
                     alt='Independence'
