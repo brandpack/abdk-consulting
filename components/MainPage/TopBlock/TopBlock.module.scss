@@ -192,3 +192,55 @@
         }
     }
 }
+@media (max-width: 1200px) and (min-width: 701px) {
+    .TopBlock {
+        justify-content: end;
+    } 
+    .TopBlockHeader {
+        font-size: 7.813vw;
+        width: 46.875vw;
+    }
+    .TopBlockButton {
+        padding: 2.344vw 3.125vw;
+        border-radius: 1.244vw;
+
+        font-size: 1.758vw;
+        font-weight: 500;
+        gap: 1.172vw;
+
+        svg {
+            width: 1.172vw;
+            height: 1.172vw;
+        }
+    }
+    .TopBlockText {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+        gap: 0;
+
+        .text {
+            font-size: 1.448vw;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .text-first {
+            font-size: 1.448vw;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .line {
+            width: 2.93vw;
+            height: 0.098vw;
+        }
+    }
+    .TopBlockGuide {
+        .GuideBgImage {
+            position: absolute;
+            width: 2.536vw;
+            height: 2.536vw;
+        }
+    }
+}

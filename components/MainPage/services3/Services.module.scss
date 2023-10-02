@@ -225,3 +225,37 @@
         background: #BF63DF;
     }
 }
+@media (max-width: 1200px) and (min-width: 701px) {
+    .Services {
+        width: 93.75vw;
+        padding: 10.156vw 3.125vw 10.156vw;
+        gap: 8.594vw;
+    }
+    .Service {
+        width: 93.75vw;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .ServiceTextFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 3.125vw;
+        p {
+            width: 27.93vw;
+            font-size: 1.563vw;
+        }
+    }
+    .ServiceImage{
+        width: 50vw;
+        height: 33.008vw;
+    }
+    .ServiceButton {
+        padding: 2.344vw 3.125vw;
+        font-size: 1.758vw;
+        svg {
+            width: 1.172vw;
+            height: 1.172vw;
+        }
+    }
+}

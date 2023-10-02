@@ -211,3 +211,113 @@
         }
     }
 }
+@media (max-width: 1200px) and (min-width: 701px) {
+    .Expertise {
+        width: 95.41vw;
+        margin: 0 1.465vw 8.789vw 3.125vw;
+    }
+    .ExpertiseContainer {
+        grid-template-columns: 55% 45%;
+    }
+    .Lines{
+        img {
+            width: 95.40vw;
+            height: auto;
+        }
+    }
+    .Evaluation1 {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.344vw;
+        margin-left: 13.851vw;
+        margin-top: 7vh;
+    
+        img {
+            width: 37.305vw;
+            height: 24.512vw;
+        }
+    
+        .EvaluationText {
+            width: 33.594vw;
+        }
+    }
+    
+    .Evaluation2 {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.344vw;
+        margin-top: 13.672vw;
+        margin-left: 1.014vw;
+    
+        img {
+            width: 37.305vw;
+            height: 24.512vw;
+        }
+    
+        .EvaluationText {
+            width: 36.816vw;
+        }
+    }
+    
+    .Evaluation3 {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: -4.4010vh;
+        margin-left: 13.851vw;
+        gap: 2.344vw;
+
+    
+        img {
+            width: 37.305vw;
+            height: 24.512vw;
+        }
+    
+        .EvaluationText {
+            width: 36.426vw;
+        }
+    }
+    
+    .Evaluation4 {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 10vh;
+        margin-left: 1.014vw;
+        gap: 2.344vw;
+    
+        img {
+            width: 37.305vw;
+            height: 24.512vw;
+        }
+    
+        .EvaluationText {
+            width: 33.398vw;
+        }
+    }
+    .EvaluationTextBlock {
+        display: flex;
+        width: 33.594vw;
+        flex-direction: column;
+        gap: 1.953vw;
+        align-items: flex-start;
+    
+        .EvaluationHeader {
+            font-size: 2.344vw;
+            font-weight: 700;
+        }
+    
+        .EvaluationText {
+            font-size: 1.563vw;
+            color: var(--grey-main, #353539);
+            font-weight: 400;
+            line-height: 140%
+        }
+    }
+}
