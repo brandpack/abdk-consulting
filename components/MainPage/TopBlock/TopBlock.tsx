@@ -23,7 +23,7 @@ export const TopBlock: FC<TopBlockProps> = ({ }) => {
                 {
                     isMobile ?
                         <video className={'bgVideo'} autoPlay muted playsInline loop>
-                            <source src='/BgVideoMobile.webm' type="video/mp4" />
+                            <source src='/BgVideoMobile.MP4' type="video/mp4" />
                             <source src='/BgVideoMobile.webm' type="video/webm" />
                         </video>
                         :

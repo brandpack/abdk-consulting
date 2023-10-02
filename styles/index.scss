@@ -70,7 +70,7 @@ input {
     .bgVideo{
         width: 100vw;
         min-height: 100svh;
-        object-fit: fill;
+        object-fit: cover;
     }
 }
 @media (max-width: 700px) {
