@@ -1,0 +1,10 @@
+<svg width="70" height="52" viewBox="0 0 70 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2H2V12H12V2Z" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M12 40H2V50H12V40Z" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M12 21H2V31H12V21Z" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M68 2H58V12H68V2Z" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M68 40H58V50H68V40Z" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M68 21H58V31H68V21Z" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M18 7H35.5M35.5 7V26M35.5 7L52 7M35.5 45H18M35.5 45V26M35.5 45H52M35.5 26H18M35.5 26H52" stroke="#4C7DC6" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M40.5 21H30.5V31H40.5V21Z" fill="white" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+</svg>

@@ -4,7 +4,7 @@
     padding: 11.486vw 8.649vw 0;
     display: grid;
     grid-template-columns: 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw;
-    grid-template-rows: 33.733vh 3.841vh 33.733vh;
+    grid-template-rows: 18.986vw 2.162vw 18.986vw;
 }
 
 .ApproachHeader {
@@ -22,7 +22,7 @@
     display: flex;
     z-index: 1;
     width: 18.986vw;
-    height: 33.733vh;
+    height: 18.986vw;
     padding: 1.622vw;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +45,7 @@
     grid-row: 3/4;
     grid-column: 7/8;
     .EvaluationText { 
-        width: 234.002px;
+        width: 15.811vw;
     }
 }
 .Evaluation2 {
@@ -71,7 +71,7 @@
 }
 .Line1 {
     width: 53.986vw;
-    height: 320px;
+    height: 280px;
     border-top: 0.135vw dashed #0A0A29;
     border-right: 0.135vw dashed #0A0A29;
     border-radius: 0 10px 0 0;

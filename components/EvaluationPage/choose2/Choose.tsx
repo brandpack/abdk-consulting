@@ -2,9 +2,14 @@ import { FC } from 'react'
 import cls from './Choose.module.scss'
 import Image from 'next/image';
 import Review from '@/public/review.svg';
+import ReviewH from '@/public/reviewEvaluationH.svg';
 import OpenSource from '@/public/openSource.svg';
+import OpenSourceH from '@/public/OpenSourceEvaluationH.svg';
 import Conduct from '@/public/conduct.svg';
+import ConductH from '@/public/ConductEvaluationH.svg';
 import Advise from '@/public/advise.svg';
+import AdviseH from '@/public/AdviseEvaluationH.svg';
+import { Evaluation } from './Evaluation';
 
 
 interface ChooseProps {
@@ -22,53 +27,30 @@ export const ChooseEvaluation: FC<ChooseProps> = ({ }) => {
             <div className={cls.Line2}></div>
             <div className={cls.Line3}></div>
             <div className={cls.Line4}></div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
-                <Image
-                    src={Review}
-                    alt='Review'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                Review for top 
-                conferences 
-                and journals
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation2}`}>
-                <Image
-                    src={OpenSource}
-                    alt='OpenSource'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Develop open-
-                    source standards
-                    and packages
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation3}`}>
-                <Image
-                    src={Conduct}
-                    alt='Conduct'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Conduct transparent
-                    evaluation process
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation4}`}>
-                <Image
-                    src={Advise}
-                    alt='Advise top players in the industry'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Advise top players
-                    in the industry
-                </p>
-            </div>
-
+            <Evaluation
+                text='Review for top conferences and journals'
+                AdditionalclassName={cls.Evaluation1}
+                img={Review}
+                imgH={ReviewH}
+            />
+            <Evaluation
+                text='Develop open-source standards and packages'
+                AdditionalclassName={cls.Evaluation2}
+                img={OpenSource}
+                imgH={OpenSourceH}
+            />
+            <Evaluation
+                text='Conduct transparent evaluation process'
+                AdditionalclassName={cls.Evaluation3}
+                img={Conduct}
+                imgH={ConductH}
+            />
+            <Evaluation
+                text='Advise top players in the industry'
+                AdditionalclassName={cls.Evaluation4}
+                img={Advise}
+                imgH={AdviseH}
+            />
         </div>
     )
 }

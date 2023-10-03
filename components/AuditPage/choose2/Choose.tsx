@@ -2,11 +2,18 @@ import { FC } from 'react'
 import cls from './Choose.module.scss'
 import Image from 'next/image';
 import Transparent from '@/public/transparent.svg';
+import TransparentH from '@/public/transparentAuditH.svg';
 import trackRecord from '@/public/trackRecord.svg';
+import trackRecordH from '@/public/trackRecordAuditH.svg';
 import advice from '@/public/advice.svg';
+import adviceH from '@/public/adviceAuditH.svg';
 import FollowUp from '@/public/followUp.svg';
+import FollowUpH from '@/public/FollowUpH.svg';
 import InternalCross from '@/public/internalCross.svg';
+import InternalCrossH from '@/public/InternalCrossAuditH.svg';
 import Reverse from '@/public/Reverse.svg';
+import ReverseH from '@/public/ReverseAuditH.svg';
+import { Evaluation } from './Evaluation';
 
 
 interface ChooseProps {
@@ -26,68 +33,42 @@ export const ChooseAudit: FC<ChooseProps> = ({ }) => {
             <div className={cls.Line4}></div>
             <div className={cls.Line5}></div>
             <div className={cls.Line6}></div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
-                <Image
-                    src={Transparent}
-                    alt='Transparent working plan'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Transparent audit process
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation2}`}>
-                <Image
-                    src={trackRecord}
-                    alt='Track record of thousands of critical bugs'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Track record of thousands of critical bugs
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation3}`}>
-                <Image
-                    src={advice}
-                    alt='advice'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Advice
-                    on optimization
-                    and architecture
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation4}`}>
-                <Image
-                    src={FollowUp}
-                    alt='Follow-up guidance'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Follow-up guidance
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation5}`}>
-                <Image
-                    src={InternalCross}
-                    alt='Internal cross-review'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Internal cross-review
-                </p>
-            </div>
-            <div className={`${cls.Evaluation} ${cls.Evaluation6}`}>
-                <Image
-                    src={Reverse}
-                    alt='Reverse-engineered code to uncover more issues'
-                    loading='lazy'
-                />
-                <p className={cls.EvaluationText}>
-                    Reverse-engineered code to uncover more issues
-                </p>
-            </div>
+            <Evaluation
+                text='Transparent audit process'
+                AdditionalclassName={cls.Evaluation1}
+                img={Transparent}
+                imgH={TransparentH}
+            />
+            <Evaluation
+                text='Track record of thousands of critical bugs'
+                AdditionalclassName={cls.Evaluation2}
+                img={trackRecord}
+                imgH={trackRecordH}
+            />
+            <Evaluation
+                text='Advice on optimization and architecture'
+                AdditionalclassName={cls.Evaluation3}
+                img={advice}
+                imgH={adviceH}
+            />
+            <Evaluation
+                text='Follow-up guidance'
+                AdditionalclassName={cls.Evaluation4}
+                img={FollowUp}
+                imgH={FollowUpH}
+            />
+            <Evaluation
+                text='Internal cross-review'
+                AdditionalclassName={cls.Evaluation5}
+                img={InternalCross}
+                imgH={InternalCrossH}
+            />
+            <Evaluation
+                text='Reverse-engineered code to uncover more issues'
+                AdditionalclassName={cls.Evaluation6}
+                img={Reverse}
+                imgH={ReverseH}
+            />
 
         </div>
     )
