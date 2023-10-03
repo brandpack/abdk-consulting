@@ -8,7 +8,10 @@
 }
 
 .Service:nth-child(even) {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
+    grid-template-areas:
+    "image Name"
+    "image Description";
 }
 
 .Service {
@@ -142,6 +145,9 @@
 
     .Service:nth-child(even) {
         flex-direction: column;
+        grid-template-areas: "Name"
+        "image"
+        "Description";
     }
 
     .Service {
@@ -235,6 +241,9 @@
         width: 93.75vw;
         height: auto;
         box-sizing: border-box;
+    }
+    .Service:nth-child(even) {
+        justify-content: stretch;
     }
     .ServiceTextFooter {
         flex-direction: column;

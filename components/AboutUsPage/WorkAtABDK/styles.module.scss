@@ -5,6 +5,7 @@
 	background: url(../../../public/work-at-abdk.webp);
 	background-repeat: no-repeat;
 	background-size: contain;
+	border-radius: 16px;
 
 	.content {
 		display: flex;
@@ -13,21 +14,20 @@
 		align-items: center;
 		gap: 30px;
 		padding-top: 4.444vw;
-
 		h2 {
 			font-family: Basis Grotesque Pro;
-			font-size: 14.019vw;
+			font-size: 60px;
 			font-weight: 500;
-			line-height: 17.991vw;
+			line-height: 77px;
 			letter-spacing: 0em;
 			text-align: center;
 		}
 
 		p {
 			font-family: Basis Grotesque Pro;
-			font-size: 3.738vw;
+			font-size: 16px;
 			font-weight: 400;
-			line-height: 2.804vw;
+			line-height: 12px;
 			letter-spacing: 0em;
 			margin-top: -17px;
 			text-align: center;
@@ -40,6 +40,7 @@
 
 		width: 100vw;
 		background: url(../../../public/work-at-abdk.png);
+		border-radius: 0px;
 
 		height: 156.533vw;
 		background-size: cover;
