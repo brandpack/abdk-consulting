@@ -132,6 +132,11 @@
     svg {
         stroke: #BF63DF;
     }
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+        opacity: 0.85;
+        transition: opacity 0.3s ease-in-out;
+    }
 }
 
 .TopBlockFooter {

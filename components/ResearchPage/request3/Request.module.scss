@@ -139,7 +139,11 @@
     line-height: normal;
     gap: 0.861vw;
     box-sizing: border-box;
-
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+        opacity: 0.85;
+        transition: opacity 0.3s ease-in-out;
+    }
     svg {
         align-self: center;
     }

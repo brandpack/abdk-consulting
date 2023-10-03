@@ -132,7 +132,12 @@
     svg {
         stroke: #676DFA;
     }
+    &:hover {
+        opacity: 0.85;
+        transition: opacity 0.3s ease-in-out;
+    }
 }
+
 
 .TopBlockFooter {
     display: flex;
