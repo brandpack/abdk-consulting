@@ -5,11 +5,11 @@ import TransparentH from '@/public/transparentH.svg';
 import FullConf from '@/public/fullConf.svg';
 import FullConfH from '@/public/FullConfH.svg';
 import FollowUp from '@/public/followUp.svg';
-import FollowUpH from '@/public/followUpH.svg';
+import FollowUpH from '@/public/FollowUpH.svg';
 import InternalCross from '@/public/internalCross.svg';
 import InternalCrossH from '@/public/InternalCrossH.svg';
 import ClearMilestones from '@/public/clearMilestones.svg';
-import ClearMilestonesH from '@/public/clearMilestonesH.svg';
+import ClearMilestonesH from '@/public/ClearMilestonesH.svg';
 
 import { Evaluation } from './Evaluation';
 
