@@ -11,6 +11,7 @@ interface CheckOutProps {
 export const CheckOut: FC<CheckOutProps> = ({ }) => {
     return (
         <div className={cls.CheckOut}>
+            <div className={cls.test}>
             <div className={cls.Portfolio}>
                 <Image 
                     src={github}
@@ -29,6 +30,7 @@ export const CheckOut: FC<CheckOutProps> = ({ }) => {
             alt='GhPage'
             loading='lazy'
             />
+            </div>
         </div>
     )
 }

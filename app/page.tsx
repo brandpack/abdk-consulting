@@ -11,7 +11,7 @@ export default function Home() {
     <main className='page'>
       <StaticHeader />
       <TopBlock />
-      <Clients />
+      {/* <Clients /> */}
       <Services />
       <Expertise />
       <Approach />
