@@ -4,11 +4,13 @@
     background: #FFF;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 2.703vw;
 }
 
 .Service:nth-child(even) {
     flex-direction: row-reverse !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.703vw;
     grid-template-areas:
     "image Name"
     "image Description";
@@ -17,10 +19,10 @@
 .Service {
     flex-direction: row;
     display: grid;
-    grid-template-areas: "Name image"
-        "Description image";
+    grid-template-areas:"Name image"
+                        "Description image";
     width: 77.703vw;
-    height: 45.62vh;
+    height: 21.892vw;
     padding: 2.365vw;
     border-radius: 12px;
     border: 1px solid rgba(226, 226, 226, 0.50);
@@ -29,8 +31,8 @@
 }
 
 .ServiceImage {
-    width: 38.851vw;
-    height: 45.62vh;
+    width: 39.459vw;
+    height: 21.892vw;
     object-fit: cover;
     border-radius: 8px;
     grid-area: image;
@@ -66,12 +68,11 @@
 
 .ServiceTextFooter {
     display: flex;
-    flex-direction: row;
-    // justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
     grid-area: Description;
-
-    gap: 5.135vw;
-    align-items: flex-end;
+    gap: 2.162vw;
 
     h1 {
         color: var(--grey-main, #353539);
@@ -235,7 +236,7 @@
     .Services {
         width: 93.75vw;
         padding: 10.156vw 3.125vw 10.156vw;
-        gap: 8.594vw;
+        gap: 40px;
     }
     .Service {
         width: 93.75vw;

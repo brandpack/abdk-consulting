@@ -3,15 +3,15 @@
     box-sizing: border-box;
     padding: 11.486vw 8.649vw;
     display: grid;
-    grid-template-columns: 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw;
-    grid-template-rows: 18.986vw 2.162vw 18.986vw;
+    grid-template-columns: 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw;
+    grid-template-rows: 13.514vw 2.703vw 13.514vw;
 }
 
 .ApproachHeader {
     width: 47.095vw;
-    font-size: 5.849vw;
+    font-size: 4.054vw;
     font-weight: 700;
-    line-height: 7.059vw;
+    line-height: 4.865vw;
     text-transform: uppercase;
     color: var(--grey-main, #353539);
 }
@@ -20,8 +20,8 @@
     box-sizing: border-box;
     display: flex;
     z-index: 1;
-    width: 18.986vw;
-    height: 18.986vw;
+    width: 18.581vw;
+    height: 13.514vw;
     padding: 1.622vw;
     flex-direction: column;
     justify-content: space-between;
@@ -31,9 +31,9 @@
     background: #FFF;
 
     .EvaluationText {
-        width: 12.838vw;
+        width: 10.878vw;
         color: var(--grey-main, #353539);
-        font-size: 1.622vw;
+        font-size: 1.351vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -43,29 +43,52 @@
 .Evaluation1 {
     grid-row: 1/2;
     grid-column: 7/8;
+    img {
+        width: 2.365vw;
+        height: 1.897vw;
+    }
 }
 .Evaluation2 {
     grid-row: 3/4;
     grid-column: 7/8;
+    img {
+        width: 2.347vw;
+        height: 2.297vw;
+    }
 }
 .Evaluation3 {
     grid-row: 3/4;
     grid-column: 5/7;
+    img {
+        width: 2.23vw;
+        height: 2.23vw;
+    }
 }
 .Evaluation4 {
     grid-row: 3/4;
     grid-column: 3/4;
+    img {
+        width: 2.23vw;
+        height: 2.23vw;
+    }
+    .EvaluationText {
+        width: 8.459vw;
+    }
 }
 .Evaluation5 {
     grid-row: 3/4;
     grid-column: 1/2;
+    img {
+        width: 2.23vw;
+        height: 2.23vw;
+    }
 }
 .Line1 {
-    width: 28.615vw;
+    width: 38.6vw;
     height: 0px;
     border-top: 0.135vw dashed #0A0A29;
     opacity: 0.3;
-    grid-row: 1/3;
+    grid-row: 1/2;
     grid-column: 4/7;
     align-self: center;
     justify-self: end;

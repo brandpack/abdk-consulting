@@ -21,7 +21,7 @@ export const Approach: FC<ApproachProps> = ({ }) => {
     return (
         <div className={cls.Approach}>
             <h1 className={cls.ApproachHeader}>
-                Our approach stands on:
+                Our approach stands on
             </h1>
             <div className={cls.Line1}></div>
             <div className={cls.Line2}></div>
