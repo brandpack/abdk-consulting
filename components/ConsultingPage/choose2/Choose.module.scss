@@ -3,14 +3,13 @@
     box-sizing: border-box;
     padding: 11.486vw 8.649vw 0;
     display: grid;
-    grid-template-columns: 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw;
-    grid-template-rows: 18.986vw 2.162vw 18.986vw;
+    grid-template-columns: 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw;
+    grid-template-rows: 13.514vw 2.703vw 13.514vw;
 }
 
 .ApproachHeader {
     width: 47.095vw;
-    font-size: 5.849vw;
-    margin-top: -100px;
+    font-size: 4.054vw;
     font-weight: 700;
     line-height: 98.473px;
     text-transform: uppercase;
@@ -21,8 +20,8 @@
     box-sizing: border-box;
     display: flex;
     z-index: 1;
-    width: 18.986vw;
-    height: 18.986vw;
+    width: 18.581vw;
+    height: 13.514vw;
     padding: 1.622vw;
     flex-direction: column;
     justify-content: space-between;
@@ -34,7 +33,7 @@
     .EvaluationText {
         width: 12.838vw;
         color: var(--grey-main, #353539);
-        font-size: 1.622vw;
+        font-size: 1.351vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -45,31 +44,55 @@
 .Evaluation1 {
     grid-row: 3/4;
     grid-column: 7/8;
-    .EvaluationText { 
-        width: 15.811vw;
+
+    .EvaluationText {
+        width: 12.838vw;
+    }
+    img {
+        width: 2.162vw;
+        height: 2.162vw;
     }
 }
+
 .Evaluation2 {
     grid-row: 3/4;
     grid-column: 5/7;
-    .EvaluationText { 
+
+    .EvaluationText {
         width: 13.108vw;
     }
+    img {
+        width: 1.892vw;
+        height: 2.416vw;
+    }
 }
+
 .Evaluation3 {
     grid-row: 3/4;
     grid-column: 3/4;
-    .EvaluationText { 
+
+    .EvaluationText {
         width: 15.946vw;
     }
+    img {
+        width: 2.162vw;
+        height: 2.209vw;
+    }
 }
+
 .Evaluation4 {
     grid-row: 3/4;
     grid-column: 1/2;
-    .EvaluationText { 
+
+    .EvaluationText {
         width: 14.189vw;
     }
+    img {
+        width: 2.162vw;
+        height: 2.162vw;
+    }
 }
+
 .Line1 {
     width: 53.986vw;
     height: 280px;
@@ -81,6 +104,7 @@
     grid-column: 2/5;
     transform: translateY(137.995px);
 }
+
 .Line2 {
     width: 3.041vw;
     height: 0px;
@@ -92,6 +116,7 @@
     grid-column: 6/7;
     z-index: 0;
 }
+
 .Line3 {
     width: 3.041vw;
     height: 0px;
@@ -103,6 +128,7 @@
     grid-column: 4/5;
     z-index: 0;
 }
+
 .Line4 {
     width: 3.041vw;
     height: 0px;
@@ -114,99 +140,122 @@
     grid-column: 2/3;
     z-index: 0;
 }
-@media (max-width: 700px) { 
+
+@media (max-width: 700px) {
     .Approach {
         padding: 23.364vw 5.607vw 36.449vw;
         display: grid;
         grid-template-columns: 42.523vw 3.738vw 42.523vw;
         grid-template-rows: 42.523vw 3.738vw 42.523vw 3.738vw 42.523vw;
     }
+
     .ApproachHeader {
         width: 100%;
         font-size: 10.981vw;
         font-weight: 700;
         margin-top: 0;
-        line-height: 13.084vw; 
+        line-height: 13.084vw;
         grid-column: 1/4;
         grid-row: 1/2;
 
     }
+
     .Evaluation {
         width: 42.523vw;
         height: 42.523vw;
         padding: 3.738vw;
+
         .EvaluationText {
             font-size: 4.206vw;
             font-weight: 500;
         }
     }
+
     .Evaluation1 {
         grid-row: 3/4;
         grid-column: 3/4;
+
         img {
             width: 7.71vw;
             height: 7.71vw;
-            }
+        }
+
         .EvaluationText {
             width: 34.112vw;
         }
     }
+
     .Evaluation2 {
         grid-row: 3/4;
         grid-column: 1/2;
+
         img {
-        width: 7.71vw;
-        height: 7.477vw;
+            width: 7.71vw;
+            height: 7.477vw;
         }
+
         .EvaluationText {
             width: 35.28vw;
         }
     }
+
     .Evaluation3 {
         grid-row: 5/6;
         grid-column: 1/2;
+
         img {
-           width: 7.944vw;
-           height: 7.944vw;
+            width: 7.944vw;
+            height: 7.944vw;
         }
+
         .EvaluationText {
             width: 34.112vw;
         }
     }
+
     .Evaluation4 {
         grid-row: 5/6;
         grid-column: 3/4;
+
         img {
             width: 7.477vw;
             height: 7.477vw;
         }
+
         .EvaluationText {
             width: 28.037vw;
         }
     }
+
     .Evaluation5 {
         grid-row: 7/8;
         grid-column: 3/4;
+
         img {
             width: 10.748vw;
             height: 8.645vw;
         }
+
         .EvaluationText {
             width: 37.617vw;
         }
     }
+
     .Evaluation6 {
         grid-row: 7/8;
         grid-column: 1/2;
+
         img {
             width: 10.748vw;
             height: 8.645vw;
         }
+
         .EvaluationText {
             width: 37.617vw;
         }
     }
-    .Line1{
+
+    .Line1 {
         width: 25.701vw;
         height: 14vw;
         border-top: 0.467vw dashed #0A0A29;
@@ -216,9 +265,10 @@
         grid-column: 2/4;
         justify-self: start;
         align-self: end;
-        border-radius:  0 10px 0 0;
+        border-radius: 0 10px 0 0;
         transform: translateY(0);
     }
+
     .Line2 {
         grid-row: 3/4;
         grid-column: 2/3;
@@ -227,6 +277,7 @@
         border-top: 0.467vw dashed #0A0A29;
 
     }
+
     .Line3 {
         grid-row: 4/5;
         grid-column: 1/2;
@@ -234,13 +285,15 @@
         height: 3.738vw;
         border-left: 0.467vw dashed #0A0A29;
     }
-    .Line4{
+
+    .Line4 {
         grid-row: 5/6;
         grid-column: 2/3;
         width: 3.738vw;
         height: 0;
         border-top: 0.467vw dashed #0A0A29;
     }
+
     .Line5 {
         grid-row: 6/7;
         grid-column: 3/4;
@@ -248,7 +301,8 @@
         height: 3.738vw;
         border-left: 0.467vw dashed #0A0A29;
     }
-    .Line6{
+
+    .Line6 {
         display: block;
         grid-row: 7/8;
         grid-column: 2/3;

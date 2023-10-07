@@ -3,13 +3,13 @@
     box-sizing: border-box;
     padding: 6.757vw 8.649vw;
     display: grid;
-    grid-template-columns: 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw;
-    grid-template-rows: 18.986vw 2.162vw 18.986vw;
+    grid-template-columns: 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw;
+    grid-template-rows: 13.514vw 2.703vw 13.514vw;
 }
 
 .ApproachHeader {
     width: 47.095vw;
-    font-size: 5.849vw;
+    font-size: 4.054vw;
     font-weight: 700;
     line-height: 98.473px;
     text-transform: uppercase;
@@ -21,8 +21,8 @@
     box-sizing: border-box;
     display: flex;
     z-index: 1;
-    width: 18.986vw;
-    height: 18.986vw;
+    width: 18.581vw;
+    height: 13.514vw;
     padding: 1.622vw;
     flex-direction: column;
     justify-content: space-between;
@@ -34,7 +34,7 @@
     .EvaluationText {
         width: 12.838vw;
         color: var(--grey-main, #353539);
-        font-size: 1.622vw;
+        font-size: 1.351vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -71,7 +71,7 @@
 }
 .Line1 {
     width: 5.676vw;
-    height: 9.797vw;
+    height: 7.5vw;
     border-top: 0.135vw dashed #0A0A29;
     border-right: 0.135vw dashed #0A0A29;
     border-radius: 0 10px 10px 0;
@@ -95,7 +95,7 @@
 }
 .Line5 {
     width: 31.926vw;
-    height: 11.486vw;
+    height: 9.3vw;
     border-top: 0.135vw dashed #0A0A29;
     border-bottom: 0.135vw dashed #0A0A29;
     border-left: 0.135vw dashed #0A0A29;

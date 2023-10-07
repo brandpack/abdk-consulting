@@ -3,14 +3,14 @@
     box-sizing: border-box;
     padding: 11.486vw 8.649vw 0;
     display: grid;
-    grid-template-columns: 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw 2.162vw 18.986vw;
-    grid-template-rows: 18.986vw 2.162vw 18.986vw;
+    grid-template-columns: 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw;
+    grid-template-rows: 13.514vw 2.703vw 13.514vw;
 }
-
+ 
 .ApproachHeader {
     width: 47.095vw;
-    font-size: 5.849vw;
-    transform: translateY(-4.73vw);
+    font-size: 4.054vw;
+    line-height: 4.865vw;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--grey-main, #353539);
@@ -20,8 +20,8 @@
     box-sizing: border-box;
     display: flex;
     z-index: 1;
-    width: 18.986vw;
-    height: 18.986vw;
+    width: 18.581vw;
+    height: 13.514vw;
     padding: 1.622vw;
     flex-direction: column;
     justify-content: space-between;
@@ -33,7 +33,8 @@
     .EvaluationText {
         width: 12.838vw;
         color: var(--grey-main, #353539);
-        font-size: 1.622vw;
+        font-size: 1.351vw;
+        line-height: 120%;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -44,39 +45,59 @@
     grid-row: 1/2;
     grid-column: 7/8;
     .EvaluationText { 
-        width: 16.284vw;
+        width: 12.838vw;
+    }
+    img {
+        width: 2.297vw;
+        height: 2.01vw;
     }
 }
 .Evaluation2 {
     grid-row: 3/4;
     grid-column: 7/8;
     .EvaluationText { 
-        width: 15.338vw;
+        width: 12.838vw;
+    }
+    img {
+        width: 2.347vw;
+        height: 2.297vw;
     }
 }
 .Evaluation3 {
     grid-row: 3/4;
     grid-column: 5/7;
     .EvaluationText { 
-        width: 13.851vw;
+        width: 15vw;
+    }
+    img {
+        width: 2.162vw;
+        height: 2.162vw;
     }
 }
 .Evaluation4 {
     grid-row: 3/4;
     grid-column: 3/4;
     .EvaluationText { 
-        width: 15.946vw;
+        width: 12.838vw;
+    }
+    img {
+        width: 2.182vw;
+        height: 2.23vw;
     }
 }
 .Evaluation5 {
     grid-row: 3/4;
     grid-column: 1/2;
     .EvaluationText { 
-        width: 14.189vw;
+        width: 12.838vw;
+    }
+    img {
+        width: 2.162vw;
+        height: 2.162vw;
     }
 }
 .Line1 {
-    width: 44.39vw;
+    width: 48.39vw;
     height: 0px;
     border-top: 0.135vw dashed #0A0A29;
     opacity: 0.3;

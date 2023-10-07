@@ -98,12 +98,25 @@
         padding: 0.859vw 1.145vw 0.859vw 0;
 
     }
+    .text:nth-child(1):hover{
+        color: #2DAED7;
+    }
+    .text:nth-child(3):hover{
+        color: #34C88C;
+    }
+    .text:nth-child(5):hover{
+        color: #474DD8;
+    }
+    .text:nth-child(7):hover{
+        color: #BF63DF;
+    }
     .text {
         padding: 0.859vw 1.145vw;
         font-size: 1.002vw;
-        text-decoration: none;
         font-weight: 700;
+        text-decoration: none;
         color: #FFF;
+        transition: color 0.3s ease-in-out;
     }
 
     .line {
