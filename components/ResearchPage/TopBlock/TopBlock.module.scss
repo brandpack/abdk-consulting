@@ -96,16 +96,34 @@
     gap: 0.27vw;
     .text:nth-child(1) {
         padding: 0.859vw 1.145vw 0.859vw 0;
-
+    }
+    .text:nth-child(1):hover{
+        color: #2DAED7;
+        transition: color 0.3s ease-in-out;
+    }
+    .text:nth-child(3){
+        color: #34C88C;
+    }
+    .text:nth-child(3):hover{
+        color: #FFF;
+        transition: color 0.3s ease-in-out;
+    }
+    .text:nth-child(5):hover{
+        color: #474DD8;
+        transition: color 0.3s ease-in-out;
+    }
+    .text:nth-child(7):hover{
+        color: #BF63DF;
+        transition: color 0.3s ease-in-out;
     }
     .text {
         padding: 0.859vw 1.145vw;
         font-size: 1.002vw;
-        text-decoration: none;
         font-weight: 700;
+        text-decoration: none;
         color: #FFF;
+        transition: color 0.3s ease-in-out;
     }
-
     .line {
         width: 2.027vw;
         height: 1px;
