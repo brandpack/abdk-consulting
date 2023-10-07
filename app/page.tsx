@@ -9,7 +9,7 @@ import StaticHeader from "@/components/common/FixedHeader/StaticHeader";
 export default function Home() {
   return (
     <main className='page'>
-      <StaticHeader />
+      <StaticHeader logoColor={'white'} />
       <TopBlock />
       <Clients />
       <Services />

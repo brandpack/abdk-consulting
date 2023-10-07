@@ -7,7 +7,7 @@ import StaticHeader from "@/components/common/FixedHeader/StaticHeader";
 export default function Audit() {
   return (
     <main className='page'>
-        <StaticHeader />
+        <StaticHeader logoColor={'#2DAED7'} />
         <TopBlockAudit />
         <ChooseAudit />
         <RequestAudit />
