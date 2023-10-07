@@ -27,9 +27,9 @@ export const TopBlock: FC<TopBlockProps> = ({ }) => {
                             <source src='/BgVideoMobile1.mp4' type="video/mp4" />
                         </video>
                         :
-                        <video autoPlay muted playsInline disablePictureInPicture loop>
+                        <video className={'bgVideo'} autoPlay muted playsInline disablePictureInPicture loop>
                             <source src='/BgVideo.webm' type="video/webm" />
-                            {/* <source src='/BgVideoMobile1.mp4' type="video/mp4" /> */}
+                            <source src='/BgVideo.mp4' type="video/mp4" />
                         </video>
                 }
 
