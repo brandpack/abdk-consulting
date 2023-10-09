@@ -4,7 +4,7 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 36.757vw 45.676vw ;
-    grid-template-rows: 150px 325px;
+    grid-template-rows: 7.095vw 325px;
 }
 
 .Header {
@@ -12,8 +12,7 @@
     color: var(--grey-main, #353539);
     font-size: 4.054vw;
     font-weight: 700;
-    line-height: 104.473px;
-    /* 120.69% */
+    line-height: 120%;
     text-transform: uppercase;
 }
 
