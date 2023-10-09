@@ -1,10 +1,10 @@
 <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M41.5 4.5L13.5 4.5L4.5 13.5L4.5 41.5L13.5 50.5L41.5 50.5L50.5 41.5L50.5 13.5L41.5 4.5Z" stroke="#64C0A5" stroke-width="3" stroke-linejoin="bevel"/>
-<path d="M28 0L28 9" stroke="#4C7DC6" stroke-width="3" stroke-linejoin="bevel"/>
-<path d="M28 46L28 55" stroke="#4C7DC6" stroke-width="3" stroke-linejoin="bevel"/>
-<path d="M0 27.5L9 27.5" stroke="#4C7DC6" stroke-width="3" stroke-linejoin="bevel"/>
-<path d="M46 27.5L55 27.5" stroke="#4C7DC6" stroke-width="3" stroke-linejoin="bevel"/>
-<path d="M27 29.9707L43 13.9707" stroke="#4C7DC6" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M28 0L28 9" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M28 46L28 55" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M0 27.5L9 27.5" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M46 27.5L55 27.5" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M27 29.9707L43 13.9707" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
 <path d="M29.0488 30.0503L19.0488 20.0503" stroke="#3D3D3D" stroke-width="3" stroke-linejoin="bevel"/>
 <path d="M28 41L28 30" stroke="white" stroke-width="17" stroke-linejoin="bevel"/>
 </svg>
