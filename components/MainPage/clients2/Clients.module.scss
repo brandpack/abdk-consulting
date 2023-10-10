@@ -59,14 +59,35 @@
 @media (max-width: 700px) { 
     .Clients {
         width: 100vw;
+        height: 215px;
         justify-items: end;
         position: relative;
     }
+    .Clients::after {
+        display: none;
+    }
+    .clientsImages {
+        margin-top: 94px;
+        gap: 50px;
+    }
     .ClientsText {
+        width: 100%;
+        height: 94px;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 40px 0;
+        bottom: unset;
+        justify-content: flex-start;
+        align-items: center;
         h1 {
-            font-size: 11.215vw;
-            font-weight: 700;
-            line-height: 9.346vw;
+            padding-left: 0;
+            color: rgba(50, 43, 61, 0.69);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
             text-transform: uppercase;
         }
     }

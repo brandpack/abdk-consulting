@@ -29,83 +29,78 @@ export const Clients: FC<ClientsProps> = ({ }) => {
                 <h1>our Clients</h1>
             </div>
             <Marquee className={cls.clientsImages}>
-                <div className={cls.Company}>
-                    <Image
+                <Image
                         src={starkware}
                         alt={'starkware'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
-                    <Image
+                     <Image
                         src={uniswap}
                         alt={'uniswap'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
-                    <Image
+                
+                <Image
                         src={starknet}
                         alt={'starknet'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+                
+
                     <Image
                         src={zklink}
                         alt={'zklink'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+
+
                     <Image
                         src={yieldProtocol}
                         alt={'yieldProtocol'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+
                     <Image
                         src={notional}
                         alt={'notional'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+                
+                
                     <Image
                         src={maverick}
                         alt={'maverick'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+                
+                
                     <Image
                         src={oneInch}
                         alt={'oneInch'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+                
+                
                     <Image
                         src={aave}
                         alt={'aave'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+                
+                
                     <Image
                         src={masterLabs}
                         alt={'masterLabs'}
                         loading="lazy"
                     />
-                </div>
-                <div className={cls.Company}>
+                
+                
                     <Image
                         src={scroll}
                         alt={'scroll'}
                         loading="lazy"
                     />
-                </div>
+                
             </Marquee>
         </div>
     )
