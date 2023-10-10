@@ -21,7 +21,7 @@ interface ClientsProps {
 
 export const Clients: FC<ClientsProps> = ({ }) => {
 
-    
+
 
     return (
         <div className={cls.Clients}>
@@ -30,77 +30,60 @@ export const Clients: FC<ClientsProps> = ({ }) => {
             </div>
             <Marquee className={cls.clientsImages}>
                 <Image
-                        src={starkware}
-                        alt={'starkware'}
-                        loading="lazy"
-                    />
-                     <Image
-                        src={uniswap}
-                        alt={'uniswap'}
-                        loading="lazy"
-                    />
-                
+                    src={starkware}
+                    alt={'starkware'}
+                    loading="lazy"
+                />
                 <Image
-                        src={starknet}
-                        alt={'starknet'}
-                        loading="lazy"
-                    />
-                
-
-                    <Image
-                        src={zklink}
-                        alt={'zklink'}
-                        loading="lazy"
-                    />
-
-
-                    <Image
-                        src={yieldProtocol}
-                        alt={'yieldProtocol'}
-                        loading="lazy"
-                    />
-
-                    <Image
-                        src={notional}
-                        alt={'notional'}
-                        loading="lazy"
-                    />
-                
-                
-                    <Image
-                        src={maverick}
-                        alt={'maverick'}
-                        loading="lazy"
-                    />
-                
-                
-                    <Image
-                        src={oneInch}
-                        alt={'oneInch'}
-                        loading="lazy"
-                    />
-                
-                
-                    <Image
-                        src={aave}
-                        alt={'aave'}
-                        loading="lazy"
-                    />
-                
-                
-                    <Image
-                        src={masterLabs}
-                        alt={'masterLabs'}
-                        loading="lazy"
-                    />
-                
-                
-                    <Image
-                        src={scroll}
-                        alt={'scroll'}
-                        loading="lazy"
-                    />
-                
+                    src={uniswap}
+                    alt={'uniswap'}
+                    loading="lazy"
+                />
+                <Image
+                    src={starknet}
+                    alt={'starknet'}
+                    loading="lazy"
+                />
+                <Image
+                    src={zklink}
+                    alt={'zklink'}
+                    loading="lazy"
+                />
+                <Image
+                    src={yieldProtocol}
+                    alt={'yieldProtocol'}
+                    loading="lazy"
+                />
+                <Image
+                    src={notional}
+                    alt={'notional'}
+                    loading="lazy"
+                />
+                <Image
+                    src={maverick}
+                    alt={'maverick'}
+                    loading="lazy"
+                />
+                <Image
+                    src={oneInch}
+                    alt={'oneInch'}
+                    loading="lazy"
+                />
+                <Image
+                    src={aave}
+                    alt={'aave'}
+                    loading="lazy"
+                />
+                <Image
+                    src={masterLabs}
+                    alt={'masterLabs'}
+                    loading="lazy"
+                />
+                <Image
+                    src={scroll}
+                    alt={'scroll'}
+                    loading="lazy"
+                />
             </Marquee>
         </div>
     )

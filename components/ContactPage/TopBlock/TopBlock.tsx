@@ -7,29 +7,16 @@ import X from '@/public/xMini.svg';
 import LinkedIn from '@/public/linkedInMini.svg';
 import GhLink from '@/public/GithubMini.svg';
 import EmailLink from '@/public/emailLink.svg';
-import GetInTouch from '@/public/getInTouch.svg';
-import GetInTouchMobile from '@/public/GetInTouchMobile.svg';
 
 interface TopBlockProps {
 }
 
 export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-      // Check if window is defined (i.e., we are in a browser environment)
-      if (typeof window !== 'undefined') {
-        setIsMobile(window.innerWidth <= 700);
-      }
-    }, []);
     return (
         <div className={cls.TopBlock}>
             <div className={cls.TopBlockHeader}>
                 <h1 className={cls.ApproachHeader}>
-                    <Image 
-                    src={isMobile ? GetInTouchMobile : GetInTouch}
-                    alt='get in touch'
-                    />
+                    GET IN TOUCH
                 </h1>
                 <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
                     <Image
@@ -79,15 +66,17 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                     <div className={cls.EvaluationFooterEmail}>
                         <p>Email</p>
                         <div className={cls.FooterBtn}>
-                            <a className={cls.EvaluationFooterEmailLink} href="mailto:dmitry@abdkconsulting.com">dmitry@abdkconsulting.com</a>
+                            <a className={cls.EvaluationFooterEmailLink} href="mailto:info@abdk.consulting">info@abdk.consulting</a>
                             <button
                                 className={cls.EmailCopy}
-                                onClick={() => navigator.clipboard.writeText('dmitry@abdkconsulting.com')}
+                                onClick={() => navigator.clipboard.writeText('info@abdk.consulting')}
                             >
                                 Copy
                             </button>
                         </div>
-
+                        <p className={cls.emailText}>
+                        We combine experience from science and industry and are able to solve problems that are too tough for our competitors.
+                        </p>
                     </div>
                 </div>
             </div>

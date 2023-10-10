@@ -14,19 +14,20 @@
     margin-top: 13.514vw;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 40.135vw 1.081vw 41.216vw;
-    grid-template-rows: 9.9640vh 1.9208vh 9.9640vh 1.9208vh 9.9640vh 1.9208vh 9.9640vh 1.9208vh 9.9640vh;
+    grid-template-columns: 40.135vw 1.351vw 41.014vw;
+    grid-template-rows: 7.432vw 1.351vw 7.432vw 1.351vw 7.432vw 1.351vw 7.432vw;
 }
 
 .ApproachHeader {
-    img {
-        width: 82.432vw;
-        height: 8.784vw;
-    }
     align-self: center;
-    grid-column: 1/ span 3;
-    grid-row: 1/ span 3;
-
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 4.054vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    text-transform: uppercase;
+    color: #353539;
 }
 
 .Evaluation {
@@ -62,12 +63,15 @@
 
 .Evaluation1 {
 
-    grid-row: -5/-6;
+    grid-row: -3/-4;
     grid-column: 3/4;
 
     border: 1px solid #E2E2E2;
     background: #FFF;
-
+    img {
+        width: 2.23vw;
+        height: 2.23vw;
+    }
     .EvaluationText {
 
         svg {
@@ -78,12 +82,15 @@
 
 .Evaluation2 {
 
-    grid-row: -3/-4;
+    grid-row: -1/-2;
     grid-column: 3/4;
 
     border: 1px solid #E2E2E2;
     background: #FFF;
-
+    img {
+        width: 8.716vw;
+        height: 2.23vw;
+    }
     .EvaluationText {
 
         svg {
@@ -93,10 +100,14 @@
 }
 
 .Evaluation3 {
-    grid-row: -1/-2;
+    grid-row: -5/-6;
     grid-column: 3/4;
     border: 1px solid #E2E2E2;
     background: #FFF;
+    img {
+        width: 7.838vw;
+        height: 2.365vw;
+    }
 
     .EvaluationText {
 
@@ -114,7 +125,10 @@
     padding: 2.703vw;
     flex-direction: column;
     align-items: start;
-
+    img {
+        width: 4.06vw;
+        height: 4.122vw;
+    }
     .EvaluationText {
         width: 15.946vw;
     }
@@ -124,7 +138,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: 20px;
+        gap: 1.351vw;
 
         p {
             color: var(--grey-main, #353539);
@@ -138,6 +152,15 @@
             gap: 0.27vw;
             align-items: center;
             justify-content: center;
+        }
+        .emailText {
+            margin-top: 2.027vw;
+            width: 22.432vw;
+            color: #000;
+            font-size: 0.946vw;
+            font-weight: 400;
+            line-height: 140%;
+            opacity: 0.6;
         }
     }
 
@@ -157,13 +180,13 @@
         padding: 0.27vw;
         justify-content: center;
         align-items: center;
-        border-radius: 0.203vw;
+        border-radius: 3.004px;
         background: var(--grey-main, #353539);
         border-width: 0px;
         transition: all 0.3s ease-in-out;
         color: #FFF;
         font-size: 0.676vw;
-font-weight: 500;
+        font-weight: 500;
     }
 
     .EmailCopy:active {
@@ -218,26 +241,24 @@ font-weight: 500;
 }
 @media (max-width: 700px) {
     .TopBlock {
-        justify-content: end;
-        min-height: 100svh;        
+        justify-content: center;
+        min-height: 100svh;    
+        height: auto;    
         padding: 0 5.607vw;
         width: 88.786vw;
     }
     .TopBlockHeader {
         width: 100%;
-        margin-top: 13.514vw;
+        margin-top: 18.514vw;
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 64px 8px 64px 8px 64px 8px 64px 8px 64px 8px 64px 8px 64px 8px 64px;
+        grid-template-rows: 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw;
     }
     .ApproachHeader {
-        img {
-            width: 88.785vw;
-            height: 45.794vw;
-        }
-        grid-row: 1/5;
-        grid-column: 1/4;
+        font-size: 12.383vw;
+        grid-row: 1/2;
+        grid-column: 1/2;
     }
     .Evaluation {
         padding: 0 5.841vw;
@@ -254,7 +275,7 @@ font-weight: 500;
 
     .Evaluation1 {
         grid-row: -5/-6;
-        grid-column: 1/4;
+        grid-column: 1/2;
         img {
             width: 5.607vw;
             height: 5.607vw;
@@ -262,7 +283,7 @@ font-weight: 500;
     }
     .Evaluation2 {
         grid-row: -3/-4;
-        grid-column: 1/4;
+        grid-column: 1/2;
         img {
             width: 22.664vw;
             height: 5.607vw;
@@ -270,16 +291,16 @@ font-weight: 500;
     }
     .Evaluation3 {
         grid-row: -1/-2;
-        grid-column: 1/4;
+        grid-column: 1/2;
         img {
             width: 18.692vw;
             height: 5.607vw;
         }
     }
     .Evaluation4 {
-        grid-row: -7/-10;
-        grid-column: 1/4;
-        padding: 24px;
+        grid-row: -7/-13;
+        grid-column: 1/2;
+        padding: 5.607vw;
         
         img {
             width: 6.542vw;
@@ -300,6 +321,11 @@ font-weight: 500;
                 font-size: 4.673vw;
                 font-weight: 500;
                 
+            }
+            .emailText {
+                margin: 0;
+                font-size: 3.271vw;
+                width: 100%;
             }
             .EmailCopy {
                 font-size: 2.57vw;
