@@ -41,24 +41,9 @@
     }
 }
 .clientsImages {
-    grid-area: component2;
-    display: grid;
-    grid-template-columns: repeat(7,16.283vw);
-    grid-template-rows: 8.986vw;
-    column-gap: 3.378vw;
-    justify-content: end;
-    white-space: nowrap;
-    animation: runningText 22s linear infinite;
+    display: flex;
+    align-items: center;
 }
-  
-  @keyframes runningText {
-    0% {
-      transform: translateX(75%);
-    }
-    100% {
-      transform: translateX(-75%);
-    }
-  }
 .Company {
     display: flex;
     width: 16.216vw;

@@ -8,21 +8,27 @@ import zklink from '@/public/zk-link.svg';
 import yieldProtocol from '@/public/YieldProtocol.svg';
 import notional from '@/public/notional.svg';
 import maverick from '@/public/maverick.svg';
+import oneInch from '@/public/oneInch.svg';
+import aave from '@/public/aave.svg';
+import masterLabs from '@/public/masterLabs.svg';
+import scroll from '@/public/scroll.svg';
 import ClientsMark from '@/public/clientsMark.svg';
 import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
 
 interface ClientsProps {
 }
 
 export const Clients: FC<ClientsProps> = ({ }) => {
 
+    
 
     return (
         <div className={cls.Clients}>
             <div className={cls.ClientsText}>
                 <h1>our Clients</h1>
             </div>
-            <div className={cls.clientsImages}>
+            <Marquee className={cls.clientsImages}>
                 <div className={cls.Company}>
                     <Image
                         src={starkware}
@@ -72,7 +78,35 @@ export const Clients: FC<ClientsProps> = ({ }) => {
                         loading="lazy"
                     />
                 </div>
-            </div>
+                <div className={cls.Company}>
+                    <Image
+                        src={oneInch}
+                        alt={'oneInch'}
+                        loading="lazy"
+                    />
+                </div>
+                <div className={cls.Company}>
+                    <Image
+                        src={aave}
+                        alt={'aave'}
+                        loading="lazy"
+                    />
+                </div>
+                <div className={cls.Company}>
+                    <Image
+                        src={masterLabs}
+                        alt={'masterLabs'}
+                        loading="lazy"
+                    />
+                </div>
+                <div className={cls.Company}>
+                    <Image
+                        src={scroll}
+                        alt={'scroll'}
+                        loading="lazy"
+                    />
+                </div>
+            </Marquee>
         </div>
     )
 
