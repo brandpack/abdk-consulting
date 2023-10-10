@@ -9,7 +9,7 @@ import StaticHeader from "@/components/common/FixedHeader/StaticHeader";
 export default function Consulting() {
   return (
     <main className='page'>
-        <StaticHeader logoColor={'#BF63DF'} />
+        <StaticHeader auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'#BF63DF'} />
         <TopBlockEvaluation />
         <ChooseEvaluation />
         <RequestEvaluation />

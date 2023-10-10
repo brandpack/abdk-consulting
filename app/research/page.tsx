@@ -8,7 +8,7 @@ import StaticHeader from "@/components/common/FixedHeader/StaticHeader";
 export default function Research() {
   return (
     <main className='page'>
-        <StaticHeader logoColor={'#34C88C'} />
+        <StaticHeader auditColor={'white'} researchColor={'#34C88C'} consultingColor={'white'} evaluationColor={'white'} />
         <TopBlockResearch />
         <ChooseResearch />
         <RequestResearch />

@@ -1,73 +1,70 @@
 .Clients {
     width: 100vw;
-    border-bottom: 1px solid #E2E2E2;
-    background: #F6F6F6;
-    display: grid;
-    grid-template-areas: 
-    "component1 component2"
-    "component3 component3";
+    height: 15.541vw;
+    background: #FFF;
+    display: flex;
     justify-items: end;
+    align-items: center;
     position: relative;
+    overflow: hidden;
 }
-.clientsBgImage{
+.Clients::after {
     position: absolute;
-    left: 0;
+    top: 0;
     bottom: 0;
-    width: 21.014vw;
-    height: 29.527vw;
+    right: 0;
+    content: '';
+    width: 20.203vw;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to left, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 .ClientsText {
-    grid-area: component1;
     display: flex;
-    gap: 2.162vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 66.892vw;
+    height: 100%;
+    background: linear-gradient(to right, #FFF 38.03%, rgba(255, 255, 255, 0.00) 100%);
+    z-index: 2;
     flex-direction: column;
-    color: #353539;
-    width: 26.419vw;
+    color: rgba(50, 43, 61, 0.69);
     justify-content: center;
     h1 {
-        font-size: 3.784vw;
-        font-weight: 700;
-        line-height: 2.703vw;
+        padding-left: 8.581vw;
+        font-size: 2.174vw;
+        font-weight: 500;
+        line-height: 100%; 
         text-transform: uppercase;
-    }
-
-    p {
-        color: var(--grey-main, #353539);
-        font-size: 1.216vw;
-        width: 25.676vw;
-        font-weight: 400;
-        line-height: 140%; 
-        opacity: 0.9;
     }
 }
 .clientsImages {
     grid-area: component2;
     display: grid;
-    grid-template-columns: repeat(3,18.986vw);
-    grid-template-rows: 33.7334vh;
+    grid-template-columns: repeat(7,16.283vw);
+    grid-template-rows: 8.986vw;
+    column-gap: 3.378vw;
     justify-content: end;
+    white-space: nowrap;
+    animation: runningText 22s linear infinite;
 }
-.clientsImages2 {
-    grid-area: component3;
-    display: grid;
-    grid-template-columns: repeat(4,18.986vw);
-    justify-content: end;
-    grid-template-rows: 33.7334vh;
-    .Company {
-        border-top: 1px solid #E2E2E2;
+  
+  @keyframes runningText {
+    0% {
+      transform: translateX(75%);
     }
-    .Company:nth-child(1) {
-        border-radius: 8px 0px 0px 0px;
+    100% {
+      transform: translateX(-75%);
     }
-}
+  }
 .Company {
     display: flex;
-    width: 18.986vw;
+    width: 16.216vw;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #E2E2E2;
-    border-left: 1px solid #E2E2E2;
-    background: #FAFAFA;
+    background: #FFF;
     img {
         width: 12.136vw;
         height: 3.841vh;
@@ -77,84 +74,15 @@
 @media (max-width: 700px) { 
     .Clients {
         width: 100vw;
-        border-bottom: 1px solid #E2E2E2;
-        background: #F6F6F6;
-        display: grid;
-        grid-template-areas: 
-        "component1 component2"
-        "component3 component3"
-        "component4 component4";
         justify-items: end;
         position: relative;
-        grid-template-rows: 38.318vw 1fr 1fr;
-
-    }
-    .clientsBgImage{
-        display: none;
     }
     .ClientsText {
-        grid-area: component1;
-        display: flex;
-        gap: 4.673vw;
-        flex-direction: column;
-        color: #353539;
-        width: auto;
-        justify-content: center;
         h1 {
             font-size: 11.215vw;
             font-weight: 700;
             line-height: 9.346vw;
             text-transform: uppercase;
-        }
-    
-        p {
-            color: var(--grey-main, #353539);
-            font-size: 2.804vw;
-            width: 54.206vw;
-            font-weight: 400;
-            line-height: 140%; 
-            opacity: 0.9;
-        }
-    }
-    .clientsImages1 {
-        grid-area: component2;
-        display: grid;
-        grid-template-columns: repeat(1,33.294vw);
-        grid-template-rows: 25.234vw;
-        justify-content: end;
-        align-self: end;
-        .Company {
-            border-top: 1px solid #E2E2E2;
-        }
-        .Company:nth-child(1) {
-            border-radius: 8px 0px 0px 0px;
-        }
-    }
-    .clientsImages2 {
-        grid-area: component3;
-        grid-column: 1/3;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 25.234vw;
-        justify-content: stretch;
-
-        .Company:nth-child(1) {
-            border-radius: 0px 0px 0px 0px;
-        }
-    }
-    .clientsImages3 {
-        grid-area: component4;
-        grid-column: 1/3;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 25.234vw;
-        .Company {
-            border-top: 1px solid #E2E2E2;
-        }
-        .Company:nth-child(1) {
-            border-radius: 0px 0px 0px 0px;
         }
     }
     .Company {
@@ -162,12 +90,9 @@
         width: 99.5%;
         align-items: center;
         justify-content: center;
-        border-right: 1px solid #E2E2E2;
-        border-left: 1px solid #E2E2E2;
-        background: #FAFAFA;
         img {
-            width: 17.474vw;
-            height: 4.622vw;
+            width: 258.615px;
+            height: 68.406px;
         }
     }
 }

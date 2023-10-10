@@ -10,7 +10,7 @@ import React from "react";
 const AboutUs: React.FC = () => {
 	return (
 		<main>
-			<StaticHeader logoColor={'white'} />
+			<StaticHeader auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
 			<TopBlockAboutUs />
 			<ChooseAboutUs />
 			<History />
