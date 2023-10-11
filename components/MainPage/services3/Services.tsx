@@ -41,10 +41,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.1}}
+                        initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
-                        viewport={{amount: 0.3 }}
-                        transition={{ ease: "easeOut", duration: 1,}}
+                        transition={{ ease: "easeIn", duration: 0.8,}}
                         className={`${cls.imgBigScreen1}`}
                         />
                     </figure>
@@ -75,10 +74,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.1}}
+                        initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
-                        viewport={{amount: 0.3 }}
-                        transition={{ ease: "easeOut", duration: 1,}}
+                        transition={{ ease: "easeIn", duration: 0.8,}}
                         className={`${cls.imgBigScreen2}`}
                         />
                     </figure>
@@ -108,10 +106,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.1}}
+                        initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
-                        viewport={{amount: 0.3 }}
-                        transition={{ ease: "easeOut", duration: 1,}}
+                        transition={{ ease: "easeIn", duration: 0.8,}}
                         className={`${cls.imgBigScreen3}`}
                         />
                     </figure>
@@ -144,8 +141,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         <motion.div
                         initial={{scale: 1.1}}
                         whileInView={{scale: 1}}
-                        viewport={{amount: 0.3 }}
-                        transition={{ ease: "easeOut", duration: 1,}}
+                        transition={{ ease: "easeIn", duration: 0.8,}}
                         className={`${cls.imgBigScreen4}`}
                         />
                     </figure>
