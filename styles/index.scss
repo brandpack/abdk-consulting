@@ -54,6 +54,7 @@ html,
 }
 .Mainpage{
 	height: 100vh;
+	top: 0;
 	overflow-x: hidden;
 	position: relative;
 	overflow-y: auto;
@@ -92,7 +93,8 @@ input {
 }
 @media (max-width: 700px) {
 	.videoWrapper {
-		.bgVideo{
+    	bottom: auto;
+	.bgVideo{
 			min-height: 579px;
 			height: 579px;
 
