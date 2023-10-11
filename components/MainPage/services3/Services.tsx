@@ -41,9 +41,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.08}}
+                        initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "easeIn", duration: 0.8,}}
+                        transition={{ ease: "easeIn", duration: 1.4,}}
                         className={`${cls.imgBigScreen1}`}
                         />
                     </figure>
@@ -74,9 +74,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.08}}
+                        initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "easeIn", duration: 0.8,}}
+                        transition={{ ease: "easeIn", duration: 1.4,}}
                         className={`${cls.imgBigScreen2}`}
                         />
                     </figure>
@@ -106,9 +106,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.08}}
+                        initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "easeIn", duration: 0.8,}}
+                        transition={{ ease: "easeIn", duration: 1.4,}}
                         className={`${cls.imgBigScreen3}`}
                         />
                     </figure>
@@ -139,9 +139,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.1}}
+                        initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "easeIn", duration: 0.8,}}
+                        transition={{ ease: "easeIn", duration: 1.4,}}
                         className={`${cls.imgBigScreen4}`}
                         />
                     </figure>
