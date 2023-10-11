@@ -21,7 +21,14 @@ interface ClientsProps {
 
 export const Clients: FC<ClientsProps> = ({ }) => {
 
+    const [isMobile, setIsMobile] = useState(false);
 
+    useEffect(() => {
+      // Check if window is defined (i.e., we are in a browser environment)
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth <= 700);
+      }
+    }, []);
 
     return (
         <div className={cls.Clients}>
@@ -32,57 +39,57 @@ export const Clients: FC<ClientsProps> = ({ }) => {
                 <Image
                     src={starkware}
                     alt={'starkware'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={uniswap}
                     alt={'uniswap'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={starknet}
                     alt={'starknet'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={zklink}
                     alt={'zklink'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={yieldProtocol}
                     alt={'yieldProtocol'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={notional}
                     alt={'notional'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={maverick}
                     alt={'maverick'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={oneInch}
                     alt={'oneInch'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={aave}
                     alt={'aave'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={masterLabs}
                     alt={'masterLabs'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
                 <Image
                     src={scroll}
                     alt={'scroll'}
-                    loading="lazy"
+                    loading={isMobile? 'eager' : 'lazy'}
                 />
             </Marquee>
         </div>

@@ -46,8 +46,7 @@ export const Expertise: FC<ExpertiseProps> = ({ }) => {
                     Smart contracts
                 </h1>
                 <p className={cls.EvaluationText}>
-                    Found more than a thousand critical bugs 
-                    over the 7 years of audit experience.
+                    Found more than a thousand critical bugs over the 7 years of audit experience.
                 </p>
                 </div>
 
@@ -63,9 +62,7 @@ export const Expertise: FC<ExpertiseProps> = ({ }) => {
                     Zero Knowledge
                 </h1>
                 <p className={cls.EvaluationText}>
-                    Designed and audited SNARK circuits for 
-                    Rollups, Mixers, and Virtual Machines --
-                    written in Rust, Circom, ZoKrates, Cairo, C++
+                    Designed and audited SNARK circuits for privacy protocols and zkvM.
                 </p>
                 </div>
 
@@ -81,10 +78,7 @@ export const Expertise: FC<ExpertiseProps> = ({ }) => {
                     Cryptography
                 </h1>
                 <p className={cls.EvaluationText}>
-                    Developed and analyzed cutting-edge
-                    protocols and schemes of verifiable 
-                    encryption, lookup arguments, ZK hashing,
-                    signatures, VDFs.
+                    Developed and analyzed cutting-edge protocols and schemes.
                 </p>
                 </div>
 
@@ -100,9 +94,7 @@ export const Expertise: FC<ExpertiseProps> = ({ }) => {
                     DeFi
                 </h1>
                 <p className={cls.EvaluationText}>
-                    Constructed, evaluated, and optimized DeFi 
-                    protocols (trading curves, liquidity mining)
-                    for top industry players.
+                    Constructed, audited, and optimized protocols for top industry players.
                 </p>
                 </div>
 

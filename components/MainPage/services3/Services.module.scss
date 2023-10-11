@@ -30,18 +30,73 @@
     justify-content: space-between;
 }
 
-.ServiceImage {
+.zoomHover:hover img {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.zoomHover img{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.zoomHover {
+    grid-area: image;
+}
+.imgBigScreen {
     width: 39.459vw;
     height: 21.892vw;
     object-fit: cover;
     border-radius: 8px;
-    grid-area: image;
-
+    
 }
-
-
-
-
+.imgBigScreen1{
+    width: 39.459vw;
+    height: 21.892vw;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 8px;
+    background-image: url(../../../public/audit-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgBigScreen2{
+    width: 39.459vw;
+    height: 21.892vw;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 8px;
+    background-image: url(../../../public/reasearch-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgBigScreen3{
+    width: 39.459vw;
+    height: 21.892vw;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 8px;
+    background-image: url(../../../public/consulting-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgBigScreen4 {
+    width: 39.459vw;
+    height: 21.892vw;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 8px;
+    background-image: url(../../../public/evaluation-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.imgFigure {
+    overflow: hidden;
+    border-radius: 8px;
+}
 
 
 
