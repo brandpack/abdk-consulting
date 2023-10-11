@@ -43,7 +43,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         <motion.div
                         initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.4,}}
+                        transition={{ ease: "linear", duration: 1.7,}}
                         className={`${cls.imgBigScreen1}`}
                         />
                     </figure>
@@ -76,7 +76,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         <motion.div
                         initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.4,}}
+                        transition={{ ease: "linear", duration: 1.7,}}
                         className={`${cls.imgBigScreen2}`}
                         />
                     </figure>
@@ -108,7 +108,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         <motion.div
                         initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.4,}}
+                        transition={{ ease: "linear", duration: 1.7,}}
                         className={`${cls.imgBigScreen3}`}
                         />
                     </figure>
@@ -141,7 +141,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         <motion.div
                         initial={{scale: 1.05}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.4,}}
+                        transition={{ ease: "linear", duration: 1.7,}}
                         className={`${cls.imgBigScreen4}`}
                         />
                     </figure>
