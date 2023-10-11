@@ -1,5 +1,5 @@
 'use client'
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll, useViewportScroll, useTransform } from "framer-motion"
 import { FC, useRef, useState } from 'react'
 import cls from './Services.module.scss'
 import Image from 'next/image';
@@ -41,9 +41,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.05}}
+                        initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.7,}}
+                        transition={{ ease: "linear", duration: 2.4,}}
                         className={`${cls.imgBigScreen1}`}
                         />
                     </figure>
@@ -74,9 +74,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.05}}
+                        initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.7,}}
+                        transition={{ ease: "linear", duration: 2.4,}}
                         className={`${cls.imgBigScreen2}`}
                         />
                     </figure>
@@ -106,9 +106,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.05}}
+                        initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.7,}}
+                        transition={{ ease: "linear", duration: 2.4,}}
                         className={`${cls.imgBigScreen3}`}
                         />
                     </figure>
@@ -139,9 +139,9 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 <div className={`${cls.zoomHover}`}>
                     <figure className={cls.imgFigure}>
                         <motion.div
-                        initial={{scale: 1.05}}
+                        initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 1.7,}}
+                        transition={{ ease: "linear", duration: 2.4,}}
                         className={`${cls.imgBigScreen4}`}
                         />
                     </figure>
