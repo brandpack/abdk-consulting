@@ -5,11 +5,14 @@ import WorkAtABDK from "@/components/AboutUsPage/WorkAtABDK/WorkAtABDK";
 import { ChooseAboutUs } from "@/components/AboutUsPage/choose2/Choose";
 import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
 import StaticHeader from "@/components/common/FixedHeader/StaticHeader";
+import Footer from "@/components/common/Footer/Footer";
+import Header from "@/components/common/Header/Header";
 import React from "react";
 
 const AboutUs: React.FC = () => {
 	return (
 		<main>
+			<Header/>
 			<StaticHeader auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
 			<TopBlockAboutUs />
 			<ChooseAboutUs />
@@ -17,6 +20,7 @@ const AboutUs: React.FC = () => {
             <HistoryMobile />
 			<WorkAtABDK />
 			<CheckOut />
+			<Footer />
 		</main>
 	);
 };

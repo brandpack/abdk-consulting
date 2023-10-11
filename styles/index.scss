@@ -27,6 +27,12 @@ body {
 	gap: 50px !important;
 
 }
+.rfm-marquee-container {
+	gap: 50px !important;
+}
+.rfm-marquee {
+	gap: 50px !important;
+}
 body,
 html,
 #root,
@@ -45,6 +51,14 @@ html,
 
 #root {
 	flex-direction: column;
+}
+.Mainpage{
+	height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+	overflow-y: auto;
+	perspective: 10px;
+    transform-style: preserve-3d;
 }
 
 h1,

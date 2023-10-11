@@ -6,27 +6,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';
 
-const Header = () => {
-    const [isHeaderFixed, setIsHeaderFixed] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 800) {
-                setIsHeaderFixed(true);
-            } else {
-                setIsHeaderFixed(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+const Header: React.FC<any> = (props) => {
+    
 
     return (
 
-        <div className={classNames(cls.headerFixed, { [cls.visible]: isHeaderFixed }, [])}>
+        <div className={classNames(cls.headerFixed, { [cls.visible]: props.isHeaderFixed }, [])}>
             <div className={cls.headerContent}>
                 <a href={'/'}>
                     <Image

@@ -1,0 +1,68 @@
+.headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.324vw;
+    width: 82.432vw;
+    padding: 2px 2.027vw;
+    margin: 0 6.757vw;
+    border-radius: 13px;
+    border: 0.01px solid rgb(226 226 226 / 8%);
+    background: rgba(248, 248, 248, 0.01);
+    backdrop-filter: blur(30px);
+
+    .headerLinks {
+        display: flex;
+        gap: 1.622vw;
+
+        .link {
+            color: #FFF;
+            font-family: Basis Grotesque Pro;
+            font-size: 0.946vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+}
+
+.headerFixed {
+    position: fixed;
+    pointer-events: none;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(226, 226, 226, 0.30);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+    transform: translateY(-500px);
+    transition: transform 0.4s ease-in-out;
+    
+    &.visible {
+        transform: translateY(0); /* Показываем элемент */
+    }
+
+    .headerContent {
+        border-radius: 0;
+        border: none;
+        background: none;
+        backdrop-filter: none;
+
+        .link {
+            color: #190628;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .headerContent {
+        height: 60px;
+        .headerLinks {
+            gap: 5.607vw;
+    
+            .link {
+                font-size: 3.271vw;
+            }
+        }
+    }
+}
