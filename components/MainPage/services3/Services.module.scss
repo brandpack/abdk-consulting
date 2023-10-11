@@ -242,10 +242,10 @@
             line-height: 140%;
         }
     }
-
-    .ServiceImage {
-        margin-top: 4.673vw;
-        grid-area: image;
+    .imgBigScreen4,
+    .imgBigScreen3,
+    .imgBigScreen2,
+    .imgBigScreen1{
         width: 88.785vw;
         height: 58.879vw;
     }
@@ -311,7 +311,10 @@
             font-size: 1.563vw;
         }
     }
-    .ServiceImage{
+    .imgBigScreen4,
+    .imgBigScreen3,
+    .imgBigScreen2,
+    .imgBigScreen1{
         width: 50vw;
         height: 33.008vw;
     }

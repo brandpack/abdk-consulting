@@ -44,6 +44,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.1}}
                         whileInView={{scale: 1}}
                         viewport={{amount: 0.5 }}
+                        transition={{ ease: "linear", duration: 1,}}
                         className={`${cls.imgBigScreen1}`}
                         />
                     </figure>
@@ -77,6 +78,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.1}}
                         whileInView={{scale: 1}}
                         viewport={{amount: 0.5 }}
+                        transition={{ ease: "linear", duration: 1,}}
                         className={`${cls.imgBigScreen2}`}
                         />
                     </figure>
@@ -109,6 +111,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.1}}
                         whileInView={{scale: 1}}
                         viewport={{amount: 0.5 }}
+                        transition={{ ease: "linear", duration: 1,}}
                         className={`${cls.imgBigScreen3}`}
                         />
                     </figure>
@@ -142,6 +145,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.1}}
                         whileInView={{scale: 1}}
                         viewport={{amount: 0.5 }}
+                        transition={{ ease: "linear", duration: 1,}}
                         className={`${cls.imgBigScreen4}`}
                         />
                     </figure>
