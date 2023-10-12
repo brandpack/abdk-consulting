@@ -35,15 +35,14 @@ export const CheckOut: FC<CheckOutProps> = ({ }) => {
                 <motion.div
                     className={cls.GhPage}
                     initial={{transform: 'rotate3d(1, 0, 0, 45deg)'}}
-                    whileInView={{transform: 'rotate3d(1, 0, 0, 15deg)'}}
-                    transition={{ ease: [0.17, 0.67, 0.83, 1], duration: 1,}}
-                    viewport={{amount: 0.2}}
+                    whileInView={{transform: 'rotate3d(1, 0, 0, 30deg)'}}
+                    transition={{ ease: [0.17, 0.67, 0.83, 1], duration: 0.5,}}
                 >
-                <Image 
-                src={githubPage}
-                alt='GhPage'
-                loading='lazy'
-                />
+                    <Image 
+                        src={githubPage}
+                        alt='GhPage'
+                        loading='lazy'
+                    />
                 </motion.div>
             </div>
         </div>
