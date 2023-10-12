@@ -32,12 +32,19 @@ export const CheckOut: FC<CheckOutProps> = ({ }) => {
                         <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting'} target="_blank" >Check Out</Link>
                     </motion.div>
                 </figure>
+                <motion.div
+                    className={cls.GhPage}
+                    initial={{transform: 'rotate3d(1, 0, 0, 45deg)'}}
+                    whileInView={{transform: 'rotate3d(1, 0, 0, 15deg)'}}
+                    transition={{ ease: [0.17, 0.67, 0.83, 1], duration: 1,}}
+                    viewport={{amount: 0.2}}
+                >
                 <Image 
-                className={cls.GhPage}
                 src={githubPage}
                 alt='GhPage'
                 loading='lazy'
                 />
+                </motion.div>
             </div>
         </div>
     )

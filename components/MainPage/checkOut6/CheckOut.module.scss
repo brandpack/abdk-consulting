@@ -76,12 +76,12 @@
     transition: all 0.3s ease-out;
 }
 
-.GhPage {
+.GhPage img {
     width: 85.122vw;
     height: 677px;
-    transform: rotate3d(1, 0, 0, 45deg);
-    -webkit-transform: rotate3d(1, 0, 0, 45deg);
+
 }
+
 @media (max-width: 700px) { 
     .CheckOut {
         margin: 0;
