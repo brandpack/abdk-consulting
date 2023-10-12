@@ -115,8 +115,9 @@
     border-radius: 6.075vw;
     border: 0.234vw solid #E2E2E2;
 }
-.GhPage {
-    width: 93.458vw;
-    height: 140.187vw;
+.GhPage img{
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
 }
 }
