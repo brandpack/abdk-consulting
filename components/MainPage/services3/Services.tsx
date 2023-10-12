@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import cls from './Services.module.scss'
 import Image from 'next/image';
 import Link from 'next/link';
