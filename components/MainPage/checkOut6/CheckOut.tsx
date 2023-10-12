@@ -1,3 +1,4 @@
+'use client'
 import { FC, useEffect, useState } from 'react'
 import cls from './CheckOut.module.scss'
 import github from '@/public/github.svg';
@@ -14,19 +15,7 @@ export const CheckOut: FC<CheckOutProps> = ({ }) => {
     return (
         <div className={cls.CheckOut}>
             <div className={cls.test}>
-                <div className={cls.Portfolio}>
-                    <Image 
-                        src={github}
-                        alt='github'
-                        loading='lazy'
-                    />
-                    <div className={`${cls.PortfolioText}`}>
-                        <h1>Our audit portfolio</h1>
-                        <p>Check out our audit portfolio on github.</p>
-                        <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting'} target="_blank" >Check Out</Link>
-                    </div>
-                </div>
-                {/* <figure className={cls.Portfolio}>
+                <figure className={cls.Portfolio}>
                     <Image 
                         src={github}
                         alt='github'
@@ -42,7 +31,7 @@ export const CheckOut: FC<CheckOutProps> = ({ }) => {
                         <p>Check out our audit portfolio on github.</p>
                         <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting'} target="_blank" >Check Out</Link>
                     </motion.div>
-                </figure> */}
+                </figure>
                 <Image 
                 className={cls.GhPage}
                 src={githubPage}
