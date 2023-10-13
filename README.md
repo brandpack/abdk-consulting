@@ -169,7 +169,7 @@ pm2 save
 
 Update pm2
 ```bash
-#nextjs nextjs is example name your pm2 proccess
+#nextjs is example name your pm2 process
 pm2 restart nextjs
 ```
 
@@ -188,10 +188,7 @@ cd /var/www/abdk-consulting
 Update repository
 ```bash
 git pull
-```
-
-Install dependencies
-```bash
+#if necessary, install new packages
 npm i
 ```
 
@@ -202,7 +199,7 @@ npm run build
 
 Update pm2
 ```bash
-#nextjs nextjs is example name your pm2 proccess
+#nextjs is example name of your pm2 process
 pm2 restart nextjs
 ```
 Done
