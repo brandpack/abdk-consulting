@@ -177,7 +177,7 @@ pm2 restart nextjs
 ---
 
 # Update
-#### Open project
+Open project
 Navigate to the Next.js application directory (if not already there):
 ```bash
 cd /var/www/***NEXTJS_PROJECT***
@@ -185,8 +185,7 @@ cd /var/www/***NEXTJS_PROJECT***
 cd /var/www/abdk-consulting
 ```
 
-#### Update repository
-
+Update repository
 ```bash
 git pull
 ```
@@ -197,7 +196,6 @@ npm i
 ```
 
 Take a build
-
 ```bash
 npm run build
 ```
