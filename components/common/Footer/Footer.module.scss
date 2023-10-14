@@ -132,7 +132,10 @@
     gap: 0.405vw;
     align-items: baseline;
     text-decoration: none;
+}
 
+.link:hover {
+    color: rgba(207, 207, 232, 0.93);
 }
 
 @media (max-width: 700px) {

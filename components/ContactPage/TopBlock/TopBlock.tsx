@@ -24,7 +24,7 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                         alt='X'
                         loading='lazy'
                     />
-                    <Link href={"https://x.com/ABDKconsulting?s=20"} className={cls.EvaluationText} target="_blank">
+                    <Link href={"https://x.com/ABDKconsulting"} className={cls.EvaluationText} target="_blank">
                         Link
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                             <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
@@ -37,7 +37,7 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                         alt='LinkedIn'
                         loading='lazy'
                     />
-                    <Link href={"https://www.linkedin.com/company/abdk-consulting/about/"} className={cls.EvaluationText} target="_blank">
+                    <Link href={"https://www.linkedin.com/company/abdk-consulting/"} className={cls.EvaluationText} target="_blank">
                         Link
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                             <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />

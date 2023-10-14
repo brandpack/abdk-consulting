@@ -55,19 +55,19 @@ const Footer = () => {
                                 <path d="M0.5625 8.9375L8 1.5M8 1.5H-2.98023e-08M8 1.5V9.5" stroke="#A3A2CC" strokeWidth="1.5" strokeLinejoin="bevel" />
                             </svg>
                         </a>
-                        <Link className={cls.link} href={'a'} >
+                        <Link className={cls.link} href={'https://x.com/ABDKconsulting'}  target="_blank">
                             X
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
                                 <path d="M0.5625 8.9375L8 1.5M8 1.5H-2.98023e-08M8 1.5V9.5" stroke="#A3A2CC" strokeWidth="1.5" strokeLinejoin="bevel" />
                             </svg>
                         </Link>
-                        <Link className={cls.link} href={'a'} >
+                        <Link className={cls.link} href={'https://www.linkedin.com/company/abdk-consulting/'}  target="_blank">
                             LinkedIn
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
                                 <path d="M0.5625 8.9375L8 1.5M8 1.5H-2.98023e-08M8 1.5V9.5" stroke="#A3A2CC" strokeWidth="1.5" strokeLinejoin="bevel" />
                             </svg>
                         </Link>
-                        <Link className={cls.link} href={'a'} >
+                        <Link className={cls.link} href={'https://github.com/abdk-consulting'}  target="_blank">
                             GitHub
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
                                 <path d="M0.5625 8.9375L8 1.5M8 1.5H-2.98023e-08M8 1.5V9.5" stroke="#A3A2CC" strokeWidth="1.5" strokeLinejoin="bevel" />
