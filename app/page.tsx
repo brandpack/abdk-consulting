@@ -44,9 +44,9 @@ export default function Home() {
       <Expertise />
       <Approach />
       <CheckOut />
-      <Footer />
+      <Footer scrollableElementRef={scrollableElementRef}/>
     </main>
-    <Header isHeaderFixed={isHeaderFixed}/>
+    <Header scrollableElementRef={scrollableElementRef} isHeaderFixed={isHeaderFixed}/>
     </>
 
   )

@@ -1,8 +1,6 @@
 'use client'
 import { FC, useEffect, useState } from 'react'
 import cls from './TopBlock.module.scss'
-import GuideMark from '@/public/GuideMark.svg';
-import Image from 'next/image';
 import Link from 'next/link';
 
 interface TopBlockProps {
