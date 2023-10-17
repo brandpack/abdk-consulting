@@ -36,13 +36,6 @@ const Header: React.FC<any> = (props) => {
                             />
                         </Link>
                     }
-                <a href={'/'}>
-                    <Image
-                        src={logoDesktop}
-                        alt={'ADKB'}
-                        loading="lazy"
-                    />
-                </a>
                 <div className={cls.headerLinks}>
                     { pathname === '/' ?
                         <Link className={cls.link} href={'/'} onClick={scrollToTop}>Home</Link>
