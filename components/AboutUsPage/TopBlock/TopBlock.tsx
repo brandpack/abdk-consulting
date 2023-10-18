@@ -23,12 +23,7 @@ export const TopBlockAboutUs: FC<TopBlockProps> = ({ }) => {
                         About Us
                     </h1>
                     <p className={cls.Text}>
-                        The ABDK Research Team, led by the world 
-                        top cryptography, security, and blockchain 
-                        researcher Dmitry Khovratovich, provides 
-                        exclusive advice on blockchain, 
-                        scalability, zero-knowledge techniques,
-                        encryption, and consensus issues.
+                        ABDK Consulting was founded in 2016 as a top service provider in the design and security of Web 3.0. Since then we have conducted over 100 audit projects, have developed DeFi protocols and cryptographic schemes, have crafted Solidity libraries and consulted dozens of clients. 
                     </p>
                 </div>
             </div>
