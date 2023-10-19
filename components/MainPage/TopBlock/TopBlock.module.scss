@@ -23,7 +23,16 @@
     z-index: 2;
 
 }
-
+.TopBlockHeaderFixHeader{
+    position: absolute;
+    color: transparent;
+    top: 90px;
+    width: 100vw;
+    height: 350px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+}
 
 .TopBlockGuide {
     color: #77F8A2;

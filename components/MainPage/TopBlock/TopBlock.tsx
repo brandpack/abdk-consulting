@@ -49,6 +49,9 @@ export const TopBlock: FC<TopBlockProps> = ({ }) => {
                 in the World
                 of Crypto
             </div>
+            <div className={cls.TopBlockHeaderFixHeader}>
+                Your
+            </div>
             <div className={cls.TopBlockFooter}>
                 <div className={cls.TopBlockText}>
                     <Link href={'/audit'} className={cls.text}>Audit</Link>
