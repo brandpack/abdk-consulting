@@ -2,10 +2,10 @@
 import { FC, useEffect, useState } from 'react'
 import cls from './ourTeam.module.scss'
 import Image from 'next/image';
-import Dmitry from '@/public/dmitry.svg';
-import Mikhail from '@/public/mikhail.svg';
-import Anna from '@/public/anna.svg';
-import Aleksandra from '@/public/aleksandra.svg';
+import Dmitry from '@/public/dmitry.jpg';
+import Mikhail from '@/public/mikhail.jpg';
+import Anna from '@/public/anna.jpg';
+import Aleksandra from '@/public/alexandra.jpg';
 
 import Lines from '@/public/linesAboutUs.svg';
 import LinesMobile from '@/public/linesMobile.svg';
