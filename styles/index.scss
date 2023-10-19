@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	width: 100vw;
+	width: 100%;
 }
 
 * {
@@ -15,12 +15,12 @@
 }
 
 html {
-	width: 100vw;
+	width: 100%;
 	min-height: 100%;
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
 	margin: 0 !important;
 	padding: 0 !important;
@@ -41,7 +41,7 @@ html,
 #__next {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
+	width: 100%;
 	font-family: 'Basis Grotesque Pro', sans-serif;
 	color: $colorAccent;
 	//letter-spacing: 1px;
@@ -56,7 +56,7 @@ html,
 }
 .Mainpage{
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	top: 0;
 	overflow-x: hidden;
 	position: relative;
@@ -88,9 +88,9 @@ input {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     .bgVideo{
-        width: 100vw;
+        width: 100%;
         min-height: 100svh;
         object-fit: cover;
     }
@@ -98,7 +98,7 @@ input {
 @media (max-width: 700px) {
 	.Mainpage {
 		height: 100svh;
-		width: 100lvw;
+		width: 100%;
 	}
 	.videoWrapper {
     	bottom: auto;
