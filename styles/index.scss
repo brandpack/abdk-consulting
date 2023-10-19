@@ -60,6 +60,7 @@ html,
 	overflow-y: auto;
 	perspective: 10px;
     transform-style: preserve-3d;
+	-webkit-overflow-scrolling: touch;
 }
 
 h1,
