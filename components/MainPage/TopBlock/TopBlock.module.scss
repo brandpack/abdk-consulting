@@ -27,6 +27,7 @@
     position: absolute;
     color: transparent;
     top: 90px;
+    font-size: 90px;
     width: 100vw;
     height: 350px;
     z-index: 2;
@@ -107,7 +108,7 @@
     color: #FFF;
     font-size: 1.549vw;
     gap: 0.861vw;
-    z-index: 1;
+    z-index: 4;
     font-weight: 500;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -140,7 +141,7 @@
 
 
 .TopBlockFooter {
-    z-index: 1;
+    z-index: 3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
