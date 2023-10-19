@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     gap: 2.703vw;
+    z-index: 3;
+    position: relative;
 }
 
 .Service:nth-child(even) {

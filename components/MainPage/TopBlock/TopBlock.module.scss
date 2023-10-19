@@ -9,7 +9,7 @@
     padding: 0 7.264vw 0 8.514vw;
     background: #2D283C;
     transform: translateZ(-10px) scale(2);
-    z-index: -1;
+    z-index: 0;
 }
 
 .TopBlockHeader {
@@ -22,6 +22,7 @@
     z-index: 2;
 
 }
+
 
 .TopBlockGuide {
     color: #77F8A2;
