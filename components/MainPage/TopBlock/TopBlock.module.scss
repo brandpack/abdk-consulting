@@ -29,7 +29,7 @@
     top: 90px;
     font-size: 90px;
     width: 100vw;
-    height: 350px;
+    height: calc(100vh - 90px);
     z-index: 2;
     left: 0;
     right: 0;
