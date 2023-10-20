@@ -48,3 +48,8 @@
         
     }
 }
+@media (max-height: 500px) and (orientation: landscape) {
+	.link {
+        font-size: 1.6vw !important;
+	}
+}
