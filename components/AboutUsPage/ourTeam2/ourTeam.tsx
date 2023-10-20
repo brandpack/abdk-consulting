@@ -17,11 +17,22 @@ export const OurTeam: FC<ourTeamProps> = ({ }) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-      // Check if window is defined (i.e., we are in a browser environment)
-      if (typeof window !== 'undefined') {
-        setIsMobile(window.innerWidth <= 700);
-      }
-    }, []);
+        function handleResize() {
+            if (typeof window !== 'undefined') {
+                setIsMobile(window.innerWidth <= 700);
+            }
+        }
+    
+        // Initial check and setup
+        handleResize();
+    
+        window.addEventListener('resize', handleResize);
+    
+        // Clean up the event listener when the component unmounts
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
     return (
         <div className={cls.Expertise}>
             <div className={cls.Lines}>
