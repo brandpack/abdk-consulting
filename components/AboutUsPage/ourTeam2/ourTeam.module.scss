@@ -13,12 +13,12 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: start;
-    margin-top: -6.6vh;
+    margin-top: -12vh;
 }
 
 .Lines {
     position: absolute;
-    top: 5vh;
+    top: 5.5vh;
     img {
         width: 83.514vw;
         height: auto;
@@ -28,8 +28,18 @@
 .ExpertiseHeader {
     font-size: 4.054vw;
     font-weight: 700;
-    line-height: 12.485vh;
+    line-height: 120%;
     text-transform: uppercase;
+}
+.ExpertiseText {
+    color: #000;
+    font-family: Basis Grotesque Pro;
+    font-size: 1.351vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    opacity: 0.9;
+    width: 40.135vw;
 }
 
 .Evaluation1 {
@@ -136,6 +146,7 @@
         margin: 17.991vw 5.607vw;
     }
     .ExpertiseContainer {
+        margin-top: -2vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 400px);
     }
@@ -145,8 +156,13 @@
         font-weight: 700;
         line-height: 9.346vw;
     }
+    .ExpertiseText {
+        width: 380px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
     .Lines {
-        top: 6vh;
+        top: 13vh;
         img {
             width: 11.083vw;
             height: 300vw;
@@ -217,62 +233,38 @@
 @media (max-width: 1200px) and (min-width: 701px) {
     .Expertise {
         width: 95.41vw;
-        margin: 0 1.465vw 8.789vw 3.125vw;
+        margin: 7.838vw 1.465vw 8.789vw 3.125vw;
     }
     .ExpertiseContainer {
-        grid-template-columns: 55% 45%;
+        margin-top: -6vh;
+        grid-template-columns: 57% 43%;
     }
     .Lines{
+        top: 0;
         img {
             width: 95.40vw;
             height: auto;
         }
     }
     .Evaluation1 {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
         gap: 2.344vw;
-        margin-left: 13.851vw;
-        margin-top: 6vh;
-    
         img {
             width: 37.305vw;
             height: auto;
-        }
-    
-        .EvaluationText {
-            width: 33.594vw;
+            object-fit: contain;
         }
     }
     
     .Evaluation2 {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
         gap: 2.344vw;
-        margin-top: 13.672vw;
-        margin-left: 1.014vw;
     
         img {
             width: 37.305vw;
             height: auto;
         }
-    
-        .EvaluationText {
-            width: 36.816vw;
-        }
     }
     
     .Evaluation3 {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        margin-top: -60px;
-        margin-left: 13.851vw;
         gap: 2.344vw;
 
     
@@ -280,37 +272,18 @@
             width: 37.305vw;
             height: auto;
         }
-    
-        .EvaluationText {
-            width: 36.426vw;
-        }
     }
     
     .Evaluation4 {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        margin-top: 8vh;
-        margin-left: 1.014vw;
         gap: 2.344vw;
     
         img {
             width: 37.305vw;
             height: auto;
         }
-    
-        .EvaluationText {
-            width: 33.398vw;
-        }
     }
     .EvaluationTextBlock {
-        display: flex;
-        width: 33.594vw;
-        flex-direction: column;
-        gap: 1.953vw;
-        align-items: flex-start;
-    
+        width: 37.305vw;
         .EvaluationHeader {
             font-size: 2.344vw;
             font-weight: 700;

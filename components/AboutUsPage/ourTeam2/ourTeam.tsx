@@ -34,6 +34,9 @@ export const OurTeam: FC<ourTeamProps> = ({ }) => {
             <h1 className={cls.ExpertiseHeader}>
                 Our Team
             </h1>
+            <p className={cls.ExpertiseText}>
+                The core team of ABDK has remained unchanged over the years and has maintained the uniformly high quality in all projects.
+            </p>
             <div className={cls.ExpertiseContainer}>
             <div className={cls.Evaluation1}>
                 <Image 
