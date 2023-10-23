@@ -55,26 +55,32 @@
     margin-top: 26.65vh;
     flex-direction: row;
     margin-left: -1.145vw;
-    gap: 0.27vw;
+    gap: 1vw;
     .text:nth-child(1):hover{
         color: #2DAED7;
+        border-bottom: 1px solid #2DAED7;
     }
     .text:nth-child(3):hover{
         color: #34C88C;
+        border-bottom: 1px solid #34C88C;
     }
     .text:nth-child(5):hover{
-        color: #474DD8;
+        color: #555afb;
+        border-bottom: 1px solid #555afb;
     }
     .text:nth-child(7):hover{
         color: #BF63DF;
+        border-bottom: 1px solid #BF63DF;
     }
     .text {
-        padding: 0.859vw 1.145vw;
-        font-size: 1.002vw;
+        //padding: 0.859vw 1.145vw;
+        padding: 4px 0;
+        font-size: 1.100vw;
         font-weight: 400;
+        border-bottom: 1px solid #fff;
         text-decoration: none;
         color: #FFF;
-        transition: color 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     .text-first {
