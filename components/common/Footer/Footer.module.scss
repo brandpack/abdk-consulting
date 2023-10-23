@@ -141,8 +141,8 @@
 
 @media (max-width: 700px) {
   .Footer {
-    height: 131.308vw;
-    grid-template-rows: 30.374vw 82.71vw 11.682vw;
+    height: 85vw;
+    grid-template-rows: 0vw 68.71vw 11.682vw;
   }
 
   .FooterContent {
@@ -154,7 +154,7 @@
       "rights";
     width: 100%;
     height: auto;
-    margin: 11.215vw 0px 7.477vw;
+    margin: 6vw 0px 5vw;
     padding: 0;
   }
   .FooterCombine {
@@ -174,7 +174,7 @@
   }
 
   .links {
-    gap: 7.477vw;
+    gap: 6vw;
   }
 
   .link {
@@ -200,10 +200,9 @@
   }
 
   .FooterImage {
-    width: 41.121vw;
-    height: 15.47vw;
+    width: 30vw;
     justify-self: center;
-    margin-bottom: 11.215vw;
+    margin-bottom: 6vw;
   }
   .FooterLineImage {
     display: none;
@@ -212,5 +211,6 @@
     display: block;
     width: 100vw;
     height: 30.374vw;
+    display: none;
   }
 }
