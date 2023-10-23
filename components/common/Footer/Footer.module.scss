@@ -1,8 +1,8 @@
 .Footer {
   display: grid;
-  grid-template-rows: 15vw 26.757vw 4.73vw;
+  grid-template-rows: 0vw 18vw 1vw;
   width: 100vw;
-  height: 46.554vw;
+  height: 20vw;
   background: #322c3f;
   position: relative;
   box-sizing: border-box;
@@ -15,7 +15,7 @@
   background: rgba(225, 226, 249, 0.1);
   left: 0px;
   right: 0px;
-  bottom: 4.73vw;
+  bottom: 3vw;
 }
 
 .FooterContent {
@@ -28,7 +28,7 @@
   width: 100vw;
   height: auto;
   box-sizing: border-box;
-  padding: 6.554vw 8.784vw 5.878vw;
+  padding: 3.554vw 8.784vw 3.878vw;
 }
 
 .FooterLeft {
@@ -51,8 +51,7 @@
 
 .FooterImage {
   grid-area: logo;
-  width: 14.257vw;
-  height: 5.364vw;
+  width: 10.257vw;
 }
 
 .FooterLineImage {
@@ -60,6 +59,7 @@
   grid-row: 1/2;
   width: 100vw;
   height: 15vw;
+  display: none;
 }
 .FooterLineImageMobile {
   display: none;
@@ -68,12 +68,12 @@
 .FooterCombine {
   grid-area: rights;
   width: 22.432vw;
-  color: #d4d3f3;
+  color: rgba(215, 215, 243, 0.9);
   font-size: 0.946vw;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  opacity: 0.5;
+  opacity: 1;
   align-self: flex-end;
 }
 
@@ -87,8 +87,8 @@
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  opacity: 0.15;
-  font-size: 14px;
+  opacity: 0.25;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -101,6 +101,8 @@
     font-weight: 400;
     line-height: 16px;
     text-decoration: none;
+    text-align: right;
+
   }
 }
 
@@ -122,7 +124,7 @@
 }
 
 .link {
-  color: rgba(181, 180, 225, 0.9);
+  color: rgba(215, 215, 243, 0.9);
   font-size: 0.946vw;
   font-style: normal;
   font-weight: 400;
