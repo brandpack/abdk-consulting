@@ -9,42 +9,71 @@ import { usePathname } from 'next/navigation';
 
 const Header: React.FC<any> = (props) => {
     const pathname = usePathname()
+    const [isMobile, setIsMobile] = useState(false);
 
     const scrollToTop = () => {
         if (props.scrollableElementRef.current) {
             props.scrollableElementRef.current.scrollTo({ top: 0, behavior: 'smooth' });
         }
     };
+
+    useEffect(() => {
+        function handleResize() {
+            if (typeof window !== 'undefined') {
+                setIsMobile(window.innerWidth <= 700);
+            }
+        }
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
 
         <div className={classNames(cls.headerFixed, { [cls.visible]: props.isHeaderFixed }, [])}>
             <div className={cls.headerContent}>
-                    { pathname === '/' ?
-                        <Link href={'/'} onClick={scrollToTop}>
-                            <Image
-                                src={logoDesktop}
-                                alt={'ADKB'}
-                                loading="lazy"
-                            />
-                        </Link>
+                {pathname === '/' ?
+                    <Link className={cls.Logo} href={'/'} onClick={scrollToTop}>
+                        <Image
+                            src={logoDesktop}
+                            alt={'ADKB'}
+                            loading="lazy"
+                        />
+                    </Link>
+                    :
+                    <Link className={cls.Logo} href={'/'}>
+                        <Image
+                            src={logoDesktop}
+                            alt={'ADKB'}
+                            loading="lazy"
+                        />
+                    </Link>
+                }
+                {
+                    isMobile ?
+                        <>
+                            <div
+                                onClick={() => props.setIsOpen(!props.isOpen)}
+                                className={classNames(cls.burger, { [cls.open]: props.isOpen }, [])}
+                            >
+                                <span />
+                                <span />
+                                <span />
+                            </div>
+                        </>
                         :
-                        <Link href={'/'}>
-                            <Image
-                                src={logoDesktop}
-                                alt={'ADKB'}
-                                loading="lazy"
-                            />
-                        </Link>
-                    }
-                <div className={cls.headerLinks}>
-                    { pathname === '/' ?
-                        <Link className={cls.link} href={'/'} onClick={scrollToTop}>Home</Link>
-                        :
-                        <Link className={cls.link} href={'/'}>Home</Link>
-                    }
-                    <Link className={cls.link} href={'/about-us'}>About us</Link>
-                    <Link className={cls.link} href={'/contact'}>Contact</Link>
-                </div>
+                        <div className={cls.headerLinks}>
+                            <Link href={'/audit'} className={cls.link}>Audit</Link>
+                            <Link href={'/research'} className={cls.link}>Research</Link>
+                            <Link href={'/consulting'} className={cls.link}>Consulting</Link>
+                            <Link href={'/evaluation'} className={cls.link}>Evaluation</Link>
+                            <Link href={'/about-us'} className={cls.link}>About us</Link>
+                        </div>
+                }
             </div>
         </div>
     );

@@ -53,15 +53,6 @@ export const TopBlock: FC<TopBlockProps> = ({ }) => {
                 Your
             </div>
             <div className={cls.TopBlockFooter}>
-                <div className={cls.TopBlockText}>
-                    <Link href={'/audit'} className={cls.text}>Audit</Link>
-                    <div className={cls.line}></div>
-                    <Link href={'/research'} className={cls.text}>Research</Link>
-                    <div className={cls.line}></div>
-                    <Link href={'/consulting'} className={cls.text}>Consulting</Link>
-                    <div className={cls.line}></div>
-                    <Link href={'/evaluation'} className={cls.text}>Evaluation</Link>
-                </div>
                 <Link href={'/contact'} className={cls.TopBlockButton}>
                     Contact Us
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">

@@ -6,9 +6,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';
 
-const Header = () => {
+const Header: React.FC<any> = (props) => {
     const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        function handleResize() {
+            if (typeof window !== 'undefined') {
+                setIsMobile(window.innerWidth <= 700);
+            }
+        }
 
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 800) {
@@ -23,6 +38,7 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    
 
     return (
 
@@ -35,11 +51,27 @@ const Header = () => {
                         loading="lazy"
                     />
                 </a>
-                <div className={cls.headerLinks}>
-                    <Link className={cls.link} href={'/'}>Home</Link>
-                    <Link className={cls.link} href={'/about-us'}>About us</Link>
-                    <Link className={cls.link} href={'/contact'}>Contact</Link>
-                </div>
+                {
+                    isMobile ?
+                        <>
+                            <div
+                                onClick={() => props.setIsOpen(!props.isOpen)}
+                                className={classNames(cls.burger, { [cls.open]: props.isOpen }, [])}
+                            >
+                                <span />
+                                <span />
+                                <span />
+                            </div>
+                        </>
+                        :
+                        <div className={cls.headerLinks}>
+                            <Link href={'/audit'} className={cls.link}>Audit</Link>
+                            <Link href={'/research'} className={cls.link}>Research</Link>
+                            <Link href={'/consulting'} className={cls.link}>Consulting</Link>
+                            <Link href={'/evaluation'} className={cls.link}>Evaluation</Link>
+                            <Link href={'/about-us'} className={cls.link}>About us</Link>
+                        </div>
+                }
             </div>
         </div>
     );

@@ -2,22 +2,34 @@
 import React, { useState, useEffect, FC } from 'react';
 import cls from './StaticHeader.module.scss';
 import Link from 'next/link';
+import { classNames } from '@/components/lib/classNames/classNames';
 
 interface HeaderProps {
     auditColor: string;
     researchColor: string;
     consultingColor: string;
     evaluationColor: string;
+    isOpen: boolean;
+    setIsOpen: (value: boolean) => void;
 }
 
-const StaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consultingColor, evaluationColor}) => {
+const StaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consultingColor, evaluationColor,isOpen,setIsOpen}) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        // Check if window is defined (i.e., we are in a browser environment)
-        if (typeof window !== 'undefined') {
-            setIsMobile(window.innerWidth <= 700);
+        function handleResize() {
+            if (typeof window !== 'undefined') {
+                setIsMobile(window.innerWidth <= 700);
+            }
         }
+
+        handleResize();
+    
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
@@ -63,11 +75,27 @@ const StaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consultingCol
                     }
 
                 </a>
-                <div className={cls.headerLinks}>
-                    <Link className={cls.link} href={'/'}>Home</Link>
-                    <Link className={cls.link} href={'/about-us'}>About us</Link>
-                    <Link className={cls.link} href={'/contact'}>Contact</Link>
-                </div>
+                {
+                isMobile ?
+                    <>
+                        <div
+                            onClick={() => setIsOpen(!isOpen)}
+                            className={classNames(cls.burger, { [cls.open]: isOpen }, [])}
+                        >
+                            <span />
+                            <span />
+                            <span />
+                        </div>
+                    </>
+                :
+                    <div className={cls.headerLinks}>
+                        <Link href={'/audit'} className={cls.link}>Audit</Link>
+                        <Link href={'/research'} className={cls.link}>Research</Link>
+                        <Link href={'/consulting'} className={cls.link}>Consulting</Link>
+                        <Link href={'/evaluation'} className={cls.link}>Evaluation</Link>
+                        <Link className={cls.link} href={'/about-us'}>About us</Link>
+                    </div>
+                }
             </div>
         </div>
     );

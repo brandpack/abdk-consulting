@@ -8,11 +8,13 @@ import { Services } from "@/components/MainPage/services3/Services";
 import StaticHeader from "@/components/common/FixedHeader/StaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import Header from "@/components/common/Header4MainPage/Header";
+import MobileMenu from "@/components/common/Menu/MobileMenu";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   const scrollableElementRef = useRef<any>(null);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (scrollableElementRef.current) {
@@ -37,7 +39,7 @@ export default function Home() {
   return (
     <>
     <main ref={scrollableElementRef} className='Mainpage'>
-      <StaticHeader auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
+      <StaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
       <TopBlock />
       <Clients />
       <Services />
@@ -46,7 +48,8 @@ export default function Home() {
       <CheckOut />
       <Footer scrollableElementRef={scrollableElementRef}/>
     </main>
-    <Header scrollableElementRef={scrollableElementRef} isHeaderFixed={isHeaderFixed}/>
+    <Header scrollableElementRef={scrollableElementRef} isOpen={isOpen} setIsOpen={setIsOpen} isHeaderFixed={isHeaderFixed}/>
+    <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
     </>
 
   )
