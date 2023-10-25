@@ -43,6 +43,7 @@ const MobileMenu: React.FC<any> = (props) => {
                 <Link href={'/consulting'} onClick={() => props.setIsOpen(!props.isOpen)} className={cls.link}>Consulting</Link>
                 <Link href={'/evaluation'} onClick={() => props.setIsOpen(!props.isOpen)} className={cls.link}>Evaluation</Link>
                 <Link href={'/about-us'} onClick={() => props.setIsOpen(!props.isOpen)} className={cls.link}>About us</Link>
+                <Link href={'/contact'} onClick={() => props.setIsOpen(!props.isOpen)} className={cls.link}>Contact</Link>
             </div>
         </div>
     );
