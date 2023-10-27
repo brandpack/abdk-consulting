@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import cls from './Footer.module.scss'
 import logoDesktop from '@/public/FooterDesktopLogo.svg';
-import linesDesktop from '@/public/FooterDesktopLines.svg';
-import linesMobile from '@/public/FooterMobileLines.svg';
+//import linesDesktop from '@/public/FooterDesktopLines.svg';
+//import linesMobile from '@/public/FooterMobileLines.svg';
+import linesDesktop from '@/public/linesDesktop.png';
+import linesMobile from '@/public/linesMobile.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';

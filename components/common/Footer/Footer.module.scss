@@ -1,8 +1,8 @@
 .Footer {
   display: grid;
-  grid-template-rows: 0vw 18vw 1vw;
+  grid-template-rows: 8vw 18vw 1vw;
   width: 100vw;
-  height: 20vw;
+  height: 28vw;
   background: #322c3f;
   position: relative;
   box-sizing: border-box;
@@ -58,8 +58,8 @@
   display: block;
   grid-row: 1/2;
   width: 100vw;
-  height: 15vw;
-  display: none;
+  height: auto;
+  //display: none;
 }
 .FooterLineImageMobile {
   display: none;
@@ -141,8 +141,8 @@
 
 @media (max-width: 700px) {
   .Footer {
-    height: 85vw;
-    grid-template-rows: 0vw 68.71vw 11.682vw;
+    height: 100vw;
+    grid-template-rows: 12vw 68.71vw 11.682vw;
   }
 
   .FooterContent {
@@ -210,7 +210,7 @@
   .FooterLineImageMobile {
     display: block;
     width: 100vw;
-    height: 30.374vw;
-    display: none;
+    height: auto;
+    //display: none;
   }
 }
