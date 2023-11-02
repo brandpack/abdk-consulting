@@ -16,11 +16,11 @@ export const Evaluation: FC<ApproachProps> = ({text, img, imgH, AdditionalclassN
     const [hovered, setHovered] = useState(false);
 
     const handleMouseEnter = () => {
-      setHovered(true);
+    setHovered(true);
     };
-  
+
     const handleMouseLeave = () => {
-      setHovered(false);
+    setHovered(false);
     };
     return (
             <div 
