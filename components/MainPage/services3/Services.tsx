@@ -49,6 +49,41 @@ export const Services: FC<ServicesProps> = ({ }) => {
                     </figure>
                 </div>
             </div>
+
+            <div className={cls.Service}>
+                <div className={cls.ServiceTextHeader}>
+                    <h1>Audit</h1>
+                    <div className={cls.blueLine}>
+                    </div>
+                </div>
+                <div className={cls.ServiceTextFooter}>
+                    <p>
+                        Audit of smart contracts, zero
+                        knowledge circuits, cryptographic
+                        schemes, and protocols.
+                    </p>
+                    <Link
+                        className={cls.ServiceButton}
+                        href={'audit'}
+                    >
+                        View More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
+                        </svg>
+                    </Link>
+                </div>
+                <div className={`${cls.zoomHover}`}>
+                    <figure className={cls.imgFigure}>
+                        <motion.div
+                        initial={{scale: 1.08}}
+                        whileInView={{scale: 1}}
+                        transition={{ ease: "linear", duration: 2.4,}}
+                        className={`${cls.imgBigScreen1}`}
+                        />
+                    </figure>
+                </div>
+            </div>
+
             <div className={cls.Service}>
                 <div className={cls.ServiceTextHeader}>
                     <h1>Research</h1>
