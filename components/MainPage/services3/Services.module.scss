@@ -1,6 +1,4 @@
 .Services {
-    //width: 82.433vw;
-    //padding: 8.784vw 8.784vw 8.311vw;
     padding: 8vw 0;
     justify-items: center;
     background: #FFF;
@@ -9,35 +7,31 @@
     gap: 2vw;
     z-index: 3;
     position: relative;
-    //border: 3px solid green !important;
-}
-
-.Service:nth-child(even) {
-    flex-direction: row-reverse !important;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2.703vw;
-    grid-template-areas:
-    "image Name"
-    "image Description";
 }
 
 .Service {
     flex-direction: row;
     display: grid;
-    grid-template-areas:"Name image"
-                        "Description image";
-    //width: 77.703vw;
-    //height: 21.892vw;
-    grid-template-rows: auto 1fr;
-    width: 61vw;
-    height: 16vw;
-    padding: 2.1vw;
+    grid-template-areas:
+    "Name image"
+    "Description image";
+    grid-template-columns: 1fr 1fr;
+    width: 65vw;
+    height: 18vw;
+    padding: 1.7vw;
     border-radius: 12px;
     border: 1px solid rgba(226, 226, 226, 0.50);
     background: #FCFCFC;
     justify-content: space-between;
-    // border: 3px solid green !important;
-    // width: 1060px !important;
+    column-gap: 2.703vw;
+}
+
+.Service:nth-child(even) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.703vw;
+    grid-template-areas:
+    "image Name"
+    "image Description";
 }
 
 .zoomHover:hover img {
@@ -55,53 +49,35 @@
 .zoomHover {
     grid-area: image;
     height: 100%;
-    // outline: 5px solid red;
+    width: 100%;
 }
+
 .imgBigScreen {
-    width: 39.459vw;
-    // height: 21.892vw;
+    width: 100%;
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     object-fit: cover;
-    border-radius: 8px;
-    
+    background-position: 50% 50%;
 }
-.imgBigScreen1{
-    //width: 39.459vw;
-    //height: 21.892vw;
-    width: 100%;
-    height: 100%;
-    // outline: 1px solid red;
+
+.imgBigScreen1 {
     background-image: url(../../../public/audit-small.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.imgBigScreen2{
-    width: 100%;
-    height: 100%;
+.imgBigScreen2 {
     background-image: url(../../../public/reasearch-small.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.imgBigScreen3{
-    width: 100%;
-    height: 100%;
+.imgBigScreen3 {
     background-image: url(../../../public/consulting-small.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .imgBigScreen4 {
-    width: 100%;
-    height: 100%;
     background-image: url(../../../public/evaluation-small.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
 }
+
 .imgFigure {
     overflow: hidden;
-    width: 30vw;
+    width: 100%;
     height: 100%;
-    // border: 2px solid orange;
     border-radius: 8px;
 }
 
@@ -111,13 +87,11 @@
     grid-area: Name;
     display: flex;
     flex-direction: column;
-    //gap: 2.703vw;
     gap: 1vw;
-    // border: 2px solid orange;
 
-    h1 {
+    h2 {
         color: var(--grey-main, #353539);
-        font-size: 3.2vw;
+        font-size: 2.65vw;
         font-weight: 700;
     }
 
@@ -135,12 +109,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    // grid-area: Description;
     grid-area: Description;
     gap: 3vh;
-    // border: 1px solid blue;
 
-    h1 {
+    h2 {
         color: var(--grey-main, #353539);
         font-size: 4.054vw;
         font-weight: 700;
@@ -155,32 +127,26 @@
     }
 }
 
-.blueLine {
+
+.Line {
     width: 2.703vw;
     height: 2px;
-    border-radius: 0.946vw;
+    border-radius: 999px;
+}
+
+.blueLine {
     background: #2DAED7;
-    grid-area: Name;
 }
 
 .greenLine {
-    width: 2.703vw;
-    height: 2px;
-    border-radius: 0.946vw;
     background: #34C88C;
 }
 
 .cyanLine {
-    width: 2.703vw;
-    height: 2px;
-    border-radius: 0.946vw;
     background: #474DD8;
 }
 
 .purpleLine {
-    width: 2.703vw;
-    height: 2px;
-    border-radius: 0.946vw;
     background: #BF63DF;
 }
 
@@ -201,155 +167,80 @@
     border: 1px solid #BABABA;
 }
 
-@media (max-width: 700px) {
+
+
+@media (max-width: 1440px) {
+    .Service {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 720px) {
     .Services {
-        width: 100vw;
-        padding: 0;
-        background: #FFF;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
+        gap: 10vw;
+    }
+    .Service {
+        background: none;
+        border: none;
+        width: 86vw;
+        display: grid;
+        grid-template-areas:
+        "Name"
+        "image"
+        "Description" !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto 1fr auto;
+        height: auto;
+        padding: 4vw;
+        row-gap: 30px !important;
     }
 
     .Service:nth-child(even) {
-        flex-direction: column;
-        grid-template-areas: "Name"
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2.703vw;
+        grid-template-areas:
+        "Name"
         "image"
         "Description";
+        height: auto;
     }
 
-    .Service {
-        width: 100%;
-        height: auto;
-        border-radius: 0px;
-        border: none;
-        border-bottom: 1px solid #E2E2E2;
-        display: grid;
-        padding: 16.355vw 5.607vw;
-        box-sizing: border-box;
-        grid-template-areas: "Name"
-            "image"
-            "Description";
-        row-gap: 30px;
+    .zoomHover {
+        height: 30vh;
     }
 
     .ServiceTextHeader {
-        grid-area: Name;
-        h1 {
-            font-size: 11.215vw;
+        grid-gap: 2vh;
+        h2 {
+            font-size: 10vw;
             font-weight: 700;
+        }
+        .Line {
+            width: 10vw;
+            height: 2px;
         }
     }
 
     .ServiceTextFooter {
-        grid-area: Description;
         flex-direction: column;
         align-items: flex-start;
         gap: 5.607vw;
         p {
-            width: 51.402vw;
-            font-size: 3.271vw;
+            width: 70%;
+            font-size: 4.5vw;
             font-style: normal;
             font-weight: 400;
             line-height: 140%;
         }
-    }
-    // .imgBigScreen4,
-    // .imgBigScreen3,
-    // .imgBigScreen2,
-    // .imgBigScreen1{
-    //     width: 88.785vw;
-    //     height: 100%;
-    //     height: 100%;
-    //     width: 100%;
-    // }
-    .ServiceButton {
-        padding: 20px 0px;
-        border: none;
-        font-size: 4.206vw;
-        gap: 1.869vw;
-        svg  {
-            width: 2.336vw;
-            height: 2.336vw;
-        }
-    }
-    .blueLine {
-        width: 9.346vw;
-        height: 2px;
-        border-radius: 3.271vw;
-        background: #2DAED7;
-    }
-    
-    .greenLine {
-        width: 9.346vw;
-        height: 2px;
-        border-radius: 3.271vw;
-        background: #34C88C;
-    }
-    
-    .cyanLine {
-        width: 9.346vw;
-        height: 2px;
-        border-radius: 3.271vw;
-        background: #474DD8;
-    }
-    
-    .purpleLine {
-        width: 9.346vw;
-        height: 2px;
-        border-radius: 3.271vw;
-        background: #BF63DF;
-    }
-}
-@media (max-width: 1200px) and (min-width: 701px) {
-    .Services {
-        //width: 93.75vw;
-        width: 100%;
-        //padding: 10.156vw 3.125vw 10.156vw;
-        gap: 40px;
-    }
-    .Service {
-        // width: 93.75vw;
-        align-items: center;
-        width: 93vw;
-        height: 100%;
-        box-sizing: border-box;
-    }
-    .Service:nth-child(even) {
-        justify-content: stretch;
-    }
-    .ServiceTextFooter {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        gap: 3.125vw;
-        p {
-            width: 27.93vw;
-            font-size: 1.563vw;
-        }
-    }
-
-    .imgFigure {
-        width: 44vw;
-        height: 97%;
-    }
-
-
-    .imgBigScreen4,
-    .imgBigScreen3,
-    .imgBigScreen2,
-    .imgBigScreen1{
-        // width: 50vw;
-        height: 30vw;
-        width: 100%;
-        // height: 93vh;
-    }
-    .ServiceButton {
-        padding: 2.344vw 3.125vw;
-        font-size: 1.758vw;
-        svg {
-            width: 1.172vw;
-            height: 1.172vw;
+        .ServiceButton {
+            padding: 20px 0px;
+            border: none;
+            font-size: 4.5vw;
+            gap: 1.869vw;
+            svg  {
+                width: 2.336vw;
+                height: 2.336vw;
+            }
         }
     }
 }

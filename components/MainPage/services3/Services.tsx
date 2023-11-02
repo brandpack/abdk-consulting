@@ -18,9 +18,8 @@ export const Services: FC<ServicesProps> = ({ }) => {
         <div className={cls.Services}>
             <div className={cls.Service}>
                 <div className={cls.ServiceTextHeader}>
-                    <h1>Audit</h1>
-                    <div className={cls.blueLine}>
-                    </div>
+                    <h2>Audit</h2>
+                    <div className={`${cls.Line} ${cls.blueLine}`}/>
                 </div>
                 <div className={cls.ServiceTextFooter}>
                     <p>
@@ -44,7 +43,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
                         transition={{ ease: "linear", duration: 2.4,}}
-                        className={`${cls.imgBigScreen1}`}
+                        className={`${cls.imgBigScreen} ${cls.imgBigScreen1}`}
                         />
                     </figure>
                 </div>
@@ -52,43 +51,8 @@ export const Services: FC<ServicesProps> = ({ }) => {
 
             <div className={cls.Service}>
                 <div className={cls.ServiceTextHeader}>
-                    <h1>Audit</h1>
-                    <div className={cls.blueLine}>
-                    </div>
-                </div>
-                <div className={cls.ServiceTextFooter}>
-                    <p>
-                        Audit of smart contracts, zero
-                        knowledge circuits, cryptographic
-                        schemes, and protocols.
-                    </p>
-                    <Link
-                        className={cls.ServiceButton}
-                        href={'audit'}
-                    >
-                        View More
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                            <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
-                        </svg>
-                    </Link>
-                </div>
-                <div className={`${cls.zoomHover}`}>
-                    <figure className={cls.imgFigure}>
-                        <motion.div
-                        initial={{scale: 1.08}}
-                        whileInView={{scale: 1}}
-                        transition={{ ease: "linear", duration: 2.4,}}
-                        className={`${cls.imgBigScreen1}`}
-                        />
-                    </figure>
-                </div>
-            </div>
-
-            <div className={cls.Service}>
-                <div className={cls.ServiceTextHeader}>
-                    <h1>Research</h1>
-                    <div className={cls.greenLine}>
-                    </div>
+                    <h2>Research</h2>
+                    <div className={`${cls.Line} ${cls.greenLine}`}/>
                 </div>
                 <div className={cls.ServiceTextFooter}>
                     <p>
@@ -112,16 +76,15 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
                         transition={{ ease: "linear", duration: 2.4,}}
-                        className={`${cls.imgBigScreen2}`}
+                        className={`${cls.imgBigScreen} ${cls.imgBigScreen2}`}
                         />
                     </figure>
                 </div>
             </div>
             <div className={cls.Service}>
                 <div className={cls.ServiceTextHeader}>
-                    <h1>Consulting</h1>
-                    <div className={cls.cyanLine}>
-                    </div>
+                    <h2>Consulting</h2>
+                    <div className={`${cls.Line} ${cls.cyanLine}`}/>
                 </div>
                 <div className={cls.ServiceTextFooter}>
                     <p>
@@ -144,16 +107,15 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
                         transition={{ ease: "linear", duration: 2.4,}}
-                        className={`${cls.imgBigScreen3}`}
+                        className={`${cls.imgBigScreen} ${cls.imgBigScreen3}`}
                         />
                     </figure>
                 </div>
             </div>
             <div className={cls.Service}>
                 <div className={cls.ServiceTextHeader}>
-                    <h1>Evaluation</h1>
-                    <div className={cls.purpleLine}>
-                    </div>
+                    <h2>Evaluation</h2>
+                    <div className={`${cls.Line} ${cls.purpleLine}`}/>
                 </div>
                 <div className={cls.ServiceTextFooter}>
                     <p>
@@ -177,7 +139,7 @@ export const Services: FC<ServicesProps> = ({ }) => {
                         initial={{scale: 1.08}}
                         whileInView={{scale: 1}}
                         transition={{ ease: "linear", duration: 2.4,}}
-                        className={`${cls.imgBigScreen4}`}
+                        className={`${cls.imgBigScreen} ${cls.imgBigScreen4}`}
                         />
                     </figure>
                 </div>
