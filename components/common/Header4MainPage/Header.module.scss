@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: space-between;
     height: 4.324vw;
-    width: 82.432vw;
-    padding: 2px 2.027vw;
-    margin: 0 6.757vw;
+    width: 65vw;
+    // padding: 2px 2.027vw;
+    // margin: 0 6.757vw;
     border-radius: 13px;
     border: 0.01px solid rgb(226 226 226 / 8%);
     background: rgba(248, 248, 248, 0.01);
@@ -32,6 +32,8 @@
 
 .headerFixed {
     position: fixed;
+    display: grid;
+    justify-content: center;
     top: 0px;
     width: 100%;
     border-bottom: 1px solid rgba(226, 226, 226, 0.30);

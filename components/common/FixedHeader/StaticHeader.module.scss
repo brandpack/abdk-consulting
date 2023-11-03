@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     height: 4.324vw;
-    width: 82.432vw;
+    width: 65w;
     margin: 3.243vw auto 0;
     padding: 2px 2.027vw;
     border-radius: 13px;
@@ -28,7 +28,10 @@
     }
 }
 .headerStatic{
+  align-items: flex-end;
     position: absolute;
+    display: grid;
+    justify-content: center;
     width: 100vw;
     z-index: 1000;
 }
