@@ -128,15 +128,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2.066vw 2.754vw;
-    height: 1.081vw;
-    border-radius: 0.861vw;
     border: 0.086vw solid rgba(218, 201, 253, 0.50);
     background: rgba(176, 151, 229, 0.15);
     backdrop-filter: blur(50px);
     color: #FFF;
-    font-size: 1.549vw;
-    gap: 0.861vw;
     font-weight: 500;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -202,7 +197,6 @@
         font-size: 4.206vw;
         font-weight: 500;
         gap: 1.869vw;
-
         svg {
             width: 2.804vw;
             height: 2.804vw;
