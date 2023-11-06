@@ -1,6 +1,8 @@
 .checkout {
     background-color: #fff;
     width: 100vw;
+    display: grid;
+    justify-content: center;
     .container {
         width: 1440px;
         height: 100vh;
