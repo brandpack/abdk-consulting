@@ -47,6 +47,21 @@
             height: 2px;
             border-radius: 999px;
         }
+        .blueLine {
+            background: #2DAED7;
+        }
+        
+        .greenLine {
+            background: #34C88C;
+        }
+        
+        .cyanLine {
+            background: #474DD8;
+        }
+        
+        .purpleLine {
+            background: #BF63DF;
+        }
     }
     .Footer {
         display: grid;
@@ -100,37 +115,20 @@
                 object-fit: cover;
                 background-position: 50% 50%;
             }
+            .imgBigScreen1 {
+                background-image: url(../../../public/audit-small.webp);
+            }
+            .imgBigScreen2 {
+                background-image: url(../../../public/reasearch-small.webp);
+            }
+            .imgBigScreen3 {
+                background-image: url(../../../public/consulting-small.webp);
+            }
+            .imgBigScreen4 {
+                background-image: url(../../../public/evaluation-small.webp);
+            }
         }
     }
-}
-
-.imgBigScreen1 {
-    background-image: url(../../../public/audit-small.webp);
-}
-.imgBigScreen2 {
-    background-image: url(../../../public/reasearch-small.webp);
-}
-.imgBigScreen3 {
-    background-image: url(../../../public/consulting-small.webp);
-}
-.imgBigScreen4 {
-    background-image: url(../../../public/evaluation-small.webp);
-}
-
-.blueLine {
-    background: #2DAED7;
-}
-
-.greenLine {
-    background: #34C88C;
-}
-
-.cyanLine {
-    background: #474DD8;
-}
-
-.purpleLine {
-    background: #BF63DF;
 }
 
 
@@ -139,8 +137,6 @@
         width: 1320px;
     }
 }
-
-
 
 @media (max-width: 1480px) {
     .Container {
