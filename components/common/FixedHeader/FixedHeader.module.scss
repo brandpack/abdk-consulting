@@ -35,6 +35,13 @@
                 font-weight: 400;
                 line-height: normal;
                 text-decoration: none;
+                &:hover {
+                    opacity: .7;
+                    -webkit-transition: .15s all ease-in-out;
+                    -moz-transition: .15s all ease-in-out;
+                    -o-transition: .15s all ease-in-out;
+                    transition: .15s all ease-in-out;
+                }
             }
         }
         .burger {
