@@ -43,7 +43,7 @@ export default function Home() {
       <TopBlock />
       <Clients />
       <Services />
-      <Expertise />
+      {/* <Expertise /> */}
       {/* <Approach /> */}
       <CheckOut />
       <Footer scrollableElementRef={scrollableElementRef}/>

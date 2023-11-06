@@ -14,8 +14,7 @@ interface CheckOutProps {
 export const CheckOut: FC<CheckOutProps> = ({ }) => {
     return (
         <div className={cls.CheckOut}>
-            <div className={cls.test}>
-                <figure className={cls.Portfolio}>
+            <div className={cls.test}> <figure className={cls.Portfolio}>
                     <Image 
                         src={github}
                         alt='github'
@@ -27,7 +26,7 @@ export const CheckOut: FC<CheckOutProps> = ({ }) => {
                     transition={{ ease: [0.17, 0.67, 0.83, 1], duration: 1,}}
                     className={`${cls.PortfolioText}`}
                     >
-                        <h1>Our audit portfolio</h1>
+                        <h2>Our audit portfolio</h2>
                         <p>Check out our audit portfolio on github.</p>
                         <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting'} target="_blank" >Check Out</Link>
                     </motion.div>

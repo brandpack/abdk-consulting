@@ -1,104 +1,96 @@
 .CheckOut {
-    width: 1248px;
+    width: 1440px;
     height: 100vh;
     overflow: hidden;
-    margin-top: 300px;
-    margin-bottom: 200px;
+    margin: 200px;
     border-radius: 0.811vw;
     border: 0.068vw solid #E2E2E2;
     background: rgba(0, 0, 0, 0.01);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.test {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    perspective: 1000px;
-    -webkit-perspective: 1000px;
-}
-
-.Portfolio {
     display: grid;
-    justify-items: center;
     align-items: center;
-    margin-top: 152px;
-    gap: 40px;
-}
-
-.PortfolioText {
-    display: grid;
-    justify-items: center;
-    gap: 40px;
-    color: var(--grey-main, #353539);
-    text-align: center;
-    align-items: center;
-
-    h1 {
-        font-size: 3.243vw;
-        font-style: normal;
-        font-weight: 700;
+    .test {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+        .Portfolio {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            margin-top: 152px;
+            gap: 40px;
+            .PortfolioText {
+                display: grid;
+                justify-items: center;
+                gap: 24px;
+                color: var(--grey-main, #353539);
+                text-align: center;
+                align-items: center;
+            
+                h2 {
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                }
+            
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .PortfolioButton {
+                display: grid;
+                padding: 17px 27px;
+                border-radius: 1.757vw;
+                border: 0.068vw solid #b8b8b8;
+                background-color: rgba(255, 255, 255, 0.10);
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 700;
+                justify-items: center;
+                color: var(--grey-main, #353539);
+                -webkit-transition: all 0.3s ease-out;
+                -moz-transition: all 0.3s ease-out;
+                -o-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+                &:hover {
+                    background-color: #353539;
+                    border: 0.068vw solid #353539;
+                    color: #E2E2E2;
+                    -webkit-transition: all 0.3s ease-out;
+                    -moz-transition: all 0.3s ease-out;
+                    -o-transition: all 0.3s ease-out;
+                    transition: all 0.3s ease-out;
+                    }
+            }
+        }
+        .GhPage img {
+            width: 100%;
+            height: 677px;
+        
+        }
     }
-
-    p {
-        font-size: 1.081vw;
-        font-weight: 400;
-    }
-
 }
 
-.PortfolioButton {
-    display: grid;
-    padding: 17px 27px;
-    border-radius: 1.757vw;
-    border: 0.068vw solid #b8b8b8;
-    background-color: rgba(255, 255, 255, 0.10);
-    text-decoration: none;
-    font-size: 1.081vw;
-    font-weight: 700;
-    justify-items: center;
-    color: var(--grey-main, #353539);
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+
+
+// @media (max-width: 1440px) { 
+//     .CheckOut {
+//         margin: 0;
+//         width: 93vw;
+//         height: 900px;
+//         border: none;
+//         border-radius: none;
+//     }
+//     .Portfolio {
+//         gap: 30px;
+//     }
     
-}
-
-.PortfolioButton:hover {
-    background-color: #353539;
-    border: 0.068vw solid #353539;
-    color: #E2E2E2;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.GhPage img {
-    width: 100%;
-    height: 677px;
-
-}
-
-
-@media (max-width: 1440px) { 
-    .CheckOut {
-        margin: 0;
-        width: 93vw;
-        height: 900px;
-        border: none;
-        border-radius: none;
-    }
-    .Portfolio {
-        gap: 30px;
-    }
-    
-    .PortfolioText {
-        gap: 30px;
-    }
-}
+//     .PortfolioText {
+//         gap: 30px;
+//     }
+// }
 @media (max-width: 1200px) { 
     .CheckOut {
         margin: 0;
@@ -123,7 +115,7 @@
 .PortfolioText {
     gap: 10px;
     
-    h1 {
+    h2 {
         font-size: 8.411vw;
         font-weight: 700;
         line-height: 114.1%;
