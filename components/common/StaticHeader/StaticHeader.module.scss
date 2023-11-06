@@ -10,7 +10,6 @@
     border: 1px solid rgba(246, 246, 246, 0.30);
     background: rgba(0, 0, 0, 0.01);
     backdrop-filter: blur(30px);
-
     .headerLinks {
         display: flex;
         gap: 1.622vw;
@@ -37,6 +36,8 @@
     display: flex;
     justify-content: center;
 }
+
+
 @media (max-width: 700px) {
     .headerContent {
         height: 7.477vw;

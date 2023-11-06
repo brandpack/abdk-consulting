@@ -2,7 +2,7 @@
 import { TopBlockEvaluation } from "@/components/EvaluationPage/TopBlock/TopBlock";
 import { ChooseEvaluation } from "@/components/EvaluationPage/choose2/Choose";
 import { RequestEvaluation } from "@/components/EvaluationPage/request3/Request";
-import StaticHeader from "@/components/common/FixedHeader/StaticHeader";
+import StaticHeader from "@/components/common/FixedHeader/FixedHeader";
 import Footer from "@/components/common/Footer/Footer";
 import Header from "@/components/common/Header/Header";
 import MobileMenu from "@/components/common/Menu/MobileMenu";

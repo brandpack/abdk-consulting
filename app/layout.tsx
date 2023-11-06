@@ -1,4 +1,4 @@
-import StaticHeader from '@/components/common/FixedHeader/StaticHeader';
+import StaticHeader from '@/components/common/FixedHeader/FixedHeader';
 import Footer from '@/components/common/Footer/Footer';
 import Header from '@/components/common/Header/Header';
 import '@/styles/index.scss';
