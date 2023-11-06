@@ -44,7 +44,7 @@ export default function Home() {
       <Clients />
       <Services />
       <Expertise />
-      <Approach />
+      {/* <Approach /> */}
       <CheckOut />
       <Footer scrollableElementRef={scrollableElementRef}/>
     </main>

@@ -18,25 +18,27 @@ export const Services: FC<ServicesProps> = ({ }) => {
         <div className={cls.Services}>
             <div className={cls.Container}>
                 <div className={cls.Service}>
-                    <div className={cls.ServiceTextHeader}>
+                    <div className={cls.Header}>
                         <h2>Audit</h2>
                         <div className={`${cls.Line} ${cls.blueLine}`}/>
                     </div>
-                    <div className={cls.ServiceTextFooter}>
+                    <div className={cls.Footer}>
                         <p>
-                            Audit of smart contracts, zero
-                            knowledge circuits, cryptographic
-                            schemes, and protocols.
+                            Audit of smart contracts, zero knowledge circuits, <br/>
+                            cryptographic schemes, and protocols.
                         </p>
-                        <Link
-                            className={cls.ServiceButton}
-                            href={'audit'}
-                        >
-                            View More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
-                            </svg>
-                        </Link>
+                        <div className={cls.btnContainer}>
+                            <Link
+                                className={cls.Button}
+                                href={'audit'}
+                            >
+                                View More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                    <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
+                                </svg>
+                            </Link>
+                            <div></div>
+                        </div>
                     </div>
                     <div className={`${cls.zoomHover}`}>
                         <figure className={cls.imgFigure}>
@@ -51,25 +53,28 @@ export const Services: FC<ServicesProps> = ({ }) => {
                 </div>
 
                 <div className={cls.Service}>
-                    <div className={cls.ServiceTextHeader}>
+                    <div className={cls.Header}>
                         <h2>Research</h2>
                         <div className={`${cls.Line} ${cls.greenLine}`}/>
                     </div>
-                    <div className={cls.ServiceTextFooter}>
+                    <div className={cls.Footer}>
                         <p>
                             Advise on making best
-                            architectural and security
+                            architectural<br/> and security
                             decisions.
                         </p>
-                        <Link
-                            className={cls.ServiceButton}
-                            href={'research'}
-                        >
-                            View More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
-                            </svg>
-                        </Link>
+                        <div className={cls.btnContainer}>
+                            <Link
+                                className={cls.Button}
+                                href={'research'}
+                            >
+                                View More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                    <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
+                                </svg>
+                            </Link>
+                            <div></div>
+                        </div>
                     </div>
                     <div className={`${cls.zoomHover}`}>
                         <figure className={cls.imgFigure}>
@@ -83,24 +88,27 @@ export const Services: FC<ServicesProps> = ({ }) => {
                     </div>
                 </div>
                 <div className={cls.Service}>
-                    <div className={cls.ServiceTextHeader}>
+                    <div className={cls.Header}>
                         <h2>Consulting</h2>
                         <div className={`${cls.Line} ${cls.cyanLine}`}/>
                     </div>
-                    <div className={cls.ServiceTextFooter}>
+                    <div className={cls.Footer}>
                         <p>
-                            Design optimal and secure
+                            Design optimal and secure <br/>
                             schemes in crypto.
                         </p>
-                        <Link
-                            className={cls.ServiceButton}
-                            href={'consulting'}
-                        >
-                            View More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
-                            </svg>
-                        </Link>
+                        <div className={cls.btnContainer}>
+                            <Link
+                                className={cls.Button}
+                                href={'consulting'}
+                            >
+                                View More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                    <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
+                                </svg>
+                            </Link>
+                            <div></div>
+                        </div>
                     </div>
                     <div className={`${cls.zoomHover}`}>
                         <figure className={cls.imgFigure}>
@@ -114,25 +122,28 @@ export const Services: FC<ServicesProps> = ({ }) => {
                     </div>
                 </div>
                 <div className={cls.Service}>
-                    <div className={cls.ServiceTextHeader}>
+                    <div className={cls.Header}>
                         <h2>Evaluation</h2>
                         <div className={`${cls.Line} ${cls.purpleLine}`}/>
                     </div>
-                    <div className={cls.ServiceTextFooter}>
+                    <div className={cls.Footer}>
                         <p>
-                            Review existing approaches from
+                            Review existing approaches from <br/>
                             security and performance
                             perspective.
                         </p>
-                        <Link
-                            className={cls.ServiceButton}
-                            href={'evaluation'}
-                        >
-                            View More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
-                            </svg>
-                        </Link>
+                        <div className={cls.btnContainer}>
+                            <Link
+                                className={cls.Button}
+                                href={'evaluation'}
+                            >
+                                View More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                    <path d="M0.84375 12.1562L12 1M12 1H-4.47035e-08M12 1V13" stroke="black" strokeWidth="1.8" strokeLinejoin="bevel" />
+                                </svg>
+                            </Link>
+                            <div></div>
+                        </div>
                     </div>
                     <div className={`${cls.zoomHover}`}>
                         <figure className={cls.imgFigure}>
