@@ -1,8 +1,9 @@
 .CheckOut {
-    width: 82.432vw;
-    height: 88.5954vh;
+    width: 1248px;
+    height: 100vh;
     overflow: hidden;
-    margin: 20.0096vh 8.784vw;
+    margin-top: 300px;
+    margin-bottom: 200px;
     border-radius: 0.811vw;
     border: 0.068vw solid #E2E2E2;
     background: rgba(0, 0, 0, 0.01);
@@ -19,17 +20,17 @@
 }
 
 .Portfolio {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
     align-items: center;
-    margin-top: 7.9231vh;
-    gap: 4.8019vh;
+    margin-top: 152px;
+    gap: 40px;
 }
 
 .PortfolioText {
-    display: flex;
-    flex-direction: column;
-    gap: 2.8811vh;
+    display: grid;
+    justify-items: center;
+    gap: 40px;
     color: var(--grey-main, #353539);
     text-align: center;
     align-items: center;
@@ -48,16 +49,15 @@
 }
 
 .PortfolioButton {
-    display: flex;
-    padding: 1.9207vh 1.351vw;
-    width: 6.081vw;
+    display: grid;
+    padding: 17px 27px;
     border-radius: 1.757vw;
     border: 0.068vw solid #b8b8b8;
     background-color: rgba(255, 255, 255, 0.10);
     text-decoration: none;
     font-size: 1.081vw;
     font-weight: 700;
-    justify-content: center;
+    justify-items: center;
     color: var(--grey-main, #353539);
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -77,25 +77,51 @@
 }
 
 .GhPage img {
-    width: 85.122vw;
+    width: 100%;
     height: 677px;
 
+}
+
+
+@media (max-width: 1440px) { 
+    .CheckOut {
+        margin: 0;
+        width: 93vw;
+        height: 900px;
+        border: none;
+        border-radius: none;
+    }
+    .Portfolio {
+        gap: 30px;
+    }
+    
+    .PortfolioText {
+        gap: 30px;
+    }
+}
+@media (max-width: 1200px) { 
+    .CheckOut {
+        margin: 0;
+        width: 93vw;
+        height: 700px;
+        border: none;
+        border-radius: none;
+    }
 }
 
 @media (max-width: 700px) { 
     .CheckOut {
         margin: 0;
-        width: 100vw;
-        height: 133.879vw;
+        width: 85vw;
+        height: 600px;
         border: none;
         border-radius: none;
     }
     .Portfolio {
-        margin-top: 11.215vw;
-        gap: 11.215vw;
+        gap: 20px;
     }
 .PortfolioText {
-    gap: 5.607vw;
+    gap: 10px;
     
     h1 {
         font-size: 8.411vw;
@@ -109,15 +135,12 @@
     }
 }
 .PortfolioButton {
-    padding: 3.738vw 4.673vw;
-    font-size: 3.738vw;
-    width: 21.028vw;
+    font-size: 24px;
+    width: 130px;
     border-radius: 6.075vw;
     border: 0.234vw solid #E2E2E2;
 }
 .GhPage img{
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
+    height: 60vw;
 }
 }

@@ -1,7 +1,7 @@
 .Approach {
-    width: 100vw;
+    width: 1248px;
     box-sizing: border-box;
-    padding: 9.486vw 8.649vw 2.486vw 8.649vw;
+    // padding: 9.486vw 8.649vw 2.486vw 8.649vw;
     display: grid;
     grid-template-columns: 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw 2.703vw 18.581vw;
     grid-template-rows: 13.514vw 2.703vw 13.514vw;
@@ -42,7 +42,7 @@
 
 .Evaluation1 {
     grid-row: 1/2;
-    grid-column: 7/8;
+    grid-column: 6/8;
     img {
         width: 2.365vw;
         height: 1.897vw;

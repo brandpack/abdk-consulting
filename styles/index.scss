@@ -57,7 +57,9 @@ html,
 .Mainpage{
 	height: 100vh;
 	width: 100%;
+	display: grid;
 	top: 0;
+	justify-items: center;
 	overflow-x: hidden;
 	position: relative;
 	overflow-y: auto;

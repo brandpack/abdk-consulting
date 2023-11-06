@@ -7,7 +7,7 @@
     position: relative;
 }
 .Container {
-    width: 65vw;
+    width: 1248px;
     padding: 8vw 0;
     display: grid;
     flex-direction: column;
@@ -177,14 +177,14 @@
 
 
 @media (max-width: 1440px) {
-    .Service {
-        width: 70vw;
+    .Container {
+        width: 93vw;
     }
 }
 
 @media (max-width: 720px) {
-    .Services {
-        gap: 10vw;
+    .Container {
+
     }
     .Service {
         background: none;
