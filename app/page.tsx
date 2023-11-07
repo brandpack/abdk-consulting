@@ -7,25 +7,22 @@ import { Expertise } from "@/components/MainPage/expertise4/Expertise";
 import { Services } from "@/components/MainPage/services3/Services";
 import StaticHeader from "@/components/common/StaticHeader/StaticHeader";
 import Footer from "@/components/common/Footer/Footer";
-import StickHeader from "@/components/MainPage/StickHeader/StickHeader";
+import StickHeaderHome from "@/components/MainPage/StickHeaderHome/StickHeaderHome";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
 
-  const scrollableElementRef = useRef<any>(null);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollableElementRef = useRef<any>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (scrollableElementRef.current) {
         const scrollPosition = scrollableElementRef.current.scrollTop;
-        if (scrollPosition > 800) {
-          setIsHeaderFixed(true);
-        } else {
-          setIsHeaderFixed(false);
-        }
+        scrollPosition > 800 ? setIsHeaderFixed(true) : setIsHeaderFixed(false);
       }
     };
     if (scrollableElementRef.current) {
@@ -39,6 +36,7 @@ export default function Home() {
       }
     };
   }, []);
+
   return (
     <>
     <main ref={scrollableElementRef} className='Mainpage'>
@@ -52,7 +50,7 @@ export default function Home() {
       <Footer scrollableElementRef={scrollableElementRef}/>
     </main>
 
-    <StickHeader scrollableElementRef={scrollableElementRef} isOpen={isOpen} setIsOpen={setIsOpen} isHeaderFixed={isHeaderFixed}/>
+    <StickHeaderHome scrollableElementRef={scrollableElementRef} isOpen={isOpen} setIsOpen={setIsOpen} isHeaderFixed={isHeaderFixed}/>
     <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
     </>
   )

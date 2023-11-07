@@ -6,24 +6,26 @@ import { classNames } from '@/components/lib/classNames/classNames';
 
 const StickHeader: React.FC<any> = (props) => {
 
+    const [isShowHeader, setShowHeader] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-    const isVisible = props.isHeaderFixed;
 
-    const scrollToTop = () => {
-        if (props.scrollableElementRef.current) {
-            props.scrollableElementRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    const handleResize = () => {
+        if (typeof window !== 'undefined') {
+            setIsMobile(window.innerWidth <= 700);
         }
+        window.addEventListener('resize', handleResize);
+    };
+
+    const handleScroll = () => {
+        window.scrollY > 800 ? setShowHeader(true) : setShowHeader(false);
+        window.addEventListener('scroll', handleScroll);
     };
 
     useEffect(() => {
-        function handleResize() {
-            if (typeof window !== 'undefined') {
-                setIsMobile(window.innerWidth <= 700);
-            }
-        }
+        handleScroll();
         handleResize();
-        window.addEventListener('resize', handleResize);
         return () => {
+            window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
     }, []);
@@ -71,11 +73,10 @@ const StickHeader: React.FC<any> = (props) => {
         )
     }
 
-
     return (
-        <div className={classNames(cls.header, { [cls.visible]: isVisible }, [])}>
+        <div className={classNames(cls.header, { [cls.visible]: isShowHeader }, [])}>
             <div className={cls.container}>
-                <Link className={cls.logo} href={'/'} onClick={scrollToTop}>
+                <Link className={cls.logo} href={'/'}>
                     { LOGO_SVG() }
                 </Link>
                 { isMobile ? BurgerMenu() : DesktopNavigation() }

@@ -1,33 +1,29 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import cls from './Header.module.scss'
-import logoDesktop from '@/public/fixedHeaderLogoo.svg';
-import Image from 'next/image';
+import cls from './StickHeaderHome.module.scss'
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';
 
-const Header: React.FC<any> = (props) => {
+const StickHeaderHome: React.FC<any> = (props) => {
 
-    const [isShowHeader, setShowHeader] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const isVisible = props.isHeaderFixed;
 
-    const handleResize = () => {
-        if (typeof window !== 'undefined') {
-            setIsMobile(window.innerWidth <= 700);
+    const scrollToTop = () => {
+        if (props.scrollableElementRef.current) {
+            props.scrollableElementRef.current.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        window.addEventListener('resize', handleResize);
-    };
-
-    const handleScroll = () => {
-        window.scrollY > 800 ? setShowHeader(true) : setShowHeader(false);
-        window.addEventListener('scroll', handleScroll);
     };
 
     useEffect(() => {
-        handleScroll();
+        function handleResize() {
+            if (typeof window !== 'undefined') {
+                setIsMobile(window.innerWidth <= 700);
+            }
+        }
         handleResize();
+        window.addEventListener('resize', handleResize);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
     }, []);
@@ -75,10 +71,11 @@ const Header: React.FC<any> = (props) => {
         )
     }
 
+
     return (
-        <div className={classNames(cls.header, { [cls.visible]: isShowHeader }, [])}>
+        <div className={classNames(cls.header, { [cls.visible]: isVisible }, [])}>
             <div className={cls.container}>
-                <Link className={cls.logo} href={'/'}>
+                <Link className={cls.logo} href={'/'} onClick={scrollToTop}>
                     { LOGO_SVG() }
                 </Link>
                 { isMobile ? BurgerMenu() : DesktopNavigation() }
@@ -87,4 +84,4 @@ const Header: React.FC<any> = (props) => {
     );
 
 };
-export default Header;
+export default StickHeaderHome;
