@@ -42,7 +42,7 @@ export default function Home() {
     <main ref={scrollableElementRef} className='Mainpage'>
       <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
       <FirstScreen />
-      <Clients />
+      {/* <Clients /> */}
       <Services />
       {/* <Expertise /> */}
       {/* <Approach /> */}
