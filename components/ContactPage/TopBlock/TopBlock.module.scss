@@ -8,10 +8,11 @@
 
 
 .ApproachHeader {
+    width: 510px;
     align-self: center;
     margin-top: 200px;
     margin-bottom: 50px;
-    font-size: 4.054vw;
+    font-size: 72px;
     font-style: normal;
     font-weight: 700;
     line-height: 72px; 
@@ -64,9 +65,8 @@
         font-style: normal;
         font-weight: 500;
         padding: 14px 16px;
-        border-radius: 0.405vw;
+        border-radius: 6px;
         border: 1px solid #E2E2E2;
-        line-height: normal;
         text-decoration: none;
     }
 }
@@ -150,7 +150,7 @@
         .FooterBtn {
             display: flex;
             flex-direction: row;
-            gap: 0.27vw;
+            gap: 4px;
             align-items: center;
             justify-content: center;
         }
@@ -159,7 +159,7 @@
             color: #000;
             font-size: 20px;
             font-weight: 400;
-            line-height: 140%;
+            line-height: 140%; 
             opacity: 0.6;
         }
     }
@@ -176,7 +176,7 @@
     .EmailCopy {
         display: flex;
         height: 16px;
-        padding: 0.27vw;
+        padding: 4px;
         justify-content: center;
         align-items: center;
         border-radius: 4px;
@@ -184,7 +184,7 @@
         border-width: 0px;
         transition: all 0.3s ease-in-out;
         color: #FFF;
-        font-size: 0.676vw;
+        font-size: 12px;
         font-weight: 500;
     }
 
@@ -194,50 +194,49 @@
     }
 }
 
-.TopBlockText {
-    display: flex;
-    align-items: center;
-    margin-top: 6.041vw;
-    flex-direction: row;
-    gap: 0.27vw;
+// .TopBlockText {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+//     gap: 0.27vw;
 
-    .text:nth-child(1) {
-        padding: 0.859vw 1.145vw 0.859vw 0;
-    }
-    .text:nth-child(1):hover{
-        color: #2DAED7;
-    }
-    .text:nth-child(3):hover{
-        color: #34C88C;
-    }
-    .text:nth-child(5):hover{
-        color: #474DD8;
-    }
-    .text:nth-child(7):hover{
-        color: #BF63DF;
-    }
-    .text {
-        padding: 0.859vw 1.145vw;
-        font-size: 1.002vw;
-        font-weight: 400;
-        text-decoration: none;
-        color: #000;
-        transition: color 0.3s ease-in-out;
-    }
+//     .text:nth-child(1) {
+//         padding: 0.859vw 1.145vw 0.859vw 0;
+//     }
+//     .text:nth-child(1):hover{
+//         color: #2DAED7;
+//     }
+//     .text:nth-child(3):hover{
+//         color: #34C88C;
+//     }
+//     .text:nth-child(5):hover{
+//         color: #474DD8;
+//     }
+//     .text:nth-child(7):hover{
+//         color: #BF63DF;
+//     }
+//     .text {
+//         padding: 0.859vw 1.145vw;
+//         font-size: 1.002vw;
+//         font-weight: 400;
+//         text-decoration: none;
+//         color: #000;
+//         transition: color 0.3s ease-in-out;
+//     }
 
-    .line {
-        width: 2.027vw;
-        height: 1px;
-        background: rgba(0, 0, 0, 0.15);
-    }
-}
+//     .line {
+//         width: 2.027vw;
+//         height: 1px;
+//         background: rgba(0, 0, 0, 0.15);
+//     }
+// }
 
-.TopBlockFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 2.635vw;
-}
+// .TopBlockFooter {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin-bottom: 2.635vw;
+// }
 
 
 
