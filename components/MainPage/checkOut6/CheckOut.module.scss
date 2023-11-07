@@ -9,7 +9,7 @@
         overflow: hidden;
         margin: 200px;
         border-radius: 0.811vw;
-        border: 0.068vw solid #E2E2E2;
+        border: 1px solid #E2E2E2;
         background: rgba(0, 0, 0, 0.01);
         display: grid;
         align-items: center;
@@ -23,7 +23,7 @@
                 display: grid;
                 justify-items: center;
                 align-items: center;
-                margin-top: 152px;
+                margin-top: 70px;
                 gap: 40px;
                 .PortfolioText {
                     display: grid;
@@ -48,7 +48,7 @@
                     display: grid;
                     padding: 17px 27px;
                     border-radius: 1.757vw;
-                    border: 0.068vw solid #b8b8b8;
+                    border: 1px solid #b8b8b8;
                     background-color: rgba(255, 255, 255, 0.10);
                     text-decoration: none;
                     font-size: 16px;
@@ -61,7 +61,7 @@
                     transition: all 0.3s ease-out;
                     &:hover {
                         background-color: #353539;
-                        border: 0.068vw solid #353539;
+                        border: 1px solid #353539;
                         color: #E2E2E2;
                         -webkit-transition: all 0.3s ease-out;
                         -moz-transition: all 0.3s ease-out;
@@ -73,7 +73,133 @@
             .GhPage img {
                 width: 100%;
                 height: 677px;
-            
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .checkout {
+        .container {
+            width: 1320px;
+        }
+    }
+}
+
+@media (max-width: 1480px) { 
+    .checkout {
+        .container {
+            width: 1220px;
+        }
+    }
+}
+
+@media (max-width: 1340px) { 
+    .checkout {
+        .container {
+            width: 1080px;
+            margin: 150px;
+            .test {
+                .Portfolio {
+                    margin-top: 60px;
+                    gap: 35px;
+                    .PortfolioText {
+                        gap: 22px;
+                    
+                        h2 {
+                            font-size: 46px;
+                        }
+                    
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .PortfolioButton {
+                        display: grid;
+                        padding: 17px 27px;
+                        border-radius: 24px;
+                        border: 1px solid #b8b8b8;
+                        font-size: 16px;
+                    }
+                }
+                .GhPage img {
+                    width: 100%;
+                    height: 500px;
+                
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) { 
+    .checkout {
+        .container {
+            width: 93vw;
+            margin: 100px;
+            height: 86vw;
+            .test {
+                .Portfolio {
+                    margin-top: 50px;
+                    gap: 30px;
+                    .PortfolioText {
+                        gap: 20px;
+                        h2 {
+                            font-size: 40px;
+                        }
+                    
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .PortfolioButton {
+                        padding: 17px 27px;
+                        border-radius: 24px;
+                        border: 1px solid #b8b8b8;
+                        font-size: 16px;
+                    }
+                }
+                .GhPage img {
+                    width: 93vw;
+                    height: 53vw;
+                
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) { 
+    .checkout {
+        .container {
+            width: 100vw;
+            height: 110vw;
+            border: none;
+            background: #fff;
+            border-radius: none;
+            .test {
+                .Portfolio {
+                    margin-top: 50px;
+                    gap: 30px;
+                    .PortfolioText {
+                        gap: 20px;
+                        h2 {
+                            font-size: 38px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .PortfolioButton {
+                        padding: 16px 20px;
+                        border-radius: 120px;
+                        font-size: 16px;
+                    }
+                }
+                .GhPage img {
+                    width: 93vw;
+                    height: 53vw;
+                }
             }
         }
     }
@@ -97,48 +223,51 @@
 //         gap: 30px;
 //     }
 // }
-@media (max-width: 1200px) { 
-    .container {
-        margin: 0;
-        width: 93vw;
-        height: 700px;
-        border: none;
-        border-radius: none;
-    }
-}
 
-@media (max-width: 700px) { 
-    .container {
-        margin: 0;
-        width: 85vw;
-        height: 600px;
-        border: none;
-        border-radius: none;
-    }
-    .Portfolio {
-        gap: 20px;
-    }
-    .PortfolioText {
-        gap: 10px;
+
+
+// @media (max-width: 1200px) { 
+//     .container {
+//         margin: 0;
+//         width: 93vw;
+//         height: 700px;
+//         border: none;
+//         border-radius: none;
+//     }
+// }
+
+// @media (max-width: 700px) { 
+//     .container {
+//         margin: 0;
+//         width: 85vw;
+//         height: 600px;
+//         border: none;
+//         border-radius: none;
+//     }
+//     .Portfolio {
+//         gap: 20px;
+//     }
+//     .PortfolioText {
+//         gap: 10px;
         
-        h2 {
-            font-size: 8.411vw;
-            font-weight: 700;
-            line-height: 114.1%;
-        }
+//         h2 {
+//             font-size: 8.411vw;
+//             font-weight: 700;
+//             line-height: 114.1%;
+//         }
 
-        p {
-            font-size: 3.738vw;
-            font-weight: 400;
-        }
-    }
-    .PortfolioButton {
-        font-size: 24px;
-        width: 130px;
-        border-radius: 6.075vw;
-        border: 0.234vw solid #E2E2E2;
-    }
-    .GhPage img{
-        height: 60vw;
-    }
-}
+//         p {
+//             font-size: 3.738vw;
+//             font-weight: 400;
+//         }
+//     }
+//     .PortfolioButton {
+//         font-size: 24px;
+//         width: 130px;
+//         border-radius: 6.075vw;
+//         border: 0.234vw solid #E2E2E2;
+//     }
+//     .GhPage img{
+//         height: 60vw;
+//     }
+// }
