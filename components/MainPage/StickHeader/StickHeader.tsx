@@ -7,9 +7,8 @@ import { classNames } from '@/components/lib/classNames/classNames';
 import { usePathname } from 'next/navigation';
 
 const StickHeader: React.FC<any> = (props) => {
-    const pathname = usePathname()
+    
     const [isMobile, setIsMobile] = useState(false);
-
     const isVisible = props.isHeaderFixed;
 
     const scrollToTop = () => {
