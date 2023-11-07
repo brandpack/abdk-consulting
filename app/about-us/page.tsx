@@ -8,7 +8,7 @@ import { OurTeam } from "@/components/AboutUsPage/ourTeam2/ourTeam";
 import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
-import Header from "@/components/common/StickHeader/StickHeader";
+import StickHeader from "@/components/common/StickHeader/StickHeader";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
 import React, { useState } from "react";
 
@@ -16,9 +16,8 @@ const AboutUs: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<main>
-			<Header isOpen={isOpen} setIsOpen={setIsOpen}/>
-        	<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
 			<TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
+			<StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
 			<TopBlockAboutUs />
 			<OurTeam/>
 			<ChooseAboutUs />
@@ -27,6 +26,7 @@ const AboutUs: React.FC = () => {
 			<WorkAtABDK />
 			<CheckOut />
 			<Footer />
+        	<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
 		</main>
 	);
 };
