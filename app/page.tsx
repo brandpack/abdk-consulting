@@ -7,14 +7,16 @@ import { Expertise } from "@/components/MainPage/expertise4/Expertise";
 import { Services } from "@/components/MainPage/services3/Services";
 import StaticHeader from "@/components/common/StaticHeader/StaticHeader";
 import Footer from "@/components/common/Footer/Footer";
-import Header from "@/components/common/Header4MainPage/Header";
+import StickHeader from "@/components/MainPage/StickHeader/StickHeader";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+
   const scrollableElementRef = useRef<any>(null);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (scrollableElementRef.current) {
@@ -49,9 +51,9 @@ export default function Home() {
       <CheckOut />
       <Footer scrollableElementRef={scrollableElementRef}/>
     </main>
-    <Header scrollableElementRef={scrollableElementRef} isOpen={isOpen} setIsOpen={setIsOpen} isHeaderFixed={isHeaderFixed}/>
+
+    <StickHeader scrollableElementRef={scrollableElementRef} isOpen={isOpen} setIsOpen={setIsOpen} isHeaderFixed={isHeaderFixed}/>
     <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
     </>
-
   )
 }
