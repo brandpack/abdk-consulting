@@ -1,6 +1,6 @@
 {
   "name": "abdk",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,19 +8,24 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "overrides": {
+    "chokidar": "3.5.3",
+    "glob-parent": "6.0.2"
+  },
   "dependencies": {
-    "@types/node": "20.6.3",
-    "@types/react": "18.2.22",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.5.2",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.36",
+    "@types/react-dom": "18.2.14",
+    "eslint": "8.53.0",
+    "eslint-config-next": "14.0.1",
     "framer-motion": "^10.16.4",
-    "next": "13.5.2",
+    "next": "14.0.1",
     "next-videos": "^1.4.1",
+    "npm-check-updates": "^16.14.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-fast-marquee": "^1.6.1",
-    "sass": "^1.68.0",
+    "react-fast-marquee": "^1.6.2",
+    "sass": "^1.69.5",
     "sharp": "^0.32.6",
     "typescript": "5.2.2"
   }
