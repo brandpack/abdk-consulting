@@ -1,18 +1,17 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import cls from './Footer.module.scss'
 import logoDesktop from '@/public/FooterDesktopLogo.svg';
-//import linesDesktop from '@/public/FooterDesktopLines.svg';
-//import linesMobile from '@/public/FooterMobileLines.svg';
 import linesDesktop from '@/public/linesDesktop.png';
 import linesMobile from '@/public/linesMobile.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import { classNames } from '@/components/lib/classNames/classNames';
 import { usePathname } from 'next/navigation';
 
 const Footer: React.FC<any> = (props) => {
     const pathname = usePathname()
+
+    const year = new Date().getFullYear();
 
     const scrollToTop = () => {
         if (props.scrollableElementRef.current) {
@@ -21,31 +20,20 @@ const Footer: React.FC<any> = (props) => {
     };
     return (
 
-        <div className={cls.Footer}>
-            <div className={cls.Line}></div>
-            <Image
-                        className={cls.FooterLineImage}
-                        src={linesDesktop}
-                        alt='logo'
-                        loading='lazy'
-            />
-            <Image
-                        className={cls.FooterLineImageMobile}
-                        src={linesMobile}
-                        alt='logo'
-                        loading='lazy'
-            />
-            <div className={cls.FooterContent}>
-                    <Image
-                        className={cls.FooterImage}
-                        src={logoDesktop}
-                        alt='logo'
-                        loading='lazy'
-                    />
-                    <p className={cls.FooterCombine}>
-                    We combine experience from science and industry and are able to solve problems that are too tough for our competitors.
-                    </p>
-                <div className={cls.FooterRight}>
+        <footer className={cls.footer}>
+            <Image className={cls.LinesDesktop} src={linesDesktop} loading='lazy' alt='ABDK - We combine experience from science and industry and are able to solve problems that are too tough for our competitors.'/>
+            <Image className={cls.LinesMobile} src={linesMobile} loading='lazy' alt='ABDK - We combine experience from science and industry and are able to solve problems that are too tough for our competitors.'/>
+            <div className={cls.container}>
+                <div className={cls.left}>
+                <Image
+                    className={cls.logo}
+                    src={logoDesktop}
+                    alt='ABDK - We combine experience from science and industry and are able to solve problems that are too tough for our competitors.'
+                    loading='lazy'
+                />
+                <p>We combine experience from science and industry and are able to solve problems that are too tough for our competitors.</p>
+                </div>
+                <div className={cls.right}>
                     <div className={cls.links}>
                     { pathname === '/' ?
                         <Link className={cls.link} href={'/'} onClick={scrollToTop}>Home</Link>
@@ -87,18 +75,21 @@ const Footer: React.FC<any> = (props) => {
                             </svg>
                         </Link>
                     </div>
-
                 </div>
             </div>
-            <div className={cls.footerRightsContainer}>
-                <p className={cls.footerRights}>
-                    2023 © ABDK Consulting | All rights reserved.
-                </p>
-                <Link href={'https://brandpack.me/'} className={cls.footerDesigned}>
-                    Designed by brandpack.me
-                </Link>
+            
+            <div className={cls.bottom}>
+                <div className={cls.line}></div>
+                <div className={cls.container}>
+                    <p className={cls.rights}>
+                        {year} © ABDK Consulting | All rights reserved.
+                    </p>
+                    <Link href={'https://brandpack.me/'} className={cls.by} target='_blank'>
+                        Designed by brandpack.me
+                    </Link>
+                </div>
             </div>
-        </div>
+        </footer>
     );
 
 };
