@@ -1,13 +1,13 @@
 'use client'
 import { FC, useEffect, useState } from 'react'
-import cls from './TopBlock.module.scss'
+import cls from './FirstScreen.module.scss'
 import Link from 'next/link';
 import BgVideo from '../../common/Video/BgVideo';
 
-interface TopBlockProps {
+interface FirstScreenProps {
 }
 
-export const TopBlock: FC<TopBlockProps> = ({ }) => {
+export const FirstScreen: FC<FirstScreenProps> = ({ }) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {

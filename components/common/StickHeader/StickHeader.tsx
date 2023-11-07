@@ -11,7 +11,7 @@ const StickHeader: React.FC<any> = (props) => {
 
     const handleResize = () => {
         if (typeof window !== 'undefined') {
-            setIsMobile(window.innerWidth <= 700);
+            setIsMobile(window.innerWidth <= 720);
         }
         window.addEventListener('resize', handleResize);
     };

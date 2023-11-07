@@ -26,7 +26,7 @@ const TopStaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consulting
     useEffect(() => {
         function handleResize() {
             if (typeof window !== 'undefined') {
-                setIsMobile(window.innerWidth <= 700);
+                setIsMobile(window.innerWidth <= 720);
             }
         }
 
