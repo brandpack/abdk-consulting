@@ -5,7 +5,7 @@ import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
 import { Clients } from "@/components/MainPage/clients2/Clients";
 import { Expertise } from "@/components/MainPage/expertise4/Expertise";
 import { Services } from "@/components/MainPage/services3/Services";
-import StaticHeader from "@/components/common/FixedHeader/FixedHeader";
+import StaticHeader from "@/components/common/StaticHeader/StaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import Header from "@/components/common/Header4MainPage/Header";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
@@ -32,6 +32,7 @@ export default function Home() {
 
     return () => {
       if (scrollableElementRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         scrollableElementRef.current.removeEventListener('scroll', handleScroll);
       }
     };

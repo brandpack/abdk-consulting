@@ -2,7 +2,7 @@
 import { TopBlockAudit } from "@/components/AuditPage/TopBlock/TopBlock";
 import { ChooseAudit } from "@/components/AuditPage/choose2/Choose";
 import { RequestAudit } from "@/components/AuditPage/request3/Request";
-import StaticHeader from "@/components/common/FixedHeader/FixedHeader";
+import StaticHeader from "@/components/common/StaticHeader/StaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import Header from "@/components/common/Header/Header";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
