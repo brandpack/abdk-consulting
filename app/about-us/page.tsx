@@ -6,7 +6,7 @@ import WorkAtABDK from "@/components/AboutUsPage/WorkAtABDK/WorkAtABDK";
 import { ChooseAboutUs } from "@/components/AboutUsPage/choose2/Choose";
 import { OurTeam } from "@/components/AboutUsPage/ourTeam2/ourTeam";
 import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
-import StaticHeader from "@/components/common/StaticHeader/StaticHeader";
+import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import Header from "@/components/common/StickHeader/StickHeader";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
 		<main>
 			<Header isOpen={isOpen} setIsOpen={setIsOpen}/>
         	<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
-			<StaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
+			<TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
 			<TopBlockAboutUs />
 			<OurTeam/>
 			<ChooseAboutUs />

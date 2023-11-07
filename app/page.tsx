@@ -5,7 +5,7 @@ import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
 import { Clients } from "@/components/MainPage/clients2/Clients";
 import { Expertise } from "@/components/MainPage/expertise4/Expertise";
 import { Services } from "@/components/MainPage/services3/Services";
-import StaticHeader from "@/components/common/StaticHeader/StaticHeader";
+import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import StickHeaderHome from "@/components/MainPage/StickHeaderHome/StickHeaderHome";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
     <main ref={scrollableElementRef} className='Mainpage'>
-      <StaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
+      <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
       <TopBlock />
       <Clients />
       <Services />

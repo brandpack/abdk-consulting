@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect, FC } from 'react';
-import cls from './StaticHeader.module.scss';
+import cls from './TopStaticHeader.module.scss';
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';
 
@@ -13,7 +13,7 @@ interface HeaderProps {
     setIsOpen: (value: boolean) => void;
 }
 
-const StaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consultingColor, evaluationColor,isOpen,setIsOpen}) => {
+const TopStaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consultingColor, evaluationColor,isOpen,setIsOpen}) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -120,4 +120,4 @@ const StaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consultingCol
     );
 };
 
-export default StaticHeader;
+export default TopStaticHeader;
