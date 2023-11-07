@@ -46,8 +46,8 @@
         }
         .burger {
             display: flex;
-            width: 20px;
-            height: 14px;
+            width: 28px;
+            height: 20px;
             position: relative;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
@@ -83,14 +83,14 @@
                     transform-origin: left center;
                 }
                 &:nth-child(2) {
-                    top: 6px;
+                    top: 9px;
                     -webkit-transform-origin: left center;
                     -moz-transform-origin: left center;
                     -o-transform-origin: left center;
                     transform-origin: left center;
                 }
                 &:nth-child(3) {
-                    top: 12px;
+                    top: 18px;
                     -webkit-transform-origin: left center;
                     -moz-transform-origin: left center;
                     -o-transform-origin: left center;
@@ -234,7 +234,7 @@
             padding: 16px 26px;
             grid-template-columns: 1fr auto;
             .logo {
-                width: auto;
+                width: 42px;
                 justify-self: start;
             }
             .navigation {
