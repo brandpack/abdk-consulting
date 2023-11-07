@@ -28,6 +28,7 @@ const StickHeader: React.FC<any> = (props) => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const LOGO_SVG = () => {
