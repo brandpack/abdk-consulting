@@ -13,7 +13,7 @@
         width: 1440px;
         backdrop-filter: blur(30px);
         border-radius: 16px;
-        padding: 0 34px 0 0;
+        padding: 0 34px;
         .logo {
             width: 160px;
             display: grid;
@@ -189,6 +189,7 @@
         margin-top: 38px;
         .container {
             width: 980px;
+            padding: 0 24px;
             .logo {
                 width: 138px;
             }
