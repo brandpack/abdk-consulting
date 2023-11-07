@@ -1,13 +1,13 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import cls from './Header.module.scss'
+import cls from './StickHeader.module.scss'
 import logoDesktop from '@/public/fixedHeaderLogoo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';
 import { usePathname } from 'next/navigation';
 
-const Header: React.FC<any> = (props) => {
+const StickHeader: React.FC<any> = (props) => {
     const pathname = usePathname()
     const [isMobile, setIsMobile] = useState(false);
 
@@ -79,4 +79,4 @@ const Header: React.FC<any> = (props) => {
     );
 
 };
-export default Header;
+export default StickHeader;
