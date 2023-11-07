@@ -28,7 +28,7 @@ const Footer: React.FC<any> = (props) => {
                 <Image
                     className={cls.logo}
                     src={logoDesktop}
-                    alt='ABDK - We combine experience from science and industry and are able to solve problems that are too tough for our competitors.'
+                    alt='ABDK Consulting - Your Guide in the World of Crypto'
                     loading='lazy'
                 />
                 <p>We combine experience from science and industry and are able to solve problems that are too tough for our competitors.</p>
