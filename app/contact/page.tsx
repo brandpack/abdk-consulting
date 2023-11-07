@@ -2,7 +2,7 @@
 import { TopBlockContact } from "@/components/ContactPage/TopBlock/TopBlock";
 import Footer from "@/components/common/Footer/Footer";
 import MobileMenu from "@/components/common/Menu/MobileMenu";
-import StaticHeader from "@/components/common/StaticHeader/StaticHeader";
+import StaticHeader from "@/components/common/old_StaticHeader/StaticHeader";
 import { useState } from "react";
 
 
