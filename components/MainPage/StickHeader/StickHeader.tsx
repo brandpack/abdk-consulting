@@ -1,13 +1,11 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import cls from './StickHeader.module.scss'
-import Image from 'next/image';
 import Link from 'next/link';
 import { classNames } from '@/components/lib/classNames/classNames';
-import { usePathname } from 'next/navigation';
 
 const StickHeader: React.FC<any> = (props) => {
-    
+
     const [isMobile, setIsMobile] = useState(false);
     const isVisible = props.isHeaderFixed;
 
