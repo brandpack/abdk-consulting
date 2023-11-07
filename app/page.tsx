@@ -32,6 +32,7 @@ export default function Home() {
 
     return () => {
       if (scrollableElementRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         scrollableElementRef.current.removeEventListener('scroll', handleScroll);
       }
     };
