@@ -9,7 +9,8 @@
 
 .ApproachHeader {
     align-self: center;
-    margin-top: 300px;
+    margin-top: 200px;
+    margin-bottom: 50px;
     font-size: 4.054vw;
     font-style: normal;
     font-weight: 700;
@@ -128,16 +129,12 @@
     border: 1px solid #E2E2E2;
     border-radius: 10px;
     background: #F6F6F6;
-    padding: 50px;
+    padding: 40px;
     display: grid;
     img {
-        width: 4.06vw;
-        height: 4.122vw;
+        width: 71px;
+        height: 70px;
     }
-    .EvaluationText {
-        width: 400px;
-    }
-
     .EvaluationFooterEmail {
         display: grid;
         justify-items: flex-start;
@@ -146,7 +143,7 @@
 
         p {
             color: var(--grey-main, #353539);
-            font-size: 1.622vw;
+            font-size: 40px;
             font-weight: 500;
             line-height: normal;
         }
@@ -158,10 +155,9 @@
             justify-content: center;
         }
         .emailText {
-            margin-top: 2.027vw;
             width: 400px;
             color: #000;
-            font-size: 0.946vw;
+            font-size: 20px;
             font-weight: 400;
             line-height: 140%;
             opacity: 0.6;
@@ -169,7 +165,7 @@
     }
 
     .EvaluationFooterEmailLink {
-        font-size: 1.351vw;
+        font-size: 28px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -179,7 +175,6 @@
 
     .EmailCopy {
         display: flex;
-        width: 2.568vw;
         height: 16px;
         padding: 0.27vw;
         justify-content: center;
@@ -243,132 +238,142 @@
     justify-content: space-between;
     margin-bottom: 2.635vw;
 }
-@media (max-width: 700px) {
-    .TopBlock {
-        justify-content: center;
-        min-height: 100svh;    
-        height: auto;    
-        padding: 0 5.607vw;
-        width: 88.786vw;
-    }
-    .TopBlockHeader {
-        width: 100%;
-        margin-top: 18.514vw;
-        box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw;
-    }
-    .ApproachHeader {
-        font-size: 12.383vw;
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-    .Evaluation {
-        padding: 0 5.841vw;
-        border-radius: 2.336vw;
-        .EvaluationText {
-            font-size: 3.271vw;
-            font-weight: 500;
-            svg {
-                width: 1.869vw;
-                height: 1.869vw;
-            }
-        }
-    }
 
-    .Evaluation1 {
-        grid-row: -5/-6;
-        grid-column: 1/2;
-        img {
-            width: 5.607vw;
-            height: 5.607vw;
-        }
-    }
-    .Evaluation2 {
-        grid-row: -3/-4;
-        grid-column: 1/2;
-        img {
-            width: 22.664vw;
-            height: 5.607vw;
-        }
-    }
-    .Evaluation3 {
-        grid-row: -1/-2;
-        grid-column: 1/2;
-        img {
-            width: 18.692vw;
-            height: 5.607vw;
-        }
-    }
-    .Evaluation4 {
-        grid-row: -7/-13;
-        grid-column: 1/2;
-        padding: 5.607vw;
+
+
+
+
+
+
+
+
+
+// @media (max-width: 700px) {
+//     .TopBlock {
+//         justify-content: center;
+//         min-height: 100svh;    
+//         height: auto;    
+//         padding: 0 5.607vw;
+//         width: 88.786vw;
+//     }
+//     .TopBlockHeader {
+//         width: 100%;
+//         margin-top: 18.514vw;
+//         box-sizing: border-box;
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw 1.869vw 14.953vw;
+//     }
+//     .ApproachHeader {
+//         font-size: 12.383vw;
+//         grid-row: 1/2;
+//         grid-column: 1/2;
+//     }
+//     .Evaluation {
+//         padding: 0 5.841vw;
+//         border-radius: 2.336vw;
+//         .EvaluationText {
+//             font-size: 3.271vw;
+//             font-weight: 500;
+//             svg {
+//                 width: 1.869vw;
+//                 height: 1.869vw;
+//             }
+//         }
+//     }
+
+//     .Evaluation1 {
+//         grid-row: -5/-6;
+//         grid-column: 1/2;
+//         img {
+//             width: 5.607vw;
+//             height: 5.607vw;
+//         }
+//     }
+//     .Evaluation2 {
+//         grid-row: -3/-4;
+//         grid-column: 1/2;
+//         img {
+//             width: 22.664vw;
+//             height: 5.607vw;
+//         }
+//     }
+//     .Evaluation3 {
+//         grid-row: -1/-2;
+//         grid-column: 1/2;
+//         img {
+//             width: 18.692vw;
+//             height: 5.607vw;
+//         }
+//     }
+//     .Evaluation4 {
+//         grid-row: -7/-13;
+//         grid-column: 1/2;
+//         padding: 5.607vw;
         
-        img {
-            width: 6.542vw;
-            height: 6.542vw;
-        }
-        .EvaluationFooterEmail {
-            gap: 2vw;
-            width: 100%;
-            p {
-                font-size: 5.607vw;
-                font-weight: 500;
-            }
-            .FooterBtn {
-                justify-content: space-between;
-                width: 100%;
-            }
-            .EvaluationFooterEmailLink {
-                font-size: 4.673vw;
-                font-weight: 500;
+//         img {
+//             width: 6.542vw;
+//             height: 6.542vw;
+//         }
+//         .EvaluationFooterEmail {
+//             gap: 2vw;
+//             width: 100%;
+//             p {
+//                 font-size: 5.607vw;
+//                 font-weight: 500;
+//             }
+//             .FooterBtn {
+//                 justify-content: space-between;
+//                 width: 100%;
+//             }
+//             .EvaluationFooterEmailLink {
+//                 font-size: 4.673vw;
+//                 font-weight: 500;
                 
-            }
-            .emailText {
-                margin: 0;
-                font-size: 3.271vw;
-                width: 100%;
-            }
-            .EmailCopy {
-                font-size: 2.57vw;
-                padding: 1.402vw;
-                width: 9.813vw;
-                height: 4.673vw;
-                border-radius: 4px;
+//             }
+//             .emailText {
+//                 margin: 0;
+//                 font-size: 3.271vw;
+//                 width: 100%;
+//             }
+//             .EmailCopy {
+//                 font-size: 2.57vw;
+//                 padding: 1.402vw;
+//                 width: 9.813vw;
+//                 height: 4.673vw;
+//                 border-radius: 4px;
                 
-            }
-        }
-    }
+//             }
+//         }
+//     }
 
-    .TopBlockFooter {
-        flex-direction: column;
-    }
+//     .TopBlockFooter {
+//         flex-direction: column;
+//     }
 
-    .TopBlockText {
-        margin-top: 11.449vw;
-        margin-bottom: 7.477vw;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 0;
-        gap: 0;
+//     .TopBlockText {
+//         margin-top: 11.449vw;
+//         margin-bottom: 7.477vw;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         margin-left: 0;
+//         gap: 0;
 
-        .text {
-            font-size: 3.271vw;
-            font-weight: 400;
-            line-height: normal;
-        }
+//         .text {
+//             font-size: 3.271vw;
+//             font-weight: 400;
+//             line-height: normal;
+//         }
 
-        .text-first {
-            font-size: 3.271vw;
-            font-weight: 400;
-            line-height: normal;
-        }
+//         .text-first {
+//             font-size: 3.271vw;
+//             font-weight: 400;
+//             line-height: normal;
+//         }
 
-        .line {
-            width: 4.673vw;
-            height: 0.234vw;
-        }
-    }
-}
+//         .line {
+//             width: 4.673vw;
+//             height: 0.234vw;
+//         }
+//     }
+// }
