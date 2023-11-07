@@ -19,8 +19,6 @@
         justify-items: center;
         align-items: center;
         width: 1440px;
-        border-radius: 16px;
-        padding: 0 34px;
         .logo {
             width: 120px;
             display: grid;
@@ -39,7 +37,7 @@
             justify-self: end;
             display: flex;
             gap: 36px;
-            margin: 28px 0;
+            margin: 32px 0;
             .link {
                 color: #190628;
                 font-size: 19px;
@@ -76,7 +74,6 @@
                 height: 2px;
                 width: 100%;
                 background: #190628;
-                border-radius: 9px;
                 opacity: 1;
                 left: 0;
                 -webkit-transform: rotate(0deg);
@@ -189,7 +186,7 @@
             }
             .navigation {
                 gap: 34px;
-                margin: 26px 0;
+                margin: 28px 0;
                 .link {
                     font-size: 18px;
                 }
@@ -202,13 +199,12 @@
     .header {
         .container {
             width: 1220px;
-            border-radius: 14px;
             .logo {
                 width: 108px;
             }
             .navigation {
                 gap: 32px;
-                margin: 24px 0;
+                margin: 25px 0;
                 .link {
                     font-size: 18px;
                 }
@@ -221,13 +217,12 @@
     .header {
         .container {
             width: 1080px;
-            border-radius: 12px;
             .logo {
                 width: 100px;
             }
             .navigation {
                 gap: 23px;
-                margin: 22px 0;
+                margin: 23px 0;
                 .link {
                     font-size: 16px;
                 }
@@ -240,7 +235,6 @@
     .header {
         .container {
             width: 980px;
-            padding: 0 24px;
             .logo {
                 width: 96px;
             }
