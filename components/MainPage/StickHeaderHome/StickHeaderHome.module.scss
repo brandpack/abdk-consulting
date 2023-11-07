@@ -1,21 +1,27 @@
 .header {
+    position: fixed;
     display: grid;
-    position: absolute;
     justify-content: center;
-    z-index: 1000;
-    margin-top: 50px;
+    top: 0px;
+    width: 100%;
+    border-bottom: 1px solid rgba(226, 226, 226, 0.30);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
+    transform: translateY(-120px);
+    transition: transform .2s ease-in-out;
     font-family: Basis Grotesque Pro;
+    &.visible {
+        transform: translateY(0);
+        transition: transform .5s ease-in-out;
+    }
     .container {
         display: grid;
         grid-template-columns: auto 1fr;
         justify-items: center;
         align-items: center;
         width: 1440px;
-        backdrop-filter: blur(30px);
-        border-radius: 16px;
-        padding: 0 34px;
         .logo {
-            width: 160px;
+            width: 120px;
             display: grid;
             justify-content: center;
             position: relative;
@@ -32,9 +38,9 @@
             justify-self: end;
             display: flex;
             gap: 36px;
-            margin: 28px 0;
+            margin: 32px 0;
             .link {
-                color: #FFF;
+                color: #190628;
                 font-size: 19px;
                 font-style: normal;
                 font-weight: 400;
@@ -68,8 +74,7 @@
                 position: absolute;
                 height: 2px;
                 width: 100%;
-                background: white;
-                border-radius: 9px;
+                background: #190628;
                 opacity: 1;
                 left: 0;
                 -webkit-transform: rotate(0deg);
@@ -175,15 +180,14 @@
 
 @media (max-width: 1600px) {
     .header {
-        margin-top: 46px;
         .container {
             width: 1320px;
             .logo {
-                width: 152px;
+                width: 112px;
             }
             .navigation {
                 gap: 34px;
-                margin: 26px 0;
+                margin: 28px 0;
                 .link {
                     font-size: 18px;
                 }
@@ -194,16 +198,14 @@
 
 @media (max-width: 1480px) {
     .header {
-        margin-top: 44px;
         .container {
             width: 1220px;
-            border-radius: 14px;
             .logo {
-                width: 148px;
+                width: 108px;
             }
             .navigation {
                 gap: 32px;
-                margin: 24px 0;
+                margin: 25px 0;
                 .link {
                     font-size: 18px;
                 }
@@ -214,16 +216,14 @@
 
 @media (max-width: 1340px) {
     .header {
-        margin-top: 42px;
         .container {
             width: 1080px;
-            border-radius: 12px;
             .logo {
-                width: 142px;
+                width: 100px;
             }
             .navigation {
                 gap: 23px;
-                margin: 20px 0;
+                margin: 23px 0;
                 .link {
                     font-size: 16px;
                 }
@@ -234,16 +234,14 @@
 
 @media (max-width: 1180px) {
     .header {
-        margin-top: 38px;
         .container {
             width: 980px;
-            padding: 0 24px;
             .logo {
-                width: 138px;
+                width: 96px;
             }
             .navigation {
                 gap: 21px;
-                margin: 19px 0;
+                margin: 20px 0;
                 .link {
                     font-size: 16px;
                 }
@@ -254,17 +252,16 @@
 
 @media (max-width: 1040px) {
     .header {
-        margin-top: 36px;
-        width: 93vw;
         grid-template-columns: 1fr;
         .container {
-            width: auto;
+            width: 93vw;
+            justify-self: center;
             .logo {
-                width: 134px;
+                width: 88px;
             }
             .navigation {
                 gap: 20px;
-                margin: 18px 0;
+                margin: 19px 0;
                 .link {
                     font-size: 16px;
                 }
@@ -275,15 +272,14 @@
 
 @media (max-width: 720px) {
     .header {
-        margin-top: 16px;
-        width: 93vw;
         grid-template-columns: 1fr;
+        background: rgba(255, 255, 255, 0.82);
         .container {
-            width: auto;
-            padding: 16px 26px;
+            padding: 16px 0;
+            width: 86vw;
             grid-template-columns: 1fr auto;
             .logo {
-                width: 42px;
+                width: 120px;
                 justify-self: start;
             }
             .navigation {
