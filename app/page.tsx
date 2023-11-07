@@ -1,5 +1,5 @@
 "use client"
-import { TopBlock } from "@/components/MainPage/TopBlock/TopBlock";
+import { TopBlock } from "@/components/MainPage/FirstScreen/FirstScreen";
 import { Approach } from "@/components/MainPage/approach5/Approach";
 import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
 import { Clients } from "@/components/MainPage/clients2/Clients";
