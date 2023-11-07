@@ -1,5 +1,5 @@
 "use client"
-import { TopBlock } from "@/components/MainPage/FirstScreen/FirstScreen";
+import { FirstScreen } from "@/components/MainPage/FirstScreen/FirstScreen";
 import { Approach } from "@/components/MainPage/approach5/Approach";
 import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
 import { Clients } from "@/components/MainPage/clients2/Clients";
@@ -41,7 +41,7 @@ export default function Home() {
     <>
     <main ref={scrollableElementRef} className='Mainpage'>
       <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
-      <TopBlock />
+      <FirstScreen />
       <Clients />
       <Services />
       {/* <Expertise /> */}
