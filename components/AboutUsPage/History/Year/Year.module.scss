@@ -43,6 +43,18 @@
 
 @media (max-width: 1600px) {
 	.line2 {
-		height: 80px;
+		height: 70px;
+	}
+}
+
+@media (max-width: 1480px) {
+	.line2 {
+		height: 60px;
+	}
+}
+
+@media (max-width: 1340px) {
+	.line2 {
+		height: 50px;
 	}
 }

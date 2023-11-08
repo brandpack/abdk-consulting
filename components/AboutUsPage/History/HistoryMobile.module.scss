@@ -10,7 +10,7 @@
     box-sizing: border-box;
 
     h1 {
-        width: auto;
+        width: 86vw;
         font-size: 10.981vw;
         font-weight: 700;
         line-height: 24.411vw;
@@ -21,6 +21,7 @@
     }
 
     &__container {
+        width: 86vw;
         display: grid;
         grid-template-columns: 69.999px 72.43vw;
         grid-template-rows: 38px 70px 38px 70px 38px 70px 38px 70px 38px 70px 38px 70px 38px 70px 139px;
@@ -155,7 +156,7 @@
         }
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .history {
         display: block;
     }
