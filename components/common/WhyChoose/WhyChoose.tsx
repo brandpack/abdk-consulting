@@ -82,7 +82,6 @@ export const WhyChoose: FC<any> = ({items,title}) => {
                     <div className={cls.container}>
                         <div className={cls.top}>
                             { showMobileTitle() }
-                            <h3>Why <span>Choose</span>ABDK</h3>
                             <div className={cls.angleLine}></div>
                         </div>
                         <div className={cls.bottom}>
@@ -155,7 +154,7 @@ export const WhyChoose: FC<any> = ({items,title}) => {
                 <div className={cls.MobileWhyChoose}>
                     <div className={cls.container}>
                         <div className={cls.top}>
-                        { showMobileTitle() }
+                            { showMobileTitle() }
                             <div className={cls.angleLine}></div>
                         </div>
                         <div className={cls.bottom}>
