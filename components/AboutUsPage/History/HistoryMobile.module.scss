@@ -2,6 +2,7 @@
 
 .history {
     position: relative;
+    background: #fff;
     display: none;
     width: 100vw;
     height: auto;
@@ -44,7 +45,7 @@
     }
 
     .line {
-        width: 50px;
+        width: 100px;
         height: 1px;
         border-radius: 0.946vw;
         background: rgba(125, 125, 125, 1);
