@@ -37,12 +37,7 @@ const WhyChooseData = [
       image: Engaged,
       hoverImage: EngagedH,
       text: 'Engaged in standards for blockchain and cryptography',
-  },
-  {
-      image: Engaged,
-      hoverImage: EngagedH,
-      text: 'Provide transparent rates and timelines',
-  },
+  }
 ]
 
 
