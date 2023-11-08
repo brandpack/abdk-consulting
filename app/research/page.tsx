@@ -16,7 +16,7 @@ export default function Research() {
         <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'#34C88C'} consultingColor={'white'} evaluationColor={'white'} />
         <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
 
-        <ServiceFirstScreen title='Evaluation' image={image} color='#BF63DF' text='Request an evaluation of your project or technology'/>
+        <ServiceFirstScreen title='Research' image={image} color='#34C88C' text='Advise on making best architectural and security decisions.'/>
 
         <ChooseResearch />
         <RequestResearch />
