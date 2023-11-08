@@ -1,6 +1,6 @@
 'use client'
 import { ServiceFirstScreen } from "@/components/common/ServiceFirstScreen/ServiceFirstScreen";
-import { WhyChoose } from "@/components/AuditPage/WhyChoose/WhyChoose";
+import { WhyChoose } from "@/components/common/WhyChoose/WhyChoose";
 import { RequestAudit } from "@/components/AuditPage/request3/Request";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
