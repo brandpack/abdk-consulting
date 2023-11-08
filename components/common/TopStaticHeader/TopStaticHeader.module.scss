@@ -2,6 +2,7 @@
     display: grid;
     position: absolute;
     justify-content: center;
+    align-items: center;
     z-index: 1000;
     margin-top: 50px;
     font-family: Basis Grotesque Pro;
@@ -269,10 +270,10 @@
 @media (max-width: 1040px) {
     .header {
         margin-top: 36px;
-        width: 93vw;
         grid-template-columns: 1fr;
         .container {
-            width: auto;
+            width: 93vw;
+            justify-self: center;
             .logo {
                 width: 134px;
             }
@@ -290,10 +291,11 @@
 @media (max-width: 720px) {
     .header {
         margin-top: 16px;
-        width: 93vw;
+        width: 100vw;
         grid-template-columns: 1fr;
         .container {
-            width: auto;
+            width: 86vw;
+            justify-self: center;
             padding: 16px 26px;
             grid-template-columns: 1fr auto;
             .logo {
