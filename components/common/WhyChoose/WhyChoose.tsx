@@ -238,4 +238,54 @@ export const WhyChoose: FC<any> = ({items,title}) => {
     
         )
     }
+
+    if (itemsLength == 3) {
+
+        return (
+            <>
+                <div className={cls.WhyChoose}>
+                    <div className={cls.container}>
+                        <div className={`${cls.top} ${cls.top__four}`}>
+                            { showDesktopTitle() }
+                            <div className={cls.angleLine}></div>
+                        </div>
+                        <div className={`${cls.bottom} ${cls.bottom__four}`}>
+                            <div className={cls.space__full}></div>
+                            <div className={cls.line__horizontal} style={{opacity: 0}}></div>
+                            <ItemChoose item={items[0]}/> 
+                            <div className={cls.line__horizontal}></div>
+                            <ItemChoose item={items[1]}/> 
+                            <div className={cls.line__horizontal}></div>
+                            <ItemChoose item={items[2]}/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div className={cls.MobileWhyChoose}>
+                    <div className={cls.container}>
+                        <div className={cls.top}>
+                            { showMobileTitle() }
+                            <div className={cls.angleLine}></div>
+                        </div>
+                        <div className={cls.bottom}>
+    
+                            <ItemChoose item={items[0]}/> 
+                            <div className={cls.line__horizontal}></div>
+                            <ItemChoose item={items[1]}/> 
+    
+                            <div className={cls.line__vertical} style={{height:'12px'}}></div>
+                            <div className={cls.space__line}></div>
+                            <div className={cls.space__full}></div>
+    
+                            <div className={cls.space__full}></div>
+                            <div className={cls.line__horizontal}></div>
+                            <ItemChoose item={items[2]}/>
+                        </div>
+                    </div>
+                </div>
+    
+            </>
+    
+        )
+    }
 }
