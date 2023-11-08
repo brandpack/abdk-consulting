@@ -14,10 +14,33 @@ interface ItemInterface {
     text: string,
 }
 
-export const WhyChoose: FC<any> = ({items}) => {
+export const WhyChoose: FC<any> = ({items,title}) => {
 
     const itemsLength = Object.keys(items).length;
     console.log(itemsLength);
+    console.log(title);
+
+    const chooseTitleDesktop = (
+        <h3>Why Choose <br/>ABDK</h3>
+    );
+
+    const chooseTitleMobile = (
+        <h3>Why <span>Choose</span>ABDK</h3>
+    );
+
+    const customTitle = (
+        <h3 className={cls.custom}>{title}</h3>
+    );
+
+
+    const showDesktopTitle:any = () => {
+        return title ? customTitle : chooseTitleDesktop
+    }
+
+    const showMobileTitle:any = () => {
+        return title ? customTitle : chooseTitleMobile
+    }
+
 
     if (itemsLength == 6) {
 
@@ -26,7 +49,7 @@ export const WhyChoose: FC<any> = ({items}) => {
             <div className={cls.WhyChoose}>
                 <div className={cls.container}>
                     <div className={cls.top}>
-                        <h3>Why Choose <br/>ABDK</h3>
+                        { showDesktopTitle() }
                         <div className={cls.space__full}></div>
                         <div className={cls.line__horizontal}></div>
                         <div className={cls.line__horizontal__full}></div>
@@ -59,6 +82,7 @@ export const WhyChoose: FC<any> = ({items}) => {
             <div className={cls.MobileWhyChoose}>
                 <div className={cls.container}>
                     <div className={cls.top}>
+                        { showMobileTitle() }
                         <h3>Why <span>Choose</span>ABDK</h3>
                         <div className={cls.angleLine}></div>
                     </div>
@@ -99,7 +123,7 @@ export const WhyChoose: FC<any> = ({items}) => {
                 <div className={cls.WhyChoose}>
                     <div className={cls.container}>
                         <div className={cls.top}>
-                            <h3>Why Choose <br/>ABDK</h3>
+                            { showDesktopTitle() }
                             <div className={cls.space__full}></div>
                             <div className={cls.line__horizontal}></div>
                             <div className={cls.line__horizontal__full}></div>
@@ -132,7 +156,7 @@ export const WhyChoose: FC<any> = ({items}) => {
                 <div className={cls.MobileWhyChoose}>
                     <div className={cls.container}>
                         <div className={cls.top}>
-                            <h3>Why <span>Choose</span>ABDK</h3>
+                        { showMobileTitle() }
                             <div className={cls.angleLine}></div>
                         </div>
                         <div className={cls.bottom}>

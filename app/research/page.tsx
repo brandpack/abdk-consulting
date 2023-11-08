@@ -7,7 +7,7 @@ import MobileMenu from "@/components/common/Menu/MobileMenu";
 import { useState } from "react";
 import { ServiceFirstScreen } from "@/components/common/ServiceFirstScreen/ServiceFirstScreen";
 import image from '@/public/Research.webp';
-import { WhyChoose } from "@/components/AuditPage/WhyChoose/WhyChoose";
+import { WhyChoose } from "@/components/common/WhyChoose/WhyChoose";
 import Provide from '@/public/provide.svg';
 import ProvideH from '@/public/ProvideResearchH.svg';
 import trackRecord from '@/public/trackRecord.svg';
