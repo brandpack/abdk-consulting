@@ -22,36 +22,36 @@ import Reverse from '@/public/Reverse.svg';
 import ReverseH from '@/public/ReverseAuditH.svg';
 
 const WhyChooseData = [
-  {
-      image: Transparent,
-      hoverImage: TransparentH,
-      text: 'Transparent audit process',
-  },
-  {
-      image: trackRecord,
-      hoverImage: trackRecordH,
-      text: 'Track record of thousands of critical bugs',
-  },
-  {
-      image: advice,
-      hoverImage: adviceH,
-      text: 'Reverse-engineered code to uncover more issues',
-  },
-  {
-      image: FollowUp,
-      hoverImage: FollowUpH,
-      text: 'Internal cross-review',
-  },
-  {
-      image: InternalCross,
-      hoverImage: InternalCrossH,
-      text: 'Follow-up guidance',
-  },
-  {
-      image: Reverse,
-      hoverImage: ReverseH,
-      text: 'Advice on optimization and architecture',
-  },
+    {
+        image: Transparent,
+        hoverImage: TransparentH,
+        text: 'Transparent audit process',
+    },
+    {
+        image: trackRecord,
+        hoverImage: trackRecordH,
+        text: 'Track record of thousands of critical bugs',
+    },
+    {
+        image: advice,
+        hoverImage: adviceH,
+        text: 'Reverse-engineered code to uncover more issues',
+    },
+    {
+        image: FollowUp,
+        hoverImage: FollowUpH,
+        text: 'Internal cross-review',
+    },
+    {
+        image: InternalCross,
+        hoverImage: InternalCrossH,
+        text: 'Follow-up guidance',
+    },
+    {
+        image: Reverse,
+        hoverImage: ReverseH,
+        text: 'Advice on optimization and architecture',
+    },
 ]
 
 
@@ -60,14 +60,14 @@ export default function Audit() {
 
 	return (
 		<main>
-        <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'#2DAED7'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
-			  <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
-        <ServiceFirstScreen title='Audit' image={image} text='Order an audit of your code, protocol, or architecture' color='#2DAED7'/>
-        <WhyChoose items={WhyChooseData}/>
+            <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'#2DAED7'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
+            <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
+            <ServiceFirstScreen title='Audit' image={image} text='Order an audit of your code, protocol, or architecture' color='#2DAED7'/>
+            <WhyChoose items={WhyChooseData}/>
 
-        <RequestAudit />
-        <Footer />
-        <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
-    </main>
-  )
+            <RequestAudit />
+            <Footer />
+            <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
+        </main>
+    )
 }
