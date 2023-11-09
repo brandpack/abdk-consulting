@@ -312,3 +312,20 @@
         }
     }
 }
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 1000px) and (orientation: landscape) {
+    .header {
+        margin-top: 4px;
+        .container {
+            width: 93vw;
+            padding: 2px 26px;
+            .logo {
+                width: 108px;
+            }
+            .navigation {
+                margin: 18px 0;
+            }
+        }
+    }
+}
