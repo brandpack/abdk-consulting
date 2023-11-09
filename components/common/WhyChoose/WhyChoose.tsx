@@ -272,9 +272,9 @@ export const WhyChoose: FC<any> = ({items,title}) => {
                             <div className={cls.space__line}></div>
                             <div className={cls.space__full}></div>
     
-                            <div className={cls.space__full}></div>
-                            <div className={cls.line__horizontal}></div>
                             <ItemChoose item={items[2]}/>
+                            <div className={cls.space__line}></div>
+                            <div className={cls.space__full}></div>
                         </div>
                     </div>
                 </div>
