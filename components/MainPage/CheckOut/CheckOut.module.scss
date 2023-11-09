@@ -7,7 +7,7 @@
         width: 1440px;
         height: 900px;
         overflow: hidden;
-        margin: 200px;
+        margin: 200px 0;
         border-radius: 0.811vw;
         border: 1px solid #E2E2E2;
         background: rgba(0, 0, 0, 0.01);
@@ -99,7 +99,7 @@
         .container {
             width: 1080px;
             height: 800px;
-            margin: 150px;
+            margin: 150px 0;
             .test {
                 .Portfolio {
                     margin-top: 60px;
@@ -145,7 +145,7 @@
     .checkout {
         .container {
             width: 93vw;
-            margin: 100px;
+            margin: 100px 0;
             .test {
                 .Portfolio {
                     margin-top: 50px;
@@ -212,70 +212,3 @@
         }
     }
 }
-
-
-
-// @media (max-width: 1440px) { 
-//     .CheckOut {
-//         margin: 0;
-//         width: 93vw;
-//         height: 900px;
-//         border: none;
-//         border-radius: none;
-//     }
-//     .Portfolio {
-//         gap: 30px;
-//     }
-    
-//     .PortfolioText {
-//         gap: 30px;
-//     }
-// }
-
-
-
-// @media (max-width: 1200px) { 
-//     .container {
-//         margin: 0;
-//         width: 93vw;
-//         height: 700px;
-//         border: none;
-//         border-radius: none;
-//     }
-// }
-
-// @media (max-width: 700px) { 
-//     .container {
-//         margin: 0;
-//         width: 85vw;
-//         height: 600px;
-//         border: none;
-//         border-radius: none;
-//     }
-//     .Portfolio {
-//         gap: 20px;
-//     }
-//     .PortfolioText {
-//         gap: 10px;
-        
-//         h2 {
-//             font-size: 8.411vw;
-//             font-weight: 700;
-//             line-height: 114.1%;
-//         }
-
-//         p {
-//             font-size: 3.738vw;
-//             font-weight: 400;
-//         }
-//     }
-//     .PortfolioButton {
-//         font-size: 24px;
-//         width: 130px;
-//         border-radius: 6.075vw;
-//         border: 0.234vw solid #E2E2E2;
-//     }
-//     .GhPage img{
-//         height: 60vw;
-//     }
-// }
