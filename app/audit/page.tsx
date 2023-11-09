@@ -1,7 +1,7 @@
 'use client'
 import { ServiceFirstScreen } from "@/components/common/ServiceFirstScreen/ServiceFirstScreen";
 import { WhyChoose } from "@/components/common/WhyChoose/WhyChoose";
-import { RequestAudit } from "@/components/common/Request/Request";
+import { Request } from "@/components/common/Request/Request";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import StickHeader from "@/components/common/StickHeader/StickHeader";
@@ -20,6 +20,8 @@ import InternalCross from '@/public/internalCross.svg';
 import InternalCrossH from '@/public/InternalCrossAuditH.svg';
 import Reverse from '@/public/Reverse.svg';
 import ReverseH from '@/public/ReverseAuditH.svg';
+
+const nameService = 'Audit';
 
 const WhyChooseData = [
     {
@@ -52,7 +54,14 @@ const WhyChooseData = [
         hoverImage: ReverseH,
         text: 'Advice on optimization and architecture',
     },
-]
+];
+
+const AuditStages = [
+    'Show your project',
+    'Get a quote and timeline',
+    'Pay a deposit',
+    'Deliver the project for the audit'
+];
 
 
 export default function Audit() {
@@ -62,10 +71,10 @@ export default function Audit() {
 		<main>
             <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'#2DAED7'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
             <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
-            <ServiceFirstScreen title='Audit' image={image} text='Order an audit of your code, protocol, or architecture' color='#2DAED7'/>
+            <ServiceFirstScreen title={nameService} image={image} text='Order an audit of your code, protocol, or architecture' color='#2DAED7'/>
             <WhyChoose items={WhyChooseData}/>
+            <Request nameRequest={nameService} stages={AuditStages}/>
 
-            <RequestAudit />
             <Footer />
             <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
         </main>

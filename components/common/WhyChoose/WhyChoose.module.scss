@@ -90,10 +90,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     position: relative;
-    -webkit-transition: .3s all ease-in-out;
-    -moz-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
     img {
         width: 42px;
         height: 42px;
@@ -105,35 +105,35 @@
     }
     &:hover &__monochrome {
         opacity: 0;
-        -webkit-transition: .3s all ease-in-out;
-        -moz-transition: .3s all ease-in-out;
-        -o-transition: .3s all ease-in-out;
-        transition: .3s all ease-in-out;
+        -webkit-transition: .5s all ease-in-out;
+        -moz-transition: .5s all ease-in-out;
+        -o-transition: .5s all ease-in-out;
+        transition: .5s all ease-in-out;
     }
     &:hover &__colored {
         opacity: 1;
-        -webkit-transition: .3s all ease-in-out;
-        -moz-transition: .3s all ease-in-out;
-        -o-transition: .3s all ease-in-out;
-        transition: .3s all ease-in-out;
+        -webkit-transition: .5s all ease-in-out;
+        -moz-transition: .5s all ease-in-out;
+        -o-transition: .5s all ease-in-out;
+        transition: .5s all ease-in-out;
     }
     &__colored {
         position: absolute;
         top: 24px;
         left: 24px;
         opacity: 0;
-        -webkit-transition: .3s all ease-in-out;
-        -moz-transition: .3s all ease-in-out;
-        -o-transition: .3s all ease-in-out;
-        transition: .3s all ease-in-out;
+        -webkit-transition: .5s all ease-in-out;
+        -moz-transition: .5s all ease-in-out;
+        -o-transition: .5s all ease-in-out;
+        transition: .5s all ease-in-out;
     }
 
     &__monochrome {
         opacity: 1;
-        -webkit-transition: .3s all ease-in-out;
-        -moz-transition: .3s all ease-in-out;
-        -o-transition: .3s all ease-in-out;
-        transition: .3s all ease-in-out;
+        -webkit-transition: .5s all ease-in-out;
+        -moz-transition: .5s all ease-in-out;
+        -o-transition: .5s all ease-in-out;
+        transition: .5s all ease-in-out;
     }
 }
 

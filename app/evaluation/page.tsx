@@ -16,6 +16,10 @@ import Conduct from '@/public/conduct.svg';
 import ConductH from '@/public/ConductEvaluationH.svg';
 import Advise from '@/public/advise.svg';
 import AdviseH from '@/public/AdviseEvaluationH.svg';
+import { Request } from "@/components/common/Request/Request";
+import { Evaluation } from '../../components/ConsultingPage/choose2/Evaluation';
+
+const nameService = 'Evaluation';
 
 const WhyChooseData = [
   {
@@ -40,6 +44,12 @@ const WhyChooseData = [
   }
 ]
 
+const EvaluationStages = [
+  'Explain your project',
+  'Get a quote on evaluation',
+  'Pay a deposit',
+];
+
 
 export default function Consulting() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,8 +57,11 @@ export default function Consulting() {
     <main className='page'>
         <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'#BF63DF'} />
         <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
-        <ServiceFirstScreen title='Evaluation' image={image} color='#BF63DF' text='Request an evaluation of your project or technology'/>
+        <ServiceFirstScreen title={nameService} image={image} color='#BF63DF' text='Request an evaluation of your project or technology'/>
         <WhyChoose items={WhyChooseData}/>
+        <Request nameRequest={nameService} stages={EvaluationStages}/>
+
+
         <RequestEvaluation />
         <Footer />
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>

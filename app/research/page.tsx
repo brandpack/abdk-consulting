@@ -18,7 +18,9 @@ import Develop from '@/public/develop.svg';
 import DevelopH from '@/public/DevelopResearchH.svg';
 import Author from '@/public/author.svg';
 import AuthorH from '@/public/authorResearchH.svg';
+import { Request } from "@/components/common/Request/Request";
 
+const nameService = 'Research';
 
 const WhyChooseData = [
   {
@@ -46,7 +48,13 @@ const WhyChooseData = [
       hoverImage: ProvideH,
       text: 'Provide transparent rates and timelines',
   },
-]
+];
+
+const ResearchStages = [
+  'Explain your problem',
+  'Get a quote and timeline',
+  'Pay a deposit',
+];
 
 export default function Research() {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,8 +62,9 @@ export default function Research() {
     <main className='page'>
         <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'#34C88C'} consultingColor={'white'} evaluationColor={'white'} />
         <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
-        <ServiceFirstScreen title='Research' image={image} color='#34C88C' text='Advise on making best architectural and security decisions.'/>
+        <ServiceFirstScreen title={nameService} image={image} color='#34C88C' text='Advise on making best architectural and security decisions.'/>
         <WhyChoose items={WhyChooseData}/>
+        <Request nameRequest={nameService} stages={ResearchStages}/>
 
         <RequestResearch />
         <Footer />

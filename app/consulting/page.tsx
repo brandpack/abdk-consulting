@@ -16,6 +16,9 @@ import ConductH from '@/public/ConductConsultingH.svg';
 import Advise from '@/public/advise.svg';
 import AdviseH from '@/public/AdviseConsultingH.svg';
 import { WhyChoose } from "@/components/common/WhyChoose/WhyChoose";
+import { Request } from "@/components/common/Request/Request";
+
+const nameService = 'Consulting';
 
 const WhyChooseData = [
   {
@@ -40,6 +43,12 @@ const WhyChooseData = [
   }
 ]
 
+const ConsultingStages = [
+  'Explain your problem over a quick call',
+  'Get a quote on consultation',
+  'Pay a deposit',
+];
+
 
 export default function Consulting() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,10 +56,9 @@ export default function Consulting() {
     <main className='page'>
         <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'#474DD8'} evaluationColor={'white'}/>
         <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
-        <ServiceFirstScreen title='Consulting' image={image} color='#676DFA' text='Request a one-time or a series of consultations on the design, development or usage of decentralized finance or cryptography'/>
+        <ServiceFirstScreen title={nameService} image={image} color='#676DFA' text='Request a one-time or a series of consultations on the design, development or usage of decentralized finance or cryptography'/>
         <WhyChoose items={WhyChooseData}/>
-
-        <RequestConsulting />
+        <Request nameRequest={nameService} stages={ConsultingStages}/>
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
       <Footer />
     </main>
