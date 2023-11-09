@@ -84,7 +84,7 @@ export default function Home() {
       <FirstScreen />
       <Clients />
       <Services />
-      {/* <Expertise /> */}
+      <Expertise />
 
       <WhyChoose items={WhyChooseData} title='Our approach stand on'/>
       <CheckOut />
