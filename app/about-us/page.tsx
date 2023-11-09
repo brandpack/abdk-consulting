@@ -2,7 +2,6 @@
 import History from "@/components/AboutUsPage/History/History";
 import HistoryMobile from "@/components/AboutUsPage/History/HistoryMobile";
 import WorkAtABDK from "@/components/AboutUsPage/WorkAtABDK/WorkAtABDK";
-import { OurTeam } from "@/components/AboutUsPage/ourTeam2/ourTeam";
 import { CheckOut } from "@/components/MainPage/CheckOut/CheckOut";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
@@ -18,6 +17,7 @@ import Time from '@/public/time.svg';
 import TimeH from '@/public/TimeAboutUsH.svg';
 import Independence from '@/public/Independence.svg';
 import IndependenceH from '@/public/IndependenceAboutUsH.svg';
+import { OurTeam } from "@/components/AboutUsPage/OurTeam/OurTeam";
 
 const WhyChooseData = [
 	{

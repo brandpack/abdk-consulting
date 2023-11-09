@@ -5,7 +5,6 @@ import ZeroKnowledge from '@/public/zeroKnowledge.svg';
 import Cryptography from '@/public/cryptography.svg';
 import DeFi from '@/public/deFi.svg';
 import Lines from '@/public/lines.svg';
-import LinesMobile from '@/public/linesMobile.svg';
 import LinesTeam from '@/public/LinesTeam.svg';
 
 export const Expertise = ({ }) => {
@@ -55,14 +54,6 @@ export const Expertise = ({ }) => {
                             <h3>DeFi</h3>
                             <p>Constructed, audited, and optimized protocols for top industry players.</p>
                         </div>
-                        {/* <div className={cls.EvaluationTextBlock}>
-                            <h1 className={cls.EvaluationHeader}>
-                                DeFi
-                            </h1>
-                            <p className={cls.EvaluationText}>
-                                Constructed, audited, and optimized protocols for top industry players.
-                            </p>
-                        </div> */}
                     </div>
                 
                 </div>
