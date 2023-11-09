@@ -351,3 +351,11 @@
         }
     }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .container {
+        transform: scale(0.7);
+        top: 10% !important;
+        left: -10vw;
+    }
+}

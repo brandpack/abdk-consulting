@@ -286,3 +286,12 @@
         }
     }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .firstSceen {
+        .container {
+            transform: scale(0.8);
+            width: 100vw;
+        }
+    }
+}
