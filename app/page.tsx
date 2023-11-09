@@ -1,7 +1,7 @@
 "use client"
 import { FirstScreen } from "@/components/MainPage/FirstScreen/FirstScreen";
 import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
-import { Clients } from "@/components/MainPage/clients2/Clients";
+import { Clients } from "@/components/MainPage/Clients/Clients";
 import { Expertise } from "@/components/MainPage/expertise4/Expertise";
 import { Services } from "@/components/MainPage/services3/Services";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
@@ -82,7 +82,7 @@ export default function Home() {
     <main ref={scrollableElementRef} className='Mainpage'>
       <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
       <FirstScreen />
-      {/* <Clients /> */}
+      <Clients />
       <Services />
       {/* <Expertise /> */}
 

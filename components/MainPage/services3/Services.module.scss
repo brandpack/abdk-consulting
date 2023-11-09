@@ -8,7 +8,7 @@
 }
 .Container {
     width: 1440px;
-    padding: 200px 0;
+    //padding: 200px 0;
     display: grid;
     gap: 50px;
 }
@@ -140,7 +140,7 @@
     .Container {
         width: 1220px;
         gap: 40px;
-        padding: 180px 0;
+        //padding: 180px 0;
     }
 
     .Service {
@@ -165,7 +165,7 @@
 @media (max-width: 1340px) {
     .Container {
         width: 1080px;
-        padding: 160px 0;
+        //padding: 160px 0;
     }
 
     .Service {
@@ -202,7 +202,7 @@
 @media (max-width: 1180px) {
     .Container {
         width: 980px;
-        padding: 150px 0;
+        //padding: 150px 0;
     }
 
     .Service {
@@ -229,7 +229,7 @@
 @media (max-width: 1040px) {
     .Container {
         width: 93vw;
-        padding: 140px 0;
+        //padding: 140px 0;
     }
 
     .Service {

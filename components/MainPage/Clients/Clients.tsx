@@ -25,15 +25,15 @@ export const Clients: FC<ClientsProps> = ({ }) => {
 
     useEffect(() => {
       // Check if window is defined (i.e., we are in a browser environment)
-      if (typeof window !== 'undefined') {
-        setIsMobile(window.innerWidth <= 700);
-      }
+        if (typeof window !== 'undefined') {
+            setIsMobile(window.innerWidth <= 720);
+        }
     }, []);
 
     return (
         <div className={cls.Clients}>
-            <div className={cls.ClientsText}>
-                <h1>our Clients</h1>
+            <div className={cls.container}>
+                <h2>Our Clients</h2>
             </div>
             <Marquee className={cls.clientsImages}>
                 <Image
