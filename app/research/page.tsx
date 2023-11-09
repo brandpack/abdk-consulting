@@ -1,5 +1,4 @@
 'use client'
-import { RequestResearch } from "@/components/ResearchPage/request3/Request";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import StickHeader from "@/components/common/StickHeader/StickHeader";
@@ -65,8 +64,6 @@ export default function Research() {
         <ServiceFirstScreen title={nameService} image={image} color='#34C88C' text='Advise on making best architectural and security decisions.'/>
         <WhyChoose items={WhyChooseData}/>
         <Request nameRequest={nameService} stages={ResearchStages}/>
-
-        <RequestResearch />
         <Footer />
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
     </main>

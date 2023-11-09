@@ -1,5 +1,4 @@
 'use client'
-import { RequestConsulting } from "@/components/ConsultingPage/request3/Request";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import StickHeader from "@/components/common/StickHeader/StickHeader";

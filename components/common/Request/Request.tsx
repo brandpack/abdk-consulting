@@ -6,9 +6,8 @@ export const Request: FC<any> = ({nameRequest, stages}) => {
 
     const itemsLength = Object.keys(stages).length;
 
-
     const threeStages = (
-        <div className={cls.RequestItems}>
+        <div className={`${cls.RequestItems} ${cls.three}`}>
             <div className={cls.Line1}></div>
             <div className={cls.Line2}></div>
             <div className={cls.Line3}></div>

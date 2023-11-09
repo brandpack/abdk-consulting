@@ -1,5 +1,4 @@
 'use client'
-import { RequestEvaluation } from "@/components/EvaluationPage/request3/Request";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import StickHeader from "@/components/common/StickHeader/StickHeader";
@@ -17,7 +16,6 @@ import ConductH from '@/public/ConductEvaluationH.svg';
 import Advise from '@/public/advise.svg';
 import AdviseH from '@/public/AdviseEvaluationH.svg';
 import { Request } from "@/components/common/Request/Request";
-import { Evaluation } from '../../components/ConsultingPage/choose2/Evaluation';
 
 const nameService = 'Evaluation';
 
@@ -60,9 +58,6 @@ export default function Consulting() {
         <ServiceFirstScreen title={nameService} image={image} color='#BF63DF' text='Request an evaluation of your project or technology'/>
         <WhyChoose items={WhyChooseData}/>
         <Request nameRequest={nameService} stages={EvaluationStages}/>
-
-
-        <RequestEvaluation />
         <Footer />
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
     </main>
