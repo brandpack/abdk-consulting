@@ -133,6 +133,14 @@
     }
 }
 
+@media (max-width: 1180px) {
+    .checkout {
+        .container {
+			width: 980px;
+		}
+	}
+}
+
 @media (max-width: 1080px) { 
     .checkout {
         .container {

@@ -170,6 +170,15 @@
 		height: 50px;
 	}
 }
+
+@media (max-width: 1180px) {
+    .history {
+		&__container {
+			width: 980px;
+		}
+	}
+}
+
 @media (max-width: 1080px) {
 	.history {
         h1 {
