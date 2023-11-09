@@ -1,8 +1,6 @@
 import { FC } from 'react'
 import cls from './WhyChoose.module.scss'
-import Image from 'next/image';
 import { ItemChoose } from './ItemChoose/ItemChoose';
-
 
 interface WhyChooseInterface {
     array: any
@@ -17,8 +15,6 @@ interface ItemInterface {
 export const WhyChoose: FC<any> = ({items,title}) => {
 
     const itemsLength = Object.keys(items).length;
-    console.log(itemsLength);
-    console.log(title);
 
     const chooseTitleDesktop = (
         <h3>Why Choose <br/>ABDK</h3>
