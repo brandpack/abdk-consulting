@@ -1,5 +1,3 @@
-'use client'
-import { FC, useEffect, useState } from 'react'
 import cls from './CheckOut.module.scss'
 import github from '@/public/github.svg';
 import githubPage from '@/public/github.webp';
@@ -7,11 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from "framer-motion";
 
-
-interface CheckOutProps {
-}
-
-export const CheckOut: FC<CheckOutProps> = ({ }) => {
+export const CheckOut = ({ }) => {
     return (
         <div className={cls.checkout}>
             <div className={cls.container}>

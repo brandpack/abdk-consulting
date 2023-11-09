@@ -3,7 +3,7 @@ import History from "@/components/AboutUsPage/History/History";
 import HistoryMobile from "@/components/AboutUsPage/History/HistoryMobile";
 import WorkAtABDK from "@/components/AboutUsPage/WorkAtABDK/WorkAtABDK";
 import { OurTeam } from "@/components/AboutUsPage/ourTeam2/ourTeam";
-import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
+import { CheckOut } from "@/components/MainPage/CheckOut/CheckOut";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import StickHeader from "@/components/common/StickHeader/StickHeader";

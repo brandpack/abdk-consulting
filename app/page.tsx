@@ -1,9 +1,9 @@
 "use client"
 import { FirstScreen } from "@/components/MainPage/FirstScreen/FirstScreen";
-import { CheckOut } from "@/components/MainPage/checkOut6/CheckOut";
+import { CheckOut } from "@/components/MainPage/CheckOut/CheckOut";
 import { Clients } from "@/components/MainPage/Clients/Clients";
-import { Expertise } from "@/components/MainPage/expertise4/Expertise";
-import { Services } from "@/components/MainPage/services3/Services";
+import { Expertise } from "@/components/MainPage/Expertise/Expertise";
+import { Services } from "@/components/MainPage/Services/Services";
 import TopStaticHeader from "@/components/common/TopStaticHeader/TopStaticHeader";
 import Footer from "@/components/common/Footer/Footer";
 import StickHeaderHome from "@/components/MainPage/StickHeaderHome/StickHeaderHome";
