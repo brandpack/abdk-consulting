@@ -1,0 +1,297 @@
+.container {
+    width: 1440px;
+}
+
+.firstSceen {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    background: #110718;
+    .backgroundImage {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+    .container {
+        z-index: 2;
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        margin-bottom: 20vh;
+        .content {
+            display: grid;
+            grid-gap: 30px;
+            .line {
+                width: 80px;
+                height: 2px;
+                background: #2DAED7;
+            }
+            h1 {
+                font-size: 120px;
+                font-weight: 500;
+                line-height: 100%;
+            }
+            p {
+                font-size: 22px;
+                line-height: 140%;
+                width: 60%;
+                opacity: .9;
+            }
+        }
+        .button {
+            background-color: rgba($color: #2DAED7, $alpha: .1);
+            padding: 28px 36px;
+            border-radius: 14px;
+            justify-items: center;
+            align-items: center;
+            display: grid;
+            grid-gap: 14px;
+            grid-template-columns: auto auto;
+            border: 2px solid rgba($color: #2DAED7, $alpha: 1);
+            font-size: 22px;
+            color: rgba($color: #2DAED7, $alpha: 1);
+            text-decoration: none;
+            backdrop-filter: blur(25px);
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            &:hover {
+                background-color: rgba($color: #2DAED7, $alpha: .15);
+                border: 2px solid rgba($color: #2DAED7, $alpha: .8);
+                -webkit-transition: all 0.3s ease-out;
+                -moz-transition: all 0.3s ease-out;
+                -o-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+                opacity: .7;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .container {
+        width: 1320px;
+    }
+
+    .container {
+        grid-gap: 44px;
+        margin-bottom: 20vh;
+        .content {
+            grid-gap: 26px;
+            .line {
+                width: 75px;
+            }
+            h1 {
+                font-size: 110px;
+            }
+            p {
+                font-size: 21px;
+            }
+        }
+        .button {
+            padding: 27px 34px;
+            border-radius: 12px;
+            grid-gap: 14px;
+        }
+    }
+}
+
+@media (max-width: 1480px) {
+    .container {
+        width: 1220px;
+    }
+
+    .container {
+        grid-gap: 42px;
+        .content {
+            grid-gap: 24px;
+            .line {
+                width: 72px;
+            }
+            h1 {
+                font-size: 100px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .button {
+            padding: 26px 32px;
+            grid-gap: 14px;
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    .container {
+        width: 1080px;
+    }
+
+    .container {
+        grid-gap: 40px;
+        .content {
+            grid-gap: 22px;
+            .line {
+                width: 68px;
+            }
+            h1 {
+                font-size: 90px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .button {
+            padding: 26px 32px;
+            grid-gap: 14px;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .container {
+        width: 980px;
+    }
+
+    .container {
+        grid-gap: 38px;
+        .content {
+            grid-gap: 20px;
+            .line {
+                width: 64px;
+            }
+            h1 {
+                font-size: 80px;
+            }
+            p {
+                font-size: 19px;
+            }
+        }
+        .button {
+            padding: 24px 30px;
+            grid-gap: 14px;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .container {
+        width: 93vw;
+    }
+
+    .firstSceen {
+        position: relative;
+        align-items: end;
+        .backgroundImage {
+            position: absolute;
+            height: 74vh;
+            width: 100vw;
+            top: 0;
+            object-fit: cover;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: auto;
+            bottom: 26vh;
+            left: 0;
+            width: 100vw;
+            height: 250px;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0c0718 95.8%);
+        }
+        .container {
+            margin-bottom: 12vh;
+            .content {
+                h1 {
+                    font-size: 60px;
+                }
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 86vw;
+    }
+    
+    .firstSceen {
+        position: relative;
+        align-items: end;
+        .backgroundImage {
+            position: absolute;
+            height: 74vh;
+            width: 100vw;
+            top: 0;
+            object-fit: cover;
+        }
+        .container {
+            margin-bottom: 12vh;
+            .content {
+                h1 {
+                    font-size: 60px;
+                }
+                p {
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 1000px) and (orientation: landscape) {
+
+    .container {
+        width: 86vw;
+    }
+    .firstSceen {
+        position: relative;
+        align-items: end;
+        .backgroundImage {
+            position: absolute;
+            height: 74vh;
+            width: 100vw;
+            top: 0;
+            object-fit: cover;
+        }
+        .container {
+            margin-bottom: 12vh;
+            grid-gap: 20px;
+            .content {
+                grid-gap: 16px;
+                h1 {
+                    font-size: 60px;
+                }
+                p {
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
+            .button {
+                padding: 20px 26px;
+                grid-gap: 14px;
+            }
+        }
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .firstSceen {
+        .container {
+            transform: scale(0.8);
+            width: 100vw;
+        }
+    }
+}

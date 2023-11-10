@@ -11,12 +11,13 @@
 * {
 	margin: 0;
 	padding: 0;
-	outline: none !important;
+	//outline: none !important;
 }
 
 html {
 	width: 100%;
 	min-height: 100%;
+	background-color: #2C2B3D;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
 	overflow-x: hidden;
 	margin: 0 !important;
 	padding: 0 !important;
+	background-color: #2C2B3D;
 }
 .rfm-initial-child-container  {
 	gap: 50px !important;
@@ -57,7 +59,9 @@ html,
 .Mainpage{
 	height: 100vh;
 	width: 100%;
+	display: grid;
 	top: 0;
+	justify-items: center;
 	overflow-x: hidden;
 	position: relative;
 	overflow-y: auto;
@@ -101,7 +105,7 @@ input {
 		width: 100%;
 	}
 	.videoWrapper {
-    	bottom: auto;
+		bottom: auto;
 	.bgVideo{
 			min-height: 579px;
 			height: 579px;
@@ -110,9 +114,9 @@ input {
 		}
 	}
 }
-@media (max-height: 500px) and (orientation: landscape) {
-	.Mainpage {
-		overflow-y: visible;
-		overflow-x: visible;
-	}
-}
+// @media (max-height: 500px) and (orientation: landscape) {
+// 	.Mainpage {
+// 		overflow-y: visible;
+// 		overflow-x: visible;
+// 	}
+// }

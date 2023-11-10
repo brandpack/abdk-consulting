@@ -1,0 +1,536 @@
+.container {
+    width: 1440px;
+}
+
+.Expertise {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: #FFF;
+    color: var(--grey-main, #353539);
+    padding: 150px 0;
+    z-index: 99;
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .Lines {
+            position: absolute;
+            top: 8%;
+            left: 4px;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .LinesMobile {
+            display: none;
+        }
+        h2 {
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+        .ExpertiseContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-items: start;
+            margin-top: 65px;
+            margin-left: 238px;
+            padding-right: 16px;
+            grid-gap: 24px;
+            .item {
+                gap: 24px;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .content {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    justify-items: start;
+                    align-items: center;
+                    width: 100%;
+                    gap: 16px;
+                    h3 {
+                        font-size: 26px;
+                        font-weight: 700;
+                    }
+                    p {
+                        width: 100%;
+                        font-size: 20px;
+                        color: var(--grey-main, #353539);
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+            }
+            .Evaluation1 {
+                margin-top: 24px;
+                .content {
+                    p {
+                        width: 80%;
+                    }
+                }
+            }
+            
+            .Evaluation2 {
+                padding-top: 150px;
+                .content {
+                    p {
+                        width: 75%;
+                    }
+                }
+            }
+            
+            .Evaluation3 {
+                margin-top: -50px;
+                width: 100%;
+                .content {
+                    p {
+                        width: 75%;
+                    }
+                }
+            }
+            
+            .Evaluation4 {
+                padding-top: 110px;
+                .content {
+                    p {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// *********************** RESPONSIVE STYLE **************************** //
+
+@media (max-width: 1600px) {
+    .container {
+        width: 1320px;
+    }
+
+    .Expertise {
+        padding: 140px 0;
+        .container {
+            .Lines {
+                top: 8%;
+                left: 4px;
+            }
+            h2 {
+                font-size: 60px;
+            }
+            .ExpertiseContainer {
+                margin-top: 64px;
+                margin-left: 230px;
+                padding-right: 16px;
+                grid-gap: 24px;
+                .item {
+                    gap: 24px;
+                    .content {
+                        width: 100%;
+                        gap: 16px;
+                        h3 {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 19px;
+                        }
+                    }
+                }
+                .Evaluation1 {
+                    margin-top: 20px;
+                }
+                .Evaluation2 {
+                    padding-top: 135px;
+                }
+                .Evaluation3 {
+                    margin-top: -54px;
+                    width: 100%;
+                }
+                .Evaluation4 {
+                    padding-top: 103px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1480px) {
+    .container {
+        width: 1220px;
+    }
+
+    .Expertise {
+        padding: 140px 0;
+        .container {
+            .Lines {
+                top: 8%;
+                left: 4px;
+            }
+            h2 {
+                font-size: 50px;
+            }
+            .ExpertiseContainer {
+                margin-top: 65px;
+                margin-left: 207px;
+                padding-right: 17px;
+                grid-gap: 18px;
+                .item {
+                    gap: 24px;
+                    .content {
+                        width: 100%;
+                        gap: 16px;
+                        h3 {
+                            font-size: 22px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .Evaluation1 {
+                    margin-top: 20px;
+                }
+                .Evaluation2 {
+                    padding-top: 130px;
+                }
+                .Evaluation3 {
+                    margin-top: -54px;
+                    width: 100%;
+                }
+                .Evaluation4 {
+                    padding-top: 90px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1340px) {
+    .container {
+        width: 1080px;
+    }
+
+    .Expertise {
+        padding: 130px 0;
+        .container {
+            .Lines {
+                top: 8%;
+                left: 4px;
+            }
+            h2 {
+                font-size: 46px;
+            }
+            .ExpertiseContainer {
+                margin-top: 56px;
+                margin-left: 180px;
+                padding-right: 12px;
+                grid-gap: 16px;
+                .item {
+                    gap: 18px;
+                    .content {
+                        width: 100%;
+                        gap: 14px;
+                        h3 {
+                            font-size: 21px;
+                        }
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+                .Evaluation1 {
+                    margin-top: 15px;
+                }
+                .Evaluation2 {
+                    padding-top: 113px;
+                }
+                .Evaluation3 {
+                    margin-top: -54px;
+                    width: 100%;
+                }
+                .Evaluation4 {
+                    padding-top: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .container {
+        width: 980px;
+    }
+
+    .Expertise {
+        padding: 120px 0;
+        .container {
+            .Lines {
+                top: 8%;
+                left: 4px;
+            }
+            h2 {
+                font-size: 42px;
+            }
+            .ExpertiseContainer {
+                margin-top: 56px;
+                margin-left: 180px;
+                padding-right: 12px;
+                grid-gap: 16px;
+                .item {
+                    gap: 18px;
+                    .content {
+                        width: 100%;
+                        gap: 14px;
+                        h3 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .Evaluation1 {
+                    margin-top: 15px;
+                }
+                .Evaluation2 {
+                    padding-top: 96px;
+                }
+                .Evaluation3 {
+                    margin-top: -54px;
+                    width: 100%;
+                }
+                .Evaluation4 {
+                    padding-top: 68px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1040px) {
+    .container {
+        width: 93vw;
+    }
+
+    .Expertise {
+        padding: 100px 0;
+        .container {
+            .Lines {
+                top: 8%;
+                left: 4px;
+            }
+            h2 {
+                font-size: 42px;
+            }
+            .ExpertiseContainer {
+                margin-top: 42px;
+                margin-left: 17%;
+                padding-right: 15px;
+                grid-gap: 24px;
+                .item {
+                    gap: 14px;
+                    .content {
+                        width: 100%;
+                        gap: 14px;
+                        h3 {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .Evaluation1 {
+                    margin-top: 15px;
+                    .content {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+                .Evaluation2 {
+                    padding-top: 93px;
+                    .content {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+                .Evaluation3 {
+                    margin-top: -54px;
+                    width: 100%;
+                    .content {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+                .Evaluation4 {
+                    padding-top: 46px;
+                    .content {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 810px) {
+    .container {
+        width: 86vw;
+    }
+
+    .Expertise {
+        padding: 120px 0;
+        .container {
+            .Lines {
+                display: none;
+            }
+            .LinesMobile {
+                display: block;
+                position: absolute;
+                top: 60px;
+                left: 4px;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            h2 {
+                font-size: 47px;
+            }
+            .ExpertiseContainer {
+                margin-top: 46px;
+                margin-left: 30px;
+                padding-right: 0;
+                grid-gap: 30px;
+                grid-template-columns: 1fr;
+                justify-items: start;
+                .item {
+                    width: 81vw;
+                    gap: 18px;
+                    height: 273px;
+                    img {
+                        width: auto;
+                        height: 170px;
+                    }
+                    .content {
+                        width: 100%;
+                        gap: 14px;
+                        h3 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .Evaluation1 {
+                    margin-top: 0;
+                }
+                .Evaluation2 {
+                    padding-top: 0;
+                }
+                .Evaluation3 {
+                    margin-top: 0;
+                }
+                .Evaluation4 {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 470px) {
+    .container {
+        width: 86vw;
+    }
+
+    .Expertise {
+        padding: 120px 0;
+        .container {
+            .Lines {
+                display: none;
+            }
+            .LinesMobile {
+                display: block;
+                position: absolute;
+                top: 60px;
+                left: 4px;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            h2 {
+                font-size: 47px;
+            }
+            .ExpertiseContainer {
+                margin-top: 46px;
+                margin-left: 30px;
+                padding-right: 0;
+                grid-gap: 30px;
+                grid-template-columns: 1fr;
+                justify-items: start;
+                .item {
+                    width: 100%;
+                    gap: 18px;
+                    height: 273px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    .content {
+                        width: 100%;
+                        gap: 14px;
+                        h3 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .Evaluation1 {
+                    margin-top: 0;
+                }
+                .Evaluation2 {
+                    padding-top: 0;
+                }
+                .Evaluation3 {
+                    margin-top: 0;
+                }
+                .Evaluation4 {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+
+}

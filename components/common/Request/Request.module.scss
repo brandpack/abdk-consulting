@@ -1,0 +1,842 @@
+.Request {
+    display: grid;
+    width: 100vw;
+    background: #fff;
+    align-items: center;
+    justify-items: center;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1440px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    .Header {
+        color: var(--grey-main, #353539);
+        background-color: #fff;
+        z-index: 2;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: -50px;
+        white-space: nowrap;
+        padding-right: 20px;
+    }
+    .RequestItems {
+        display: grid;
+        row-gap: 8px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        grid-template-columns: 90% 10%;
+        grid-column-gap: 0;
+        grid-template-rows: repeat(5, 75px);
+        .Line1 {
+            width: 100%;
+            height: 370px;
+            border-top: 2px dashed #0A0A29;
+            border-right: 2px dashed #0A0A29;
+            border-bottom: 2px dashed #0A0A29;
+            opacity: 0.3;
+            border-radius: 0 10px 10px 0;
+            grid-column: 1/3;
+            grid-row: 1/6;
+            justify-self: end;
+            align-self: start;
+        
+        }
+        .Line2 {
+            width: 64px;
+            height: 0px;
+            border-top: 2px dashed #0A0A29;
+            opacity: 0.3;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            align-self: center;
+            justify-self: end;
+        }
+        .Line3 {
+            width: 64px;
+            height: 0px;
+            border-top: 2px dashed #0A0A29;
+            opacity: 0.3;
+            grid-column: 2/3;
+            grid-row: 3/4;
+            align-self: center;
+            justify-self: end;
+        }
+        .Line4 {
+            width: 64px;
+            height: 0px;
+            border-top: 2px dashed #0A0A29;
+            opacity: 0.3;
+            grid-column: 2/3;
+            grid-row: 4/5;
+            align-self: center;
+            justify-self: end;
+        }
+        .item {
+            display: flex;
+            z-index: 1;
+            box-sizing: border-box;
+            height: 73px;
+            padding: 32px 28px;
+            align-items: center;
+            gap: 28px;
+            border-radius: 0.676vw;
+            border: 1px solid #E2E2E2;
+            background: #FFF;
+            z-index: 2;
+            width: 150%;
+            margin-left: -200px;
+            margin-right: 140px;
+            p {
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                color: var(--grey-main, #353539);
+            }
+        }
+        .item1 {
+            grid-column: 1/2;
+            grid-row: -5/-4;
+        
+        }
+        .item2 {
+            grid-column: 1/2;
+            grid-row: -3/-4;
+        }
+        .item3 {
+            grid-column: 1/2;
+            grid-row: -2/-3;
+        }
+        .item4 {
+            grid-column: 1/2;
+            grid-row: -1/-2;
+        }
+    }
+    .three {
+        grid-template-columns: 126px 90%;
+        grid-template-rows: repeat(4, 75px);
+        .Line1 {
+            grid-column: 1/2;
+            grid-row: 1/4;
+            justify-self: start;
+            align-self: start;
+            border-bottom: none;
+            width: 60px;
+            height: 102%;
+            border-radius: 0 10px 0 0;
+        }
+        .Line2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            align-self: center;
+            justify-self: end;
+        }
+        .Line3 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            align-self: center;
+            justify-self: end;
+        }
+        .Line4 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            align-self: start;
+            border-top: none;
+            border-left: 2px dashed #0A0A29;
+            border-bottom: 2px dashed #0A0A29;
+            justify-self: end;
+            border-radius: 0 0 0 10px;
+            height: 50%;
+        }
+        .item {
+            width: 30vw;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .item1 {
+            grid-column: 2/3;
+            grid-row: -4/-3;
+        
+        }
+        .item2 {
+            grid-column: 2/3;
+            grid-row: -3/-2;
+        }
+        .item3 {
+            grid-column: 2/3;
+            grid-row: -1/-2;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        justify-content: flex-end;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        .text {
+            width: 50%;
+            color: var(--grey-main, #353539);
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        .button {
+            background-color: #fff;
+            padding: 28px 36px;
+            border-radius: 14px;
+            justify-items: center;
+            align-items: center;
+            display: grid;
+            grid-gap: 14px;
+            grid-template-columns: auto auto;
+            border: 2px solid rgba($color: #0A0A29, $alpha: 1);
+            font-size: 22px;
+            color: rgba($color: #0A0A29, $alpha: 1);
+            text-decoration: none;
+            backdrop-filter: blur(25px);
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            &:hover {
+                background-color: rgba($color: #0A0A29, $alpha: .05);
+                border: 2px solid rgba($color: #0A0A29, $alpha: .8);
+                -webkit-transition: all 0.3s ease-out;
+                -moz-transition: all 0.3s ease-out;
+                -o-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+            }
+        }
+    }
+}
+
+
+// *********************** RESPONSIVE STYLE **************************** //
+
+@media (min-width: 2230px) {
+
+    .container {
+        .three {
+            width: 100%;
+            margin-left: -62%;
+            .item {
+                width: 150%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        width: 1320px;
+    }
+
+    .Request {
+        padding: 90px 0;
+    }
+    
+    .container {
+        .Header {
+            font-size: 66px;
+            margin-bottom: -50px;
+        }
+        .RequestItems {
+            row-gap: 8px;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: repeat(5, 75px);
+            .Line1 {
+                width: 100%;
+                height: 370px;
+                border-radius: 0 10px 10px 0;
+            }
+            .Line2 {
+                width: 64px;
+            }
+            .Line3 {
+                width: 64px;
+            }
+            .Line4 {
+                width: 64px;
+            }
+            .item {
+                width: 38vw;
+                height: 73px;
+                padding: 32px 28px;
+                gap: 28px;
+                margin-left: 0;
+                margin-right: 0;
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+        .three {
+            grid-template-columns: 126px 90%;
+            grid-template-rows: repeat(4, 75px);
+            .Line1 {
+                grid-column: 1/2;
+                grid-row: 1/4;
+                justify-self: start;
+                align-self: start;
+                border-bottom: none;
+                width: 60px;
+                height: 102%;
+                border-radius: 0 10px 0 0;
+            }
+            .Line2 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line3 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line4 {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                align-self: start;
+                border-top: none;
+                border-left: 2px dashed #0A0A29;
+                border-bottom: 2px dashed #0A0A29;
+                justify-self: end;
+                border-radius: 0 0 0 10px;
+                height: 50%;
+            }
+            .item {
+                width: 30vw;
+            }
+            .item1 {
+                grid-column: 2/3;
+                grid-row: -4/-3;
+            
+            }
+            .item2 {
+                grid-column: 2/3;
+                grid-row: -3/-2;
+            }
+            .item3 {
+                grid-column: 2/3;
+                grid-row: -1/-2;
+            }
+        }
+        .content {
+            gap: 32px;
+            .text {
+                width: 50%;
+                font-size: 22px;
+            }
+            .button {
+                padding: 28px 36px;
+                border-radius: 14px;
+                font-size: 22px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1480px) {
+    .container {
+        width: 1220px;
+    }
+
+    .Request {
+        padding: 90px 0;
+    }
+    
+    .container {
+        .Header {
+            font-size: 60px;
+            margin-bottom: -30px;
+        }
+        .RequestItems {
+            row-gap: 8px;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: repeat(5, 75px);
+            .Line1 {
+                width: 100%;
+                height: 370px;
+                border-radius: 0 10px 10px 0;
+            }
+            .Line2 {
+                width: 60px;
+            }
+            .Line3 {
+                width: 60px;
+            }
+            .Line4 {
+                width: 60px;
+            }
+            .item {
+                width: 38vw;
+                height: 73px;
+                padding: 32px 28px;
+                gap: 28px;
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+        .three {
+            grid-template-columns: 126px 90%;
+            grid-template-rows: repeat(4, 75px);
+            .Line1 {
+                grid-column: 1/2;
+                grid-row: 1/4;
+                justify-self: start;
+                align-self: start;
+                border-bottom: none;
+                width: 60px;
+                height: 102%;
+                border-radius: 0 10px 0 0;
+            }
+            .Line2 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line3 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line4 {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                align-self: start;
+                border-top: none;
+                border-left: 2px dashed #0A0A29;
+                border-bottom: 2px dashed #0A0A29;
+                justify-self: end;
+                border-radius: 0 0 0 10px;
+                height: 50%;
+                padding-left: 4px;
+            }
+            .item {
+                width: 30vw;
+            }
+            .item1 {
+                grid-column: 2/3;
+                grid-row: -4/-3;
+            
+            }
+            .item2 {
+                grid-column: 2/3;
+                grid-row: -3/-2;
+            }
+            .item3 {
+                grid-column: 2/3;
+                grid-row: -1/-2;
+            }
+        }
+        .content {
+            gap: 32px;
+            .text {
+                width: 50%;
+                font-size: 20px;
+            }
+            .button {
+                padding: 24px 32px;
+                border-radius: 12px;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 1340px) {
+    .container {
+        width: 1080px;
+    }
+
+    .Request {
+        padding: 86px 0;
+    }
+    
+    .container {
+        .Header {
+            font-size: 48px;
+            margin-bottom: -36px;
+        }
+        .RequestItems {
+            row-gap: 8px;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: repeat(5, 75px);
+            .Line1 {
+                width: 100%;
+                height: 360px;
+                border-radius: 0 10px 10px 0;
+            }
+            .Line2 {
+                width: 60px;
+            }
+            .Line3 {
+                width: 60px;
+            }
+            .Line4 {
+                width: 60px;
+            }
+            .item {
+                width: 38vw;
+                height: 64px;
+                padding: 32px 28px;
+                gap: 20px;
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+        .three {
+            grid-template-columns: 126px 90%;
+            grid-template-rows: repeat(4, 75px);
+            .Line1 {
+                grid-column: 1/2;
+                grid-row: 1/4;
+                justify-self: start;
+                align-self: start;
+                border-bottom: none;
+                width: 60px;
+                height: 102%;
+                border-radius: 0 10px 0 0;
+            }
+            .Line2 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line3 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line4 {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                align-self: start;
+                border-top: none;
+                border-left: 2px dashed #0A0A29;
+                border-bottom: 2px dashed #0A0A29;
+                justify-self: end;
+                border-radius: 0 0 0 10px;
+                height: 50%;
+                padding-left: 4px;
+            }
+            .item {
+                width: 30vw;
+            }
+            .item1 {
+                grid-column: 2/3;
+                grid-row: -4/-3;
+            
+            }
+            .item2 {
+                grid-column: 2/3;
+                grid-row: -3/-2;
+            }
+            .item3 {
+                grid-column: 2/3;
+                grid-row: -1/-2;
+            }
+        }
+        .content {
+            gap: 28px;
+            .text {
+                width: 50%;
+                font-size: 20px;
+            }
+            .button {
+                padding: 24px 32px;
+                border-radius: 12px;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 1180px) {
+    .container {
+        width: 980px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .container {
+        width: 93vw;
+    }
+
+    .Request {
+        padding: 80px 0;
+        grid-template-rows: auto 1fr auto;
+    }
+    .container {
+        .Header {
+            font-size: 48px;
+            margin-bottom: -36px;
+            display: grid;
+            justify-self: start;
+            padding-right: 10px;
+        }
+        .RequestItems {
+            row-gap: 8px;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: repeat(5, 75px);
+            grid-column: 1/2;
+            align-items: stretch;
+            grid-row: 2/3;
+            .Line1 {
+                width: 100%;
+                height: 360px;
+                border-radius: 0 10px 10px 0;
+            }
+            .Line2 {
+                width: 60px;
+            }
+            .Line3 {
+                width: 60px;
+            }
+            .Line4 {
+                width: 60px;
+            }
+            .item {
+                padding: 32px 28px;
+                gap: 20px;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        .three {
+            grid-template-columns: 10% 90%;
+            grid-template-rows: repeat(4, 75px);
+            .Line1 {
+                grid-column: 1/2;
+                grid-row: 1/4;
+                justify-self: start;
+                align-self: start;
+                border-bottom: none;
+                width: 0px;
+                height: 102%;
+                border-radius: 0 10px 0 0;
+            }
+            .Line2 {
+                grid-column: 1/2;
+                width: 100%;
+                grid-row: 2/3;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line3 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                width: 100%;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line4 {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                width: 100%;
+                align-self: start;
+                border-top: none;
+                border-left: 2px dashed #0A0A29;
+                border-bottom: 2px dashed #0A0A29;
+                justify-self: end;
+                border-radius: 0 0 0 10px;
+                height: 50%;
+                margin-right: -6px !important;
+            }
+            .item {
+                width: 100%;
+            }
+            .item1 {
+                grid-column: 2/3;
+                grid-row: -4/-3;
+            
+            }
+            .item2 {
+                grid-column: 2/3;
+                grid-row: -3/-2;
+            }
+            .item3 {
+                grid-column: 2/3;
+                grid-row: -1/-2;
+            }
+        }
+        .content {
+            gap: 28px;
+            grid-column: 1/2;
+            grid-row: 3/4;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            .text {
+                width: 50%;
+                font-size: 20px;
+            }
+            .button {
+                padding: 24px 32px;
+                border-radius: 12px;
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 86vw;
+    }
+
+    .Request {
+        padding: 50px 0;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    .container {
+        .Header {
+            font-size: 9vw;
+            margin-bottom: -36px;
+            display: grid;
+            justify-self: start;
+            padding-right: 10px;
+        }
+        .RequestItems {
+            row-gap: 3px;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: repeat(5, 75px);
+            grid-column: 1/2;
+            align-items: stretch;
+            grid-row: 2/3;
+            .Line1 {
+                width: 100%;
+                height: 340px;
+                border-radius: 0 10px 10px 0;
+            }
+            .Line2 {
+                width: 60px;
+            }
+            .Line3 {
+                width: 60px;
+            }
+            .Line4 {
+                width: 60px;
+            }
+            .item {
+                height: 48px;
+                padding: 32px 22px;
+                gap: 20px;
+                width: 100%;
+                border-radius: 12px;
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+        .three {
+            grid-template-columns: 10% 90%;
+            grid-template-rows: repeat(4, 75px);
+            .Line1 {
+                grid-column: 1/2;
+                grid-row: 1/4;
+                justify-self: start;
+                align-self: start;
+                border-bottom: none;
+                width: 0px;
+                height: 100%;
+                border-radius: 0 10px 0 0;
+            }
+            .Line2 {
+                grid-column: 1/2;
+                width: 100%;
+                grid-row: 2/3;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line3 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                width: 100%;
+                align-self: center;
+                justify-self: end;
+            }
+            .Line4 {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                width: 100%;
+                align-self: start;
+                border-top: none;
+                border-left: 2px dashed #0A0A29;
+                border-bottom: 2px dashed #0A0A29;
+                justify-self: end;
+                border-radius: 0 0 0 10px;
+                height: 50%;
+                margin-right: -6px !important;
+            }
+            .item {
+                width: 100%;
+            }
+            .item1 {
+                grid-column: 2/3;
+                grid-row: -4/-3;
+            
+            }
+            .item2 {
+                grid-column: 2/3;
+                grid-row: -3/-2;
+            }
+            .item3 {
+                grid-column: 2/3;
+                grid-row: -1/-2;
+            }
+        }
+        .content {
+            gap: 28px;
+            display: grid;
+            grid-column: 1/2;
+            grid-row: 3/4;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            grid-template-columns: 1fr;
+            .text {
+                width: 100%;
+                font-size: 20px;
+                text-align: left;
+            }
+            .button {
+                padding: 24px 32px;
+                border-radius: 12px;
+                font-size: 20px;
+                justify-self: start;
+            }
+        }
+    }
+
+}

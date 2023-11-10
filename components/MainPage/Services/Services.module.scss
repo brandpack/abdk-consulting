@@ -1,0 +1,307 @@
+.Services {
+    width: 100%;
+    background: #FFF !important;
+    display: grid;
+    justify-content: center;
+    z-index: 99;
+    position: relative;
+}
+.Container {
+    width: 1440px;
+    //padding: 200px 0;
+    display: grid;
+    gap: 50px;
+}
+
+.Service {
+    display: grid;
+    grid-template-areas:
+    "Name image"
+    "Description image";
+    grid-template-columns: 1fr 1fr;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid rgba(226, 226, 226, 0.50);
+    background: #FCFCFC;
+    justify-content: space-between;
+    grid-gap: 50px;
+    &:nth-child(even) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "image Name"
+        "image Description";
+    }
+    .Header {
+        grid-area: Name;
+        display: grid;
+        gap: 60px;
+        h2 {
+            color: var(--grey-main, #353539);
+            font-size: 64px;
+            font-weight: 700;
+        }
+        .Line {
+            width: 52px;
+            height: 2px;
+            border-radius: 999px;
+        }
+        .blueLine {
+            background: #2DAED7;
+        }
+        
+        .greenLine {
+            background: #34C88C;
+        }
+        
+        .cyanLine {
+            background: #474DD8;
+        }
+        
+        .purpleLine {
+            background: #BF63DF;
+        }
+    }
+    .Footer {
+        display: grid;
+        align-items: stretch;
+        justify-content: start;
+        grid-area: Description;
+        gap: 46px;
+        p {
+            width: 100%;
+            font-size: 22px;
+            color: var(--grey-main, #353539);
+            font-weight: 400;
+            line-height: 140%;
+        }
+        .btnContainer {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            .Button {
+                display: grid;
+                gap: 14px;
+                grid-template-columns: auto auto;
+                padding: 28px 36px;
+                border-radius: 12px;
+                border: 1px solid #000;
+                color: #000;
+                font-size: 20px;
+                font-weight: 500;
+                text-decoration: none;
+                align-items: center;
+                &:hover {
+                    border: 1px solid #BABABA;
+                }
+            }
+        }
+        
+    }
+    .zoomHover {
+        grid-area: image;
+        height: 100%;
+        width: 100%;
+        .imgFigure {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            .imgBigScreen {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                background-position: 50% 50%;
+            }
+            .imgBigScreen1 {
+                background-image: url(../../../public/audit-small.webp);
+            }
+            .imgBigScreen2 {
+                background-image: url(../../../public/reasearch-small.webp);
+            }
+            .imgBigScreen3 {
+                background-image: url(../../../public/consulting-small.webp);
+            }
+            .imgBigScreen4 {
+                background-image: url(../../../public/evaluation-small.webp);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .Container {
+        width: 1320px;
+    }
+}
+
+@media (max-width: 1480px) {
+    .Container {
+        width: 1220px;
+        gap: 40px;
+        //padding: 180px 0;
+    }
+
+    .Service {
+        .Header {
+            gap: 40px;
+            h2 {
+                font-size: 60px;
+            }
+            .Line {
+                width: 40px;
+            }
+        }
+        .Footer {
+            gap: 36px;
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    .Container {
+        width: 1080px;
+        //padding: 160px 0;
+    }
+
+    .Service {
+        gap: 30px;
+        padding: 30px;
+        .Header {
+            gap: 36px;
+            h2 {
+                font-size: 54px;
+            }
+            .Line {
+                width: 36px;
+            }
+        }
+        .Footer {
+            gap: 32px;
+            p {
+                font-size: 17px;
+            }
+            .btnContainer {
+                .Button {
+                    gap: 12px;
+                    padding: 24px 32px;
+                    border-radius: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1180px) {
+    .Container {
+        width: 980px;
+        //padding: 150px 0;
+    }
+
+    .Service {
+        gap: 24px;
+        padding: 26px;
+        .Header {
+            gap: 32px;
+            h2 {
+                font-size: 50px;
+            }
+            .Line {
+                width: 32px;
+            }
+        }
+        .Footer {
+            gap: 32px;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .Container {
+        width: 93vw;
+        //padding: 140px 0;
+    }
+
+    .Service {
+        gap: 22px;
+        padding: 24px;
+        .Header {
+            gap: 30px;
+            h2 {
+                font-size: 42px;
+            }
+            .Line {
+                width: 30px;
+            }
+        }
+        .Footer {
+            gap: 30px;
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .Container {
+        width: 100vw;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .Service {
+        gap: 40px;
+        border-radius: 0;
+        grid-template-areas:
+            "Name"
+            "image"
+            "Description" !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto 1fr auto;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #E2E2E2;
+        padding: 100px 6vw;
+        .Header {
+            gap: 30px;
+            h2 {
+                font-size: 48px;
+            }
+            .Line {
+                width: 40px;
+            }
+        }
+        .Footer {
+            gap: 30px;
+            p {
+                font-size: 18px;
+            }
+            .btnContainer {
+                .Button {
+                    gap: 12px;
+                    padding: 0;
+                    border-radius: 0;
+                    font-size: 20px;
+                    border: none;
+                }
+            }
+        }
+        .zoomHover {
+            height: 30vh;
+        }
+    }
+}
