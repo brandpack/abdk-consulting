@@ -20,6 +20,7 @@ import InternalCross from '@/public/internalCross.svg';
 import InternalCrossH from '@/public/InternalCrossAuditH.svg';
 import Reverse from '@/public/Reverse.svg';
 import ReverseH from '@/public/ReverseAuditH.svg';
+import { Methodology } from "@/components/common/Methodology/Methodology";
 
 const nameService = 'Audit';
 
@@ -74,7 +75,7 @@ export default function Audit() {
             <ServiceFirstScreen title={nameService} image={image} text='Order an audit of your code, protocol, or architecture' color='#2DAED7'/>
             <WhyChoose items={WhyChooseData}/>
             <Request nameRequest={nameService} stages={AuditStages}/>
-
+            <Methodology/>
             <Footer />
             <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
         </main>
