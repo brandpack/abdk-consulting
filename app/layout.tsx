@@ -1,4 +1,5 @@
-import '@/styles/index.scss';
+import '@/styles/index.scss'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body>
         {children}
       </body>
+      <GoogleAnalytics gaId="AW-16482539669" />
     </html>
   )
 }
