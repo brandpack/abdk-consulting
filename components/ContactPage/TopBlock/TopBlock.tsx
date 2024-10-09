@@ -4,6 +4,7 @@ import cls from './TopBlock.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import X from '@/public/xMini.svg';
+import Telegram from '@/public/telegram.svg';
 import LinkedIn from '@/public/linkedInMini.svg';
 import GhLink from '@/public/GithubMini.svg';
 import EmailLink from '@/public/emailLink.svg';
@@ -40,45 +41,45 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
 
                 <div className={cls.right}>
 
-                    <div className={`${cls.Evaluation} ${cls.Evaluation1}`}>
+                    <div className={`${cls.Evaluation} ${cls.Evaluation0}`}>
                         <Image
-                            src={X}
-                            alt='X'
+                            src={Telegram}
+                            alt='Telegram'
                             loading='lazy'
                         />
-                        <Link href={"https://x.com/ABDKconsulting"} className={cls.EvaluationText} target="_blank">
-                            <p>Link</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
-                            </svg>
-                        </Link>
-                    </div>
-                    
-                    <div className={`${cls.Evaluation} ${cls.Evaluation2}`}>
-                        <Image
-                            src={LinkedIn}
-                            alt='LinkedIn'
-                            loading='lazy'
-                        />
-                        <Link href={"https://www.linkedin.com/company/abdk-consulting/"} className={cls.EvaluationText} target="_blank">
-                            Link
+                        <span>Telegram</span>
+                        <Link href={"https://t.me/khovratovich"} className={cls.EvaluationText} target="_blank">
+                            <p>Contact us</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                                 <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
                             </svg>
                         </Link>
                     </div>
 
-                    <div className={`${cls.Evaluation} ${cls.Evaluation3}`}>
-                        <Image
-                            src={GhLink}
-                            alt='GhLink'
-                            loading='lazy'
-                        />
-                        <Link className={cls.EvaluationText} href={'https://github.com/abdk-consulting'} target="_blank" >
-                            Link
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                <path d="M0.703125 10.2969L10 1M10 1H-3.72529e-08M10 1V11" strokeWidth="1.6" strokeLinejoin="bevel" />
-                            </svg>
+                    <div className={`${cls.EvaluationBottom}`}>
+
+                        <Link href={'https://github.com/abdk-consulting'} className={cls.EvaluationLink} target="_blank" >
+                            <Image className={`${cls.GitHub}`}
+                                src={GhLink}
+                                alt='GhLink'
+                                loading='lazy'
+                            />
+                        </Link>
+
+                        <Link href={"https://x.com/ABDKconsulting"} className={cls.EvaluationLink} target="_blank">
+                            <Image className={`${cls.Twitter}`}
+                                src={X}
+                                alt='X'
+                                loading='lazy'
+                            />
+                        </Link>
+
+                        <Link href={"https://www.linkedin.com/company/abdk-consulting/"} className={cls.EvaluationLink} target="_blank">
+                            <Image className={`${cls.LinkedIn}`}
+                                src={LinkedIn}
+                                alt='LinkedIn'
+                                loading='lazy'
+                            />
                         </Link>
                     </div>
 

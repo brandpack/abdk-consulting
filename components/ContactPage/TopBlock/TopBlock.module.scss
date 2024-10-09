@@ -34,17 +34,13 @@
             grid-template-columns: auto 1fr auto;
             padding: 40px 30px;
             border-radius: 10px;
-            border: 10px solid #E2E2E2;
+            border: 1px solid #E2E2E2;
             background: #FFF;
             align-items: center;
-        
             .EvaluationText {
                 display: grid;
                 grid-template-columns: auto auto;
                 gap: 8px;
-                p {
-                    font-size: 20px;
-                }
                 align-items: center;
                 color: var(--grey-main, #353539);
                 font-size: 20px;
@@ -54,9 +50,83 @@
                 border-radius: 6px;
                 border: 1px solid #E2E2E2;
                 text-decoration: none;
+                &:hover {
+                    background-color: #ebebf2;
+                    border: 1px solid #ebebf2;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .Evaluation0 {
+            width: auto;
+            border: 1px solid #E2E2E2;
+            background: #FFF;
+            padding: 40px 40px;
+            img {
+                width: 46px;
+                height: 46px;
+            }
+            span {
+                color: #000;
+                margin-left: 16px;
+                font-size: 36px;
+                font-weight: bold;
+            }
+            .EvaluationText {
+                grid-column: 3;
+                p {
+                    font-size: 22px;
+                }
+                svg {
+                    stroke: #000;
+                }
             }
         }
         
+        .EvaluationBottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: auto;
+            border: 1px solid #E2E2E2;
+            background: #FFF;
+            padding: 0px 0px;
+            border-radius: 10px;
+            background: #FFF;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            
+            .EvaluationLink {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                height: 100%;
+                width: 100%;
+                &:hover {
+                    background-color: #f4f4f4;
+                }
+                &:nth-child(2) {
+                    border-left: 1px solid #E2E2E2;
+                    border-right: 1px solid #E2E2E2;
+                }
+            }
+            .GitHub {
+                width: 102px;
+                height: 30px;
+            }
+            .Twitter {
+                width: 25px;
+                height: 25px;
+            }
+            .LinkedIn {
+                width: 105px;
+                height: 26px;
+            }
+        }
+
         .Evaluation1 {
             width: auto;
             border: 1px solid #E2E2E2;
@@ -210,7 +280,7 @@
             .Evaluation {
                 padding: 35px 25px;
                 border-radius: 10px;
-                border: 8px solid #E2E2E2;
+                border: 1px solid #E2E2E2;
                 .EvaluationText {
                     gap: 8px;
                     p {
@@ -300,7 +370,7 @@
             .Evaluation {
                 padding: 30px 20px;
                 border-radius: 10px;
-                border: 8px solid #E2E2E2;
+                border: 1px solid #E2E2E2;
             
                 .EvaluationText {
                     gap: 8px;
@@ -381,7 +451,7 @@
         .Evaluation {
             padding: 20px 15px;
             border-radius: 10px;
-            border: 8px solid #E2E2E2;
+            border: 1px solid #E2E2E2;
         
             .EvaluationText {
                 gap: 8px;
@@ -390,6 +460,32 @@
                 }
                 font-size: 18px;
                 padding: 12px 14px;
+            }
+        }
+
+        .Evaluation0 {
+            border: 1px solid #E2E2E2;
+            background: #FFF;
+            // padding: 40px 40px;
+            img {
+                width: 44px;
+                height: 44px;
+            }
+            span {
+                color: #000;
+                margin-left: 12px;
+                font-size: 22;
+                font-weight: bold;
+                display: none;
+            }
+            .EvaluationText {
+                grid-column: 3;
+                p {
+                    font-size: 16px;
+                }
+                svg {
+                    stroke: #000;
+                }
             }
         }
         
@@ -487,7 +583,7 @@
             .Evaluation {
                 padding: 20px 15px;
                 border-radius: 10px;
-                border: 8px solid #E2E2E2;
+                border: 1px solid #E2E2E2;
             
                 .EvaluationText {
                     gap: 8px;
@@ -497,6 +593,36 @@
                     font-size: 18px;
                     padding: 12px 14px;
                 }
+            }
+
+            .Evaluation0 {
+                border: 1px solid #E2E2E2;
+                background: #FFF;
+                // padding: 40px 40px;
+                img {
+                    width: 44px;
+                    height: 44px;
+                }
+                span {
+                    color: #000;
+                    margin-left: 12px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    display: block;
+                }
+                .EvaluationText {
+                    grid-column: 3;
+                    p {
+                        font-size: 16px;
+                    }
+                    svg {
+                        stroke: #000;
+                    }
+                }
+            }
+
+            .EvaluationBottom {
+                padding: 20px 0;
             }
             
             .Evaluation1 {
