@@ -42,6 +42,30 @@
             padding: 40px;
             border-radius: 10px;
             background-color: #2E2E33;
+            .successMessage {
+                display: grid;
+                width: 100%;
+                background-color: #F2FFF3;
+                border: 1px solid #19C128;
+                color: #19C128;
+                text-align: center;
+                margin-top: 20px;
+                padding: 20px 0;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+            .errorMessage {
+                display: grid;
+                width: 100%;
+                background-color: #FFF3F2;
+                border: 1px solid #C11919;
+                color: #C11919;
+                text-align: center;
+                margin-top: 20px;
+                padding: 20px 0;
+                font-size: 16px;
+                border-radius: 10px;
+            }
             form {
                 display: grid;
                 grid-template: 1fr 1fr;

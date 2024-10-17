@@ -1,5 +1,5 @@
 'use client'
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 import cls from './TopBlock.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -14,6 +14,22 @@ interface TopBlockProps {
 }
 
 export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
+    const [isSubmitted, setIsSubmitted] = useState(false);  
+    const [isError, setIsError] = useState(false);         
+
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+
+        try {
+            await sendEmail(formData);
+            setIsSubmitted(true);
+            setIsError(false);     
+        } catch (error) {
+            setIsError(true); 
+        }
+    };
+
     return (
         <div className={cls.TopBlock}>
 
@@ -24,33 +40,38 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                     <p>We are here to offer our expertise as you build towards your vision. Email us on <b>info@abdkconsulting.com</b> or fill in the form.</p>
                 </div>
                 <div className={cls.content_form}>
-                    <form action={async fromData => {
-                        await sendEmail(fromData)
-                    }}>
+                    <form onSubmit={handleSubmit}>
                         <div className={cls.line}>
                             <div className={cls.Input}>
                                 <span>Name</span>
-                                <input type="text" name="name" placeholder="Your name" required/>
+                                <input type="text" name="name" placeholder="Your name" required />
                             </div>
 
                             <div className={cls.Input}>
                                 <span>Telegram Handle</span>
-                                <input type="text" name="telegram" placeholder="@username"/>
+                                <input type="text" name="telegram" placeholder="@username" />
                             </div>
                         </div>
 
                         <div className={cls.Input}>
                             <span>Email</span>
-                            <input type="email" name="email" placeholder="Your email" required/>
+                            <input type="email" name="email" placeholder="Your email" required />
                         </div>
 
                         <div className={cls.TextArea}>
                             <span>How may we help you?</span>
-                            <textarea name="message" required placeholder="Project details (description, links to documentation, smart contract source code, etc.)"/>
+                            <textarea name="message" required placeholder="Project details (description, links to documentation, smart contract source code, etc.)" />
                         </div>
                         
                         <button type="submit">Send Request</button>
                     </form>
+                    {isSubmitted && !isError && (
+                        <p className={cls.successMessage}>Your message has been sent successfully!</p>
+                    )}
+
+                    {isError && (
+                        <p className={cls.errorMessage}>An error occurred while sending the message. Please try again.</p>
+                    )}
                 </div>
             </div>
 
