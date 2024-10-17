@@ -2,7 +2,6 @@ import '@/styles/index.scss'
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
-  viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
   title: 'ABDK Consulting - Your Guide in the World of Crypto',
   description: 'ABDK Consulting - Your Guide in the World of Crypto',
   icons: {
@@ -18,6 +17,11 @@ export const metadata = {
   },
   mainfest: '/site.webmainfest'
 }
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,

@@ -54,7 +54,7 @@ const AboutUs: React.FC = () => {
 			<WorkAtABDK />
 			<CheckOut />
 			<Footer />
-        	<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
+			<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
 		</main>
 	);
 };
