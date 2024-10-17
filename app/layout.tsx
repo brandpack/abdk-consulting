@@ -1,9 +1,13 @@
 import '@/styles/index.scss'
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'ABDK Consulting - Your Guide in the World of Crypto',
-  description: 'ABDK Consulting - Your Guide in the World of Crypto',
+export const metadata: Metadata = {
+  title: {
+    default: 'ABDK: Crypto Security',
+    template: 'ABDK: %s',
+  },
+  description: 'ABDK Consulting offers crypto security solutions through smart contract audits, blockchain research, and consultancy services that help our clients protect billion-value assets.',
   icons: {
     icon: [
       '/favicon.ico',
@@ -14,8 +18,7 @@ export const metadata = {
     shortcut: [
       '/apple-touch-icon.png',
     ]
-  },
-  mainfest: '/site.webmainfest'
+  }
 }
 
 export const viewport = {
