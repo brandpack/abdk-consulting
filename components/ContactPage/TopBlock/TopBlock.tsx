@@ -8,6 +8,7 @@ import Telegram from '@/public/telegram.svg';
 import LinkedIn from '@/public/linkedInMini.svg';
 import GhLink from '@/public/GithubMini.svg';
 import EmailLink from '@/public/emailLink.svg';
+import { sendEmail } from '../sendEmail'
 
 interface TopBlockProps {
 }
@@ -15,9 +16,43 @@ interface TopBlockProps {
 export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
     return (
         <div className={cls.TopBlock}>
-            <h1 className={cls.ApproachHeader}>
-                Get in touch
-            </h1>
+
+            <div className={cls.Form}>
+                <div className={cls.titles}>
+                    <h3>Get in touch</h3>
+                    <h1>Tell us about your project</h1>
+                    <p>We are here to offer our expertise as you build towards your vision. Email us on <b>info@abdkconsulting.com</b> or fill in the form.</p>
+                </div>
+                <div className={cls.content_form}>
+                    <form action={async fromData => {
+                        await sendEmail(fromData)
+                    }}>
+                        <div className={cls.line}>
+                            <div className={cls.Input}>
+                                <span>Name</span>
+                                <input type="text" name="name" placeholder="Your name" required/>
+                            </div>
+
+                            <div className={cls.Input}>
+                                <span>Telegram Handle</span>
+                                <input type="text" name="telegram" placeholder="@username"/>
+                            </div>
+                        </div>
+
+                        <div className={cls.Input}>
+                            <span>Email</span>
+                            <input type="email" name="email" placeholder="Your email" required/>
+                        </div>
+
+                        <div className={cls.TextArea}>
+                            <span>How may we help you?</span>
+                            <textarea name="message" required placeholder="Project details (description, links to documentation, smart contract source code, etc.)"/>
+                        </div>
+                        
+                        <button type="submit">Send Request</button>
+                    </form>
+                </div>
+            </div>
 
             <div className={cls.container}>
 

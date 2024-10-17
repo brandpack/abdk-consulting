@@ -3,6 +3,95 @@
     display: grid;
     background: #fff;
     justify-content: center;
+    .Form {
+        width: 1440px;
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+        margin-bottom: 65px;
+        .titles {
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #FCFCFC;
+            border: 1px solid #EEEEEE;
+            color: #2E2E33;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-gap: 30px;
+            h3 {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%;
+                text-transform: uppercase;
+            }
+            h1 {
+                font-size: 76px;
+                font-weight: 700;
+                line-height: 90%;
+                justify-self: end;
+                align-self: flex-end;
+            }
+            p {
+                font-size: 18px;
+                line-height: 120%;
+            }
+        }
+        .content_form {
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #2E2E33;
+            form {
+                display: grid;
+                grid-template: 1fr 1fr;
+                grid-gap: 24px;
+                .line {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 20px;
+                }
+                .Input, .TextArea {
+                    display: grid;
+                    grid-template: 1fr;
+                    grid-gap: 15px;
+                    span {
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    input {
+                        padding: 15px 12px;
+                        font-size: 16px;
+                        border-radius: 6px;
+                        background-color: #222225;
+                        border: 1px solid #101011;
+                        color: #fff;
+                    }
+                    textarea {
+                        padding: 15px 12px;
+                        font-size: 16px;
+                        border-radius: 6px;
+                        background-color: #222225;
+                        border: 1px solid #101011;
+                        color: #fff;
+                    }
+                }
+                button {
+                    background-color: #fff;
+                    color: 000000;
+                    font-size: 20px;
+                    border-radius: 6px;
+                    padding: 18px 0;
+                    border: none;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #A9FAB0;
+                    }
+                }
+            }
+        }
+    }
     .ApproachHeader {
         width: 100%;
         align-self: center;
