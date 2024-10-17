@@ -5,6 +5,7 @@ import { Resend } from "resend";
 import ContactFormEmail from "@/email/contact-form-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const emailToSend = process.env.EMAIL_TO_SEND;
 
 export const sendEmail = async (formData: FormData) => {
     const name = formData.get("name");
@@ -15,6 +16,12 @@ export const sendEmail = async (formData: FormData) => {
     if (!name || typeof name !== "string") {
         return {
             error: "Invalid name"
+        }
+    }
+
+    if (!emailToSend || typeof emailToSend !== "string") {
+        return {
+            error: "Invalid email"
         }
     }
 
@@ -33,9 +40,9 @@ export const sendEmail = async (formData: FormData) => {
     try {
         await resend.emails.send({
             from: 'ABDK Contact Form <onboarding@resend.dev>',
-            to: 'milyaev.dev@gmail.com',
+            to: emailToSend as string,
             subject: "New Request from website ABDK.Consulting",
-            replyTo: email,
+            replyTo: email as string,
             react: React.createElement(ContactFormEmail, {
                 name: name as string,
                 telegram: telegram as string,

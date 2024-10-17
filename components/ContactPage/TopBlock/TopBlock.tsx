@@ -60,7 +60,7 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
 
                         <div className={cls.TextArea}>
                             <span>How may we help you?</span>
-                            <textarea name="message" required placeholder="Project details (description, links to documentation, smart contract source code, etc.)" />
+                            <textarea name="message" rows={4} required placeholder="Project details (description, links to documentation, smart contract source code, etc.)" />
                         </div>
                         
                         <button type="submit">Send Request</button>
