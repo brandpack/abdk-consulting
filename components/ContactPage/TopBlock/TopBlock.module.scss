@@ -356,6 +356,9 @@
 
 @media (max-width: 1480px) {
     .TopBlock {
+        .Form {
+            width: 1220px;
+        }
         .ApproachHeader {
             margin-top: 200px;
             margin-bottom: 40px;
@@ -451,6 +454,9 @@
 @media (max-width: 1340px) {
 
     .TopBlock{
+        .Form {
+            width: 1138px;
+        }
         .ApproachHeader {
             font-size: 60px;
         }
@@ -526,6 +532,53 @@
 @media (max-width: 1180px) {
 
 .TopBlock{
+    .Form {
+        width: 93vw;
+        margin-top: 130px;
+        grid-gap: 16px;
+        margin-bottom: 40px;
+        .titles {
+            padding: 24px;
+            grid-gap: 20px;
+            h3 {
+                font-size: 22px;
+            }
+            h1 {
+                font-size: 42px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 120%;
+            }
+        }
+        .content_form {
+            padding: 24px;
+            form {
+                grid-gap: 20px;
+                .line {
+                    grid-gap: 16px;
+                }
+                .Input, .TextArea {
+                    grid-gap: 10px;
+                    span {
+                        font-size: 14px;
+                    }
+                    input {
+                        padding: 13px 10px;
+                        font-size: 16px;
+                    }
+                    textarea {
+                        padding: 13px 10px;
+                        font-size: 16px;
+                    }
+                }
+                button {
+                    font-size: 16px;
+                    padding: 16px 0;
+                }
+            }
+        }
+    }
     .ApproachHeader {
         margin-top: 200px;
         margin-bottom: 40px;
@@ -649,6 +702,15 @@
 
     .TopBlock{
         justify-items: center;
+        .Form {
+            grid-template-columns: 1fr;
+            .titles {
+                h1 {
+                    justify-self: start;
+                    align-self: flex-start;
+                }
+            }
+        }
         .ApproachHeader {
             display: grid;
             justify-content: center;
