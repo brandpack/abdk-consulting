@@ -1,0 +1,190 @@
+.MostPopularAudit {
+    width: 100%;
+    background: #FFF !important;
+    display: grid;
+    justify-content: center;
+    z-index: 99;
+    position: relative;
+    padding: 80px 0 0 0;
+}
+.Container {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    color: #000;
+}
+
+.MostPopularAudit {
+    .first {
+        display: grid;
+        justify-content: space-between;
+        h1 {
+            color: #322B3D;
+            font-size: 76px;
+            font-weight: 700;
+            padding: 24px 0;
+        }
+    }
+    .second {
+        display: grid;
+        grid-gap: 16px;
+        .top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 16px;
+        }
+    }
+
+    .auditCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        background-color: #FBFBFB;
+        padding: 24px;
+        border-radius: 10px;
+        grid-gap: 24px;
+        .item {
+            display: grid;
+            grid-template: 1fr;
+            grid-gap: 4px;
+            color: #1C1C1C;
+            span {
+                font-size: 11px;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+                color: #1c1c1c7c;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .info {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            align-items: center;
+            .company {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 10px;
+                align-items: center;
+                .logo {
+                    display: grid;
+                    align-items: center;
+                    justify-items: center;
+                    background-color: #fff;
+                    height: 36px;
+                    width: 36px;
+                    border-radius: 6px;
+                }
+                .name {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+            .marketCap {
+                align-items: end;
+                justify-items: end;
+            }
+        }
+        .description {
+            display: grid;
+            grid-gap: 8px;
+            align-content: start;
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 130%;
+                opacity: 0.8;
+            }
+        }
+        .auditInfo {
+            display: grid;
+            grid-gap: 24px;
+            margin-top: 4px;
+            .info {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: start;
+                grid-gap: 24px;
+            }
+            .audit {
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: #EFEFEF;
+                border-radius: 10px;
+                padding: 16px;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                &:hover {
+                    opacity: 0.65;
+                }
+                .auditDate {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .button {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                    grid-gap: 6px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #1C1C1C;
+                    .icon {
+                        height: 24px;
+                        width: 24px;
+                        background-image: url(../../../public/audit-small-icon.svg)
+                    }
+                    p {
+                        line-height: 100%;
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+        .Last {
+            justify-content: space-between;
+            grid-template-columns: auto auto;
+            .audit {
+                justify-items: end;
+            }
+        }
+    }
+    .colorGreen {
+        background-color: #F2FDEB;
+        .auditInfo {
+            .audit {
+                background-color: #E9FBDA;
+            }
+        }
+    }
+    .colorPink {
+        background-color: #FEF5FB;
+        .auditInfo {
+            .audit {
+                background-color: #FDECF8;
+            }
+        }
+    }
+    .colorPurple {
+        background-color: #F2F4FF;
+        .auditInfo {
+            .audit {
+                background-color: #E9EAFE;
+            }
+        }
+    }
+    .colorBlue {
+        background-color: #F0FCFF;
+        .auditInfo {
+            .audit {
+                background-color: #E4F6FF;
+            }
+        }
+    }
+}

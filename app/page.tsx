@@ -21,6 +21,7 @@ import InternalCross from '@/public/internalCross.svg';
 import InternalCrossH from '@/public/InternalCrossH.svg';
 import ClearMilestones from '@/public/clearMilestones.svg';
 import ClearMilestonesH from '@/public/ClearMilestonesH.svg';
+import { MostPopularAudit } from "@/components/common/MostPopularAudit/MostPopularAudit";
 
 const WhyChooseData = [
   {
@@ -82,6 +83,7 @@ export default function Home() {
     <main ref={scrollableElementRef} className='Mainpage'>
       <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
       <FirstScreen />
+      <MostPopularAudit />
       <Clients />
       <Services />
       <Expertise />
