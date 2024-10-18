@@ -50,7 +50,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                 </div>
                             </div>
 
-                            <Link href={'/'} className={cls.audit}>
+                            <Link href={'/audit/1inch'} className={cls.audit} target="_blank">
                                 <div className={`${cls.item} ${cls.auditDate}`}>
                                     <span>Last Audit</span>
                                     <p>February 2023</p>
@@ -86,12 +86,12 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             </div>
 
                             <div className={`${cls.auditInfo} ${cls.Last}`}>
-                                <Link href={'/'} className={cls.audit}>
+                                <div className={cls.audit}>
                                     <div className={`${cls.item} ${cls.auditDate} ${cls.noLink}`}>
                                         <span>Last Audit</span>
                                         <p>February 2023</p>
                                     </div>
-                                </Link>
+                                </div>
                                 <div className={cls.info}>
                                     <div className={cls.item}>
                                         <span>Platform</span>
@@ -110,6 +110,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                 <div className={cls.second}>
                     <h2>Most Popular Audits</h2>
                     <div className={cls.top}>
+
                         <div className={`${cls.auditCard} ${cls.colorPink}`}>
                             <div className={cls.info}>
                                 <div className={cls.company}>
@@ -141,7 +142,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                     </div>
                                 </div>
 
-                                <Link href={'/'} className={cls.audit}>
+                                <Link href={'/audit/uniswap'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
                                         <span>Last Audit</span>
                                         <p>March 2021</p>
@@ -185,7 +186,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                     </div>
                                 </div>
 
-                                <Link href={'/'} className={cls.audit}>
+                                <Link href={'/audit/aave'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
                                         <span>Last Audit</span>
                                         <p>January 2022</p>
@@ -221,12 +222,12 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             </div>
 
                             <div className={`${cls.auditInfo} ${cls.Last}`}>
-                                <Link href={'/'} className={cls.audit}>
+                                <div className={cls.audit}>
                                     <div className={`${cls.item} ${cls.auditDate} ${cls.noLink}`}>
                                         <span>Last Audit</span>
                                         <p>February 2023</p>
                                     </div>
-                                </Link>
+                                </div>
                                 <div className={cls.info}>
                                     <div className={cls.item}>
                                         <span>Platform</span>

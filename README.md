@@ -192,6 +192,11 @@ git pull
 npm i
 ```
 
+Clear cache
+```bash
+rm -rf .next
+```
+
 Take a build
 ```bash
 npm run build
