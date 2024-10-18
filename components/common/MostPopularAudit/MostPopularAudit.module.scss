@@ -5,7 +5,7 @@
     justify-content: center;
     z-index: 99;
     position: relative;
-    padding: 80px 0 0 0;
+    padding: 140px 0 0 0;
 }
 .Container {
     width: 1440px;
@@ -19,16 +19,26 @@
     .first {
         display: grid;
         justify-content: space-between;
-        h1 {
+        h2 {
             color: #322B3D;
             font-size: 76px;
             font-weight: 700;
             padding: 24px 0;
         }
+        .tablet {
+            display: none;
+        }
     }
     .second {
         display: grid;
         grid-gap: 16px;
+        h2 {
+            display: none;
+            color: #322B3D;
+            font-size: 76px;
+            font-weight: 700;
+            padding: 24px 0;
+        }
         .top {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -184,6 +194,75 @@
         .auditInfo {
             .audit {
                 background-color: #E4F6FF;
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .Container {
+        width: 1320px;
+    }
+}
+
+@media (max-width: 1480px) {
+    .Container {
+        width: 1220px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .Container {
+        width: 1080px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .Container {
+        width: 980px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .first {
+            grid-gap: 16px;
+            h2 {
+                font-size: 56px;
+            }
+            .tablet {
+                display: grid;
+            }
+        }
+        .second {
+            .top {
+                grid-template-columns: 1fr;
+            }
+            .bottom {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .MostPopularAudit {
+        padding: 40px 0 0 0;
+    }
+    .Container {
+        width: 93vw;
+        grid-template-columns: 1fr;
+        grid-template-areas: "second" "first";
+        .first {
+            grid-area: first;
+            grid-gap: 16px;
+            h2 {
+                display: none;
+            }
+        }
+        .second {
+            grid-area: second;
+            h2 {
+                display: block;
+                font-size: 40px;
+                text-align: center;
             }
         }
     }

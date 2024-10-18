@@ -17,7 +17,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
         <div className={cls.MostPopularAudit}>
             <div className={cls.Container}>
                 <div className={cls.first}>
-                    <h1>Most Popular Audits</h1>
+                    <h2>Most Popular Audits</h2>
 
                     <div className={`${cls.auditCard} ${cls.colorGreen}`}>
                         <div className={cls.info}>
@@ -66,9 +66,49 @@ export const MostPopularAudit: React.FC<any> = (props) => {
 
                     </div>
 
+                    <div className={`${cls.auditCard} ${cls.colorBlue} ${cls.tablet}`}>
+                            <div className={cls.info}>
+                                <div className={cls.company}>
+                                    <div className={cls.logo}>
+                                        <Image src={StarkwareIcon} alt="Starkware Icon"></Image>
+                                    </div>
+                                    <div className={cls.name}>Starkware</div>
+                                </div>
+                                <div className={`${cls.item} ${cls.marketCap}`}>
+                                    <span>Market cap</span>
+                                    <p>$735,000,000</p>
+                                </div>
+                            </div>
+
+                            <div className={`${cls.item} ${cls.description}`}>
+                                <span>Description</span>
+                                <p>Cairo Language Library provides support for the Cairo programming language. Cairo is the first Turing-complete language for creating provable programs for general computation.</p>
+                            </div>
+
+                            <div className={`${cls.auditInfo} ${cls.Last}`}>
+                                <Link href={'/'} className={cls.audit}>
+                                    <div className={`${cls.item} ${cls.auditDate} ${cls.noLink}`}>
+                                        <span>Last Audit</span>
+                                        <p>February 2023</p>
+                                    </div>
+                                </Link>
+                                <div className={cls.info}>
+                                    <div className={cls.item}>
+                                        <span>Platform</span>
+                                        <p>Ethereum L1</p>
+                                    </div>
+                                    <div className={cls.item}>
+                                        <span>Language</span>
+                                        <p>Cairo</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
                 </div>
 
                 <div className={cls.second}>
+                    <h2>Most Popular Audits</h2>
                     <div className={cls.top}>
                         <div className={`${cls.auditCard} ${cls.colorPink}`}>
                             <div className={cls.info}>
