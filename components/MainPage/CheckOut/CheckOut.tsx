@@ -23,7 +23,7 @@ export const CheckOut = ({ }) => {
                         >
                             <h2>Our audit portfolio</h2>
                             <p>Check out our audit portfolio on github.</p>
-                            <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting'} target="_blank" >Check Out</Link>
+                            <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting/audits'} target="_blank" >Check Out</Link>
                         </motion.div>
                     </figure>
                     <motion.div
