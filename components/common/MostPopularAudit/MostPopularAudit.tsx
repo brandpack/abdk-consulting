@@ -52,7 +52,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
 
                             <Link href={'/audit/1inch'} className={cls.audit} target="_blank">
                                 <div className={`${cls.item} ${cls.auditDate}`}>
-                                    <span>Last Audit</span>
+                                    <span>Audit Date</span>
                                     <p>February 2023</p>
                                 </div>
                                 <div className={cls.button}>
@@ -88,7 +88,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             <div className={`${cls.auditInfo} ${cls.Last}`}>
                                 <div className={cls.audit}>
                                     <div className={`${cls.item} ${cls.auditDate} ${cls.noLink}`}>
-                                        <span>Last Audit</span>
+                                        <span>Audit Date</span>
                                         <p>February 2023</p>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
 
                                 <Link href={'/audit/uniswap'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
-                                        <span>Last Audit</span>
+                                        <span>Audit Date</span>
                                         <p>March 2021</p>
                                     </div>
                                     <div className={cls.button}>
@@ -188,7 +188,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
 
                                 <Link href={'/audit/aave'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
-                                        <span>Last Audit</span>
+                                        <span>Audit Date</span>
                                         <p>January 2022</p>
                                     </div>
                                     <div className={cls.button}>
@@ -224,7 +224,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             <div className={`${cls.auditInfo} ${cls.Last}`}>
                                 <div className={cls.audit}>
                                     <div className={`${cls.item} ${cls.auditDate} ${cls.noLink}`}>
-                                        <span>Last Audit</span>
+                                        <span>Audit Date</span>
                                         <p>February 2023</p>
                                     </div>
                                 </div>
