@@ -726,12 +726,17 @@
 
     .TopBlock{
         justify-items: center;
-        .Form {
+        .Form {  
             grid-template-columns: 1fr;
             .titles {
                 h1 {
                     justify-self: start;
                     align-self: flex-start;
+                }
+            }
+            .content_form {
+                .line {
+                    grid-template-columns: 1fr !important;
                 }
             }
         }
