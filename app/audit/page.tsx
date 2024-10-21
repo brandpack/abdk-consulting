@@ -22,6 +22,7 @@ import Reverse from '@/public/Reverse.svg';
 import ReverseH from '@/public/ReverseAuditH.svg';
 import { Methodology } from "@/components/common/Methodology/Methodology";
 import { ExtraText } from "@/components/common/ExtraText/ExtraText";
+import { CheckOut } from "@/components/MainPage/CheckOut/CheckOut";
 
 const nameService = 'Audit';
 
@@ -76,6 +77,7 @@ export default function Audit() {
             <ServiceFirstScreen title={nameService} image={image} text='Order an audit of your code, protocol, or architecture' color='#2DAED7'/>
             <ExtraText/>
             <WhyChoose items={WhyChooseData}/>
+            <CheckOut/>
             <Request nameRequest={nameService} stages={AuditStages}/>
             <Methodology/>
             <Footer/>
