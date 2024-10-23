@@ -1,18 +1,50 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import cls from './MostPopularAudit.module.scss'
-import logoDesktop from '@/public/FooterDesktopLogo.svg';
-import linesDesktop from '@/public/linesDesktop.png';
-import linesMobile from '@/public/linesMobile.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import AuditIcon from '@/public/audit-small-icon.svg';
 import FirstInchIcon from '@/public/1inch_icon.svg';
 import UniswapIcon from '@/public/uniswap_icon.svg';
 import AaveIcon from '@/public/aave_icon.svg';
 import StarkwareIcon from '@/public/starkware_icon.svg';
+import AnimatedNumber from "./AnimatedNumber";
+import CurrencyDisplay from "./CurrentDisplay";
 
 export const MostPopularAudit: React.FC<any> = (props) => {
+    const [marketCaps, setMarketCaps] = useState({
+        uniswap: null,
+        aave: null,
+        inch: null
+    });
+    
+    useEffect(() => {
+        const fetchMarketCaps = async () => {
+            try {
+                const [uniswapResponse, aaveResponse, inchResponse] = await Promise.all([
+                    fetch(`/api/getCrypto?crypto=UNI`),
+                    fetch(`/api/getCrypto?crypto=AAVE`),
+                    fetch(`/api/getCrypto?crypto=1INCH`)
+                ]);
+        
+                const [uniswapData, aaveData, inchData] = await Promise.all([
+                    uniswapResponse.json(),
+                    aaveResponse.json(),
+                    inchResponse.json()
+                ]);
+        
+                setMarketCaps({
+                    uniswap: uniswapData.market_cap,
+                    aave: aaveData.market_cap,
+                    inch: inchData.market_cap
+                });
+            } catch (error) {
+                console.error('Error fetching market caps:', error);
+            }
+        };
+    
+        fetchMarketCaps();
+    }, []);
+
     return (
         <div className={cls.MostPopularAudit}>
             <div className={cls.Container}>
@@ -29,7 +61,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             </div>
                             <div className={`${cls.item} ${cls.marketCap}`}>
                                 <span>Market cap</span>
-                                <p>$340,000,000</p>
+                                <CurrencyDisplay marketCap={marketCaps.inch} />
                             </div>
                         </div>
 
@@ -121,7 +153,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                 </div>
                                 <div className={`${cls.item} ${cls.marketCap}`}>
                                     <span>Market cap</span>
-                                    <p>$4,440,000,000</p>
+                                    <CurrencyDisplay marketCap={marketCaps.uniswap} />
                                 </div>
                             </div>
 
@@ -165,7 +197,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                 </div>
                                 <div className={`${cls.item} ${cls.marketCap}`}>
                                     <span>Market cap</span>
-                                    <p>$2,323,200,000</p>
+                                    <CurrencyDisplay marketCap={marketCaps.aave} />
                                 </div>
                             </div>
 

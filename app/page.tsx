@@ -78,6 +78,15 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const crypto = 'UNI';
+    const crypto = 'AAVE';
+    const crypto = '1INCH';
+    fetch(`/api/getCrypto?crypto=${crypto}`)
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
+
   return (
     <>
     <main ref={scrollableElementRef} className='Mainpage'>
