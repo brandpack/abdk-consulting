@@ -120,13 +120,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                 <p>Cairo Language Library provides support for the Cairo programming language. Cairo is the first Turing-complete language for creating provable programs for general computation.</p>
                             </div>
 
-                            <div className={`${cls.auditInfo} ${cls.Last}`}>
-                                <div className={cls.audit}>
-                                    <div className={`${cls.item} ${cls.auditDate} ${cls.noLink}`}>
-                                        <span>Audit Date</span>
-                                        <p>February 2023</p>
-                                    </div>
-                                </div>
+                            <div className={`${cls.auditInfo}`}>
                                 <div className={cls.info}>
                                     <div className={cls.item}>
                                         <span>Platform</span>
@@ -137,6 +131,16 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                         <p>Cairo</p>
                                     </div>
                                 </div>
+                                <Link href={'/audit/starkware'} className={cls.audit} target="_blank">
+                                    <div className={`${cls.item} ${cls.auditDate}`}>
+                                        <span>Audit Date</span>
+                                        <p>February 2023</p>
+                                    </div>
+                                    <div className={cls.button}>
+                                        <div className={cls.icon}/>
+                                        <p>View audit</p>
+                                    </div>
+                                </Link>
                             </div>
                     </div>
 
@@ -257,12 +261,6 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             </div>
 
                             <div className={`${cls.auditInfo} ${cls.Last}`}>
-                                <div className={cls.audit}>
-                                    <div className={`${cls.item} ${cls.auditDate} ${cls.noLink}`}>
-                                        <span>Audit Date</span>
-                                        <p>February 2023</p>
-                                    </div>
-                                </div>
                                 <div className={cls.info}>
                                     <div className={cls.item}>
                                         <span>Platform</span>
@@ -273,6 +271,16 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                         <p>Cairo</p>
                                     </div>
                                 </div>
+                                <Link href={'/audit/starkware'} className={cls.audit} target="_blank">
+                                    <div className={`${cls.item} ${cls.auditDate}`}>
+                                        <span>Audit Date</span>
+                                        <p>February 2023</p>
+                                    </div>
+                                    <div className={cls.button}>
+                                        <div className={cls.icon}/>
+                                        <p>View audit</p>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
