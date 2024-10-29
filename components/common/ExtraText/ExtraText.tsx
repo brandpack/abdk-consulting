@@ -16,7 +16,7 @@ export const ExtraText = () => {
                     <div className={cls.item}>
                         <h4>Smart Contract Audits</h4>
                         <p>
-                            A smart contract is a publicly accessible piece of code that runs on a blockchain (global virtual machine). It is difficult to modify and can only be protected by a few defense mechanisms. A bug in a smart contract can easily lead to losses in the billions of dollars. At ABDK, we have been <Link href={'https://github.com/abdk-consulting/abdk-libraries-solidity'} target="_blank">writing</Link> and securing smart contracts since Ethereum's inception in 2015. The smart contract audits, our primary product, has been provided to  <Link href={'https://github.com/abdk-consulting/audits'} target="_blank">more than 100 clients</Link> over the years.
+                            A smart contract is a publicly accessible piece of code that runs on a blockchain (global virtual machine). It is difficult to modify and can only be protected by a few defense mechanisms. A bug in a smart contract can easily lead to losses in the billions of dollars. At ABDK, we have been <Link href={'https://github.com/abdk-consulting/abdk-libraries-solidity'} target="_blank">writing</Link> and securing smart contracts since Ethereum&apos;s inception in 2015. The smart contract audits, our primary product, has been provided to  <Link href={'https://github.com/abdk-consulting/audits'} target="_blank">more than 100 clients</Link> over the years.
                         </p>
                     </div>
                     <Link href={'https://github.com/abdk-consulting/abdk-libraries-solidity'} target="_blank"></Link>
