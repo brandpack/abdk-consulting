@@ -16,6 +16,19 @@ export const MostPopularAudit: React.FC<any> = (props) => {
         inch: null,
         starkware: null,
     });
+
+    function openPDF_1inch(){
+        window.open('/public/ABDK_1inch_Limit_Order_Settlement_v1.0.pdf');
+    }
+    function openPDF_uniswap(){
+        window.open('/public/ABDK_UniswapV3_v1.pdf');
+    }
+    function openPDF_aave(){
+        window.open('/public/ABDK_AAVE_Solidity_v1.pdf');
+    }
+    function openPDF_starkware(){
+        window.open('/public/ABDK_Starkware_Perpetual_v1.pdf');
+    }
     
     useEffect(() => {
         const fetchMarketCaps = async () => {
@@ -85,7 +98,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                 </div>
                             </div>
 
-                            <Link href={'/audit/1inch'} className={cls.audit} target="_blank">
+                            <Link href={'/ABDK_1inch_Limit_Order_Settlement_v1.0.pdf'} className={cls.audit} target="_blank">
                                 <div className={`${cls.item} ${cls.auditDate}`}>
                                     <span>Audit Date</span>
                                     <p>February 2023</p>
@@ -131,7 +144,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                         <p>Cairo</p>
                                     </div>
                                 </div>
-                                <Link href={'/audit/starkware'} className={cls.audit} target="_blank">
+                                <Link href={'/ABDK_Starkware_Perpetual_v1.pdf'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
                                         <span>Audit Date</span>
                                         <p>February 2023</p>
@@ -181,7 +194,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                     </div>
                                 </div>
 
-                                <Link href={'/audit/uniswap'} className={cls.audit} target="_blank">
+                                <Link href={'/ABDK_UniswapV3_v1.pdf'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
                                         <span>Audit Date</span>
                                         <p>March 2021</p>
@@ -225,7 +238,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                     </div>
                                 </div>
 
-                                <Link href={'/audit/aave'} className={cls.audit} target="_blank">
+                                <Link href={'/ABDK_AAVE_Solidity_v1.pdf'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
                                         <span>Audit Date</span>
                                         <p>January 2022</p>
@@ -271,7 +284,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                                         <p>Cairo</p>
                                     </div>
                                 </div>
-                                <Link href={'/audit/starkware'} className={cls.audit} target="_blank">
+                                <Link href={'/ABDK_Starkware_Perpetual_v1.pdf'} className={cls.audit} target="_blank">
                                     <div className={`${cls.item} ${cls.auditDate}`}>
                                         <span>Audit Date</span>
                                         <p>February 2023</p>
