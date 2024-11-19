@@ -86,8 +86,8 @@ export const TopBlockContact: FC<TopBlockProps> = ({ }) => {
                     <div className={cls.EvaluationFooterEmail}>
                         <p>Email</p>
                         <div className={cls.FooterBtn}>
-                            <a className={cls.EvaluationFooterEmailLink} href="mailto:info@abdk.consulting">info@abdk.consulting</a>
-                            <button className={cls.EmailCopy} onClick={() => navigator.clipboard.writeText('info@abdk.consulting')}>Copy</button>
+                            <a className={cls.EvaluationFooterEmailLink} href="mailto:info@abdkconsulting.com">info@abdkconsulting.com</a>
+                            <button className={cls.EmailCopy} onClick={() => navigator.clipboard.writeText('info@abdkconsulting.com')}>Copy</button>
                         </div>
                         <p className={cls.emailText}>
                             We combine experience from science and industry and are able to solve problems that are too tough for our competitors.
