@@ -84,6 +84,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                         <div className={`${cls.item} ${cls.description}`}>
                             <span>Description</span>
                             <p>1inch is one of the largest DeFi projects boasting a limit order functionality. It enables users to place a limit order and exchange any token that supports permits for ETH, even with a zero ETH balance.</p>
+                            <p className={cls.mobile}>Decentralized exchange aggregator.</p>
                         </div>
 
                         <div className={cls.auditInfo}>
@@ -131,13 +132,14 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             <div className={`${cls.item} ${cls.description}`}>
                                 <span>Description</span>
                                 <p>Cairo Language Library provides support for the Cairo programming language. Cairo is the first Turing-complete language for creating provable programs for general computation.</p>
+                                <p className={cls.mobile}>Scalability solution for derivatives trading.</p>
                             </div>
 
                             <div className={`${cls.auditInfo}`}>
                                 <div className={cls.info}>
                                     <div className={cls.item}>
                                         <span>Platform</span>
-                                        <p>Ethereum L1</p>
+                                        <p>Ethereum L2</p>
                                     </div>
                                     <div className={cls.item}>
                                         <span>Language</span>
@@ -180,6 +182,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             <div className={`${cls.item} ${cls.description}`}>
                                 <span>Description</span>
                                 <p>Uniswap v4 is an automated market maker (AMM) facilitating efficient exchange of value on the Ethereum Virtual Machine (EVM). As with previous versions of the Uniswap Protocol, it is noncustodial, non-upgradable, and permissionless. The focus of Uniswap v4 is on additional customization for developers and architectural changes for gas efficiency improvements, building on the AMM model built by Uniswap v1 and v2 and the concentrated liquidity model introduced in Uniswap v3.</p>
+                                <p className={cls.mobile}>The largest onchain marketplace.</p>
                             </div>
 
                             <div className={cls.auditInfo}>
@@ -224,6 +227,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             <div className={`${cls.item} ${cls.description}`}>
                                 <span>Description</span>
                                 <p>The Aave V3 design is born from thoughtful analysis of the evolution of the protocol and its ecosystems. The V3 enhanced features allow for new use cases that will spur a wave of innovation from users and developers. Aave V3 makes 4 improvements in all the aforementioned categories – capital efficiency, security, decentralization, UX – while simultaneously providing new functionalities to leverage the capabilities of rollups and the growing ecosystem of competing L1s.</p>
+                                <p className={cls.mobile}>Decentralized crypto lending platform</p>
                             </div>
 
                             <div className={cls.auditInfo}>
@@ -271,6 +275,7 @@ export const MostPopularAudit: React.FC<any> = (props) => {
                             <div className={`${cls.item} ${cls.description}`}>
                                 <span>Description</span>
                                 <p>Cairo Language Library provides support for the Cairo programming language. Cairo is the first Turing-complete language for creating provable programs for general computation.</p>
+                                <p className={cls.mobile}>Scalability solution for derivatives trading.</p>
                             </div>
 
                             <div className={`${cls.auditInfo} ${cls.Last}`}>

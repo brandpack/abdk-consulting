@@ -109,6 +109,9 @@
                 line-height: 130%;
                 opacity: 0.8;
             }
+            .mobile {
+                display: none;
+            }
         }
         .auditInfo {
             display: grid;
@@ -265,6 +268,55 @@
                 font-size: 40px;
                 text-align: center;
             }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .MostPopularAudit {
+        .auditCard {
+            width: 1fr;
+            grid-gap: 10px;
+            padding: 16px 20px;
+            .info {
+                padding-bottom: 12px;
+                height: 100%;
+            }
+            .item {
+                span {
+                    font-size: 10px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .auditInfo {
+                grid-gap: 10px;
+                .audit {
+                    grid-gap: 0px;
+                    .auditDate {
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .description {
+                span {
+                    display: none;
+                }
+                p {
+                    display: none;
+                }
+                .mobile {
+                    display: block;
+                }
+            }
+        }
+    }
+    .Container {
+        .first {
+            justify-content: stretch;
         }
     }
 }
