@@ -67,7 +67,7 @@ const TopStaticHeader: FC<HeaderProps> = ({auditColor, researchColor, consulting
 
     return (
         <div className={cls.header}>
-        { url == '/' || url == '/audit' || url == '/research' || url == '/consulting' || url == '/evaluation' || url == '/about-us'
+        { url == '/' || url == '/research' || url == '/consulting' || url == '/evaluation' || url == '/about-us'
             ?
             <div className={cls.container}>
                 <a  href={'/'} className={cls.logo}>

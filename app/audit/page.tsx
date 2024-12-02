@@ -73,9 +73,15 @@ export default function Audit() {
 
 	return (
 		<main>
-            <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'#2DAED7'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
+            {/* <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'#2DAED7'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} /> */}
+            <TopStaticHeader isOpen={isOpen} setIsOpen={setIsOpen} auditColor={'white'} researchColor={'white'} consultingColor={'white'} evaluationColor={'white'} />
             <StickHeader isOpen={isOpen} setIsOpen={setIsOpen}/>
-            <ServiceFirstScreen title={nameService} image={image} text='Order an audit of your code, protocol, or architecture' color='#2DAED7'/>
+            <ServiceFirstScreen
+                title={nameService}
+                isShort={true}
+                text='ABDK Consulting was founded in 2016 as a top service provider in the design and security of Web 3.0. Since then we have conducted over 100 audit projects, have developed DeFi protocols and cryptographic schemes, have crafted Solidity libraries and consulted dozens of clients.'
+                color='#2DAED7'
+            />
             <MostPopularAudit/>
             <ExtraText/>
             <WhyChoose items={WhyChooseData}/>
