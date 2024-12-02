@@ -8,6 +8,7 @@ import UniswapIcon from '@/public/uniswap_icon.svg';
 import AaveIcon from '@/public/aave_icon.svg';
 import StarkwareIcon from '@/public/starkware_icon.svg';
 import CurrencyDisplay from "./CurrentDisplay";
+import { Request } from '../Request/Request';
 
 export const MostPopularAudit: React.FC<any> = (props) => {
     const [marketCaps, setMarketCaps] = useState({
@@ -305,6 +306,12 @@ export const MostPopularAudit: React.FC<any> = (props) => {
 
                 </div>
             </div>
+            <div className={cls.gridButton}>
+                <div></div>
+                <Link className={cls.RequestButton} href={'/contact'} target="_blank" >Request Audit</Link>
+                <div></div>
+            </div>
+                
         </div>
     );
 
