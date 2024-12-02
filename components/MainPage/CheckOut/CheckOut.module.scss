@@ -5,7 +5,7 @@
     justify-content: center;
     .container {
         width: 1440px;
-        height: 900px;
+        // height: 900px;
         overflow: hidden;
         margin: 200px 0;
         border-radius: 0.811vw;
@@ -23,7 +23,7 @@
                 display: grid;
                 justify-items: center;
                 align-items: center;
-                margin-top: 70px;
+                margin: 70px 0;
                 gap: 40px;
                 .PortfolioText {
                     display: grid;
@@ -98,7 +98,7 @@
     .checkout {
         .container {
             width: 1080px;
-            height: 800px;
+            // height: 800px;
             margin: 150px 0;
             .test {
                 .Portfolio {
@@ -181,13 +181,13 @@
     .checkout {
         .container {
             width: 100vw;
-            height: 100vw;
+            height: auto;
             border: none;
             background: #fff;
             border-radius: none;
             .test {
                 .Portfolio {
-                    margin-top: 0px;
+                    margin: 0px;
                     gap: 30px;
                     .PortfolioText {
                         gap: 20px;

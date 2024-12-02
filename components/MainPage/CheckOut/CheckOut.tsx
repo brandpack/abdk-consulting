@@ -26,7 +26,7 @@ export const CheckOut = ({ }) => {
                             <Link className={cls.PortfolioButton} href={'https://github.com/abdk-consulting/audits'} target="_blank" >Check Out</Link>
                         </motion.div>
                     </figure>
-                    <motion.div
+                    {/* <motion.div
                         className={cls.GhPage}
                         initial={{transform: 'rotate3d(1, 0, 0, 45deg)'}}
                         whileInView={{transform: 'rotate3d(1, 0, 0, 30deg)'}}
@@ -37,7 +37,7 @@ export const CheckOut = ({ }) => {
                             alt='GhPage'
                             loading='lazy'
                         />
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
         </div>
